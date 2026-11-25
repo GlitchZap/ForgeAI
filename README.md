@@ -72,6 +72,18 @@ All generation prompts are committed in `forgeai/prompts/`. The demo documents a
 | Regression mode | `python -m forgeai regress runs/hr_policy --docs demos/hr_policy/docs_v2` regenerates the agent from the saved requirements, re-runs the **old** eval set, and separates real regressions from tests made stale by the document change. |
 | UI and hosting | `web/` (React, shadcn/ui, react-three-fiber) served by FastAPI. The `Dockerfile` targets Hugging Face Spaces (Docker). A free tier cannot run 7-8B models, so the hosted app shows committed runs read-only unless `OLLAMA_HOST` points at a reachable Ollama. |
 
+## Render deployment
+
+The repository includes `render.yaml` for a Docker-based Render web service. It keeps `FORGE_READONLY=1`, so the public deployment can safely show the committed demo runs without accepting uploaded briefs or spending model resources.
+
+To enable live runs or chat later:
+
+1. Deploy Ollama on a GPU-enabled server and pull `qwen2.5:7b`, `llama3.1:8b`, and `nomic-embed-text`.
+2. Set `OLLAMA_HOST` in Render to the Ollama server's public HTTPS URL.
+3. Set `FORGE_READONLY=0` and redeploy.
+
+Do not expose Ollama directly to the public internet without authentication or a reverse proxy. `OLLAMA_HOST=http://localhost:11434` is only valid when Ollama runs in the same machine/container as ForgeAI.
+
 ## How the judge is defended
 
 | Failure mode | Defence |
