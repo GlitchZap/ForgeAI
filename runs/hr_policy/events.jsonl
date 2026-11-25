@@ -1,0 +1,957 @@
+{"ts": 1795635702.5671132, "stage": "ingest", "status": "start", "name": "HR policy assistant"}
+{"ts": 1795635706.0709426, "stage": "ingest", "status": "done", "documents": 3, "chunks": 15, "mode": "hybrid", "skipped": []}
+{"ts": 1795635706.0709426, "stage": "intake", "status": "start"}
+{"ts": 1795635706.074949, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen2.5:3b"}
+{"ts": 1795635714.1689715, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen2.5:3b", "tokens": 647, "latency_s": 8.09}
+{"ts": 1795635714.1712742, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen2.5:3b"}
+{"ts": 1795635715.2260382, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen2.5:3b", "tokens": 412, "latency_s": 1.05}
+{"ts": 1795635715.2359064, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen2.5:3b"}
+{"ts": 1795635722.7162097, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen2.5:3b", "tokens": 1371, "latency_s": 7.48}
+{"ts": 1795635722.799319, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795635735.5840893, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 814, "latency_s": 12.78}
+{"ts": 1795635735.61399, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795635737.4502115, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 795, "latency_s": 1.84}
+{"ts": 1795635737.4934807, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795635738.8297467, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 656, "latency_s": 1.34}
+{"ts": 1795635738.8556352, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795635740.1944106, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 877, "latency_s": 1.34}
+{"ts": 1795635740.1984704, "stage": "intake", "status": "done", "topics": 4, "flags": ["NOT GROUNDABLE: the brief asks for 'tax_deductions' but the documents do not cover it. The agent will refuse these questions instead of guessing.", "PARTIAL COVERAGE: 'termination_and_separation' is only partly covered; answers may be incomplete."], "unsupported": ["tax_deductions"]}
+{"ts": 1795635740.1984704, "stage": "generate", "status": "start"}
+{"ts": 1795635740.2033818, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795635748.5051455, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 676, "latency_s": 8.3}
+{"ts": 1795635748.5072334, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "llama3.2:3b"}
+{"ts": 1795635757.3094163, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "llama3.2:3b", "tokens": 668, "latency_s": 8.8}
+{"ts": 1795635757.311588, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795635765.4848318, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 679, "latency_s": 8.17}
+{"ts": 1795635765.4859161, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "llama3.2:3b"}
+{"ts": 1795635774.8419263, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "llama3.2:3b", "tokens": 701, "latency_s": 9.36}
+{"ts": 1795635774.8451288, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795635783.1938527, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 692, "latency_s": 8.35}
+{"ts": 1795635783.1960983, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "llama3.2:3b"}
+{"ts": 1795635793.95231, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "llama3.2:3b", "tokens": 661, "latency_s": 10.76}
+{"ts": 1795635793.9555848, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795635805.3740692, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 1032, "latency_s": 11.42}
+{"ts": 1795635805.375665, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795635811.5246148, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 1112, "latency_s": 6.15}
+{"ts": 1795635811.5270925, "stage": "generate", "status": "done", "tools": ["current_date"], "candidates": 2}
+{"ts": 1795635811.5285285, "stage": "evalgen", "status": "start"}
+{"ts": 1795635811.5302737, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635823.9645202, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 373, "latency_s": 12.43}
+{"ts": 1795635823.970649, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635829.263297, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 589, "latency_s": 5.29}
+{"ts": 1795635829.2667801, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635833.1672397, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 368, "latency_s": 3.9}
+{"ts": 1795635833.1698916, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635837.884895, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 527, "latency_s": 4.71}
+{"ts": 1795635837.8870103, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635843.7014835, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 549, "latency_s": 5.81}
+{"ts": 1795635843.7044938, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635846.884177, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 424, "latency_s": 3.18}
+{"ts": 1795635846.8867805, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635848.8152301, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 488, "latency_s": 1.93}
+{"ts": 1795635848.8358295, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635850.8007565, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 405, "latency_s": 1.96}
+{"ts": 1795635850.8034277, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635853.2821238, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 630, "latency_s": 2.48}
+{"ts": 1795635853.2855256, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635880.6621943, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 1299, "latency_s": 27.38}
+{"ts": 1795635880.6658933, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635907.00241, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 2293, "latency_s": 26.34}
+{"ts": 1795635907.0046268, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635908.7759492, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 2449, "latency_s": 1.77}
+{"ts": 1795635908.7780693, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635909.890674, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 317, "latency_s": 1.11}
+{"ts": 1795635909.8922594, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635910.9608188, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 412, "latency_s": 1.07}
+{"ts": 1795635910.9634373, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635913.2236447, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 373, "latency_s": 2.26}
+{"ts": 1795635913.2252107, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635914.8366194, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 250, "latency_s": 1.61}
+{"ts": 1795635914.8387384, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635916.031073, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 248, "latency_s": 1.19}
+{"ts": 1795635916.0326695, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635917.897734, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 375, "latency_s": 1.87}
+{"ts": 1795635917.8997667, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635919.0539384, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 225, "latency_s": 1.15}
+{"ts": 1795635919.062912, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635923.0019221, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 458, "latency_s": 3.94}
+{"ts": 1795635923.0034752, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635928.4524562, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 493, "latency_s": 5.45}
+{"ts": 1795635928.4554842, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635932.836988, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 368, "latency_s": 4.38}
+{"ts": 1795635932.8394933, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635937.7422562, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 527, "latency_s": 4.9}
+{"ts": 1795635937.7449522, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635941.1082406, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 378, "latency_s": 3.36}
+{"ts": 1795635941.1104329, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795635944.928993, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 390, "latency_s": 3.82}
+{"ts": 1795635944.9665265, "stage": "evalgen", "status": "done", "cases": 27, "kinds": {"answerable": 19, "multi_doc": 1, "ambiguous": 3, "out_of_scope": 3, "tool": 1}}
+{"ts": 1795635944.9665265, "stage": "tournament", "status": "start", "candidates": 2}
+{"ts": 1795635944.96753, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 0, "total": 19, "case": "ans-01", "question": "What is the maximum duration of paid sick leave per calendar year?"}
+{"ts": 1795635946.451074, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635957.9464462, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 714, "latency_s": 11.5}
+{"ts": 1795635957.9486403, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635959.2038476, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 968, "latency_s": 1.26}
+{"ts": 1795635959.2077174, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 1, "total": 19, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795635959.20828, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 1, "total": 19, "case": "ans-02", "question": "What is the minimum documentation required for sick leave exceeding 2 consecutive days?"}
+{"ts": 1795635960.3098285, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635960.780842, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 701, "latency_s": 0.47}
+{"ts": 1795635960.7826133, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635961.885571, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 959, "latency_s": 1.1}
+{"ts": 1795635961.8866735, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 2, "total": 19, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795635961.8872273, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 2, "total": 19, "case": "ans-03", "question": "I'm a shore staff member, can I work from home on a regular basis?"}
+{"ts": 1795635962.083406, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635962.6378622, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 685, "latency_s": 0.55}
+{"ts": 1795635962.6395004, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635964.0265067, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 958, "latency_s": 1.39}
+{"ts": 1795635964.02987, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 3, "total": 19, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795635964.0304441, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 3, "total": 19, "case": "ans-04", "question": "My manager wants me to work from home for a month, but I have a 24x7 duty roster. Can I do that?"}
+{"ts": 1795635964.204687, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635964.759281, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 809, "latency_s": 0.55}
+{"ts": 1795635964.7611363, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635966.506994, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 1104, "latency_s": 1.75}
+{"ts": 1795635966.5124385, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795635974.9087777, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 872, "latency_s": 8.4}
+{"ts": 1795635974.9115143, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795635976.9966602, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 874, "latency_s": 2.08}
+{"ts": 1795635977.013094, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 4, "total": 19, "case": "ans-04", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795635977.014116, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 4, "total": 19, "case": "ans-06", "question": "If a General Manager is traveling, what class of service is available for flights over 6 hours?"}
+{"ts": 1795635977.0963979, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635988.8317003, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 555, "latency_s": 11.73}
+{"ts": 1795635988.8355665, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635989.7509108, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.92}
+{"ts": 1795635989.7537472, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 5, "total": 19, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795635989.7553, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 5, "total": 19, "case": "ans-07", "question": "If an employee is leaving the company, how many days of annual leave can they expect to receive on their resignation?"}
+{"ts": 1795635992.306567, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635992.8611002, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.55}
+{"ts": 1795635992.8629746, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795635994.2738104, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 927, "latency_s": 1.41}
+{"ts": 1795635994.2760558, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636001.1827269, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 696, "latency_s": 6.91}
+{"ts": 1795636001.1863494, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636002.201732, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 696, "latency_s": 1.02}
+{"ts": 1795636002.2028794, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 6, "total": 19, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636002.2034416, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 6, "total": 19, "case": "ans-09", "question": "A staff member is leaving their job after being confirmed as an Assistant Manager. What is the required notice period for this role?"}
+{"ts": 1795636002.2399297, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636013.302906, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 641, "latency_s": 11.06}
+{"ts": 1795636013.305115, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636014.397136, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 896, "latency_s": 1.09}
+{"ts": 1795636014.39904, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 7, "total": 19, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636014.399611, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 7, "total": 19, "case": "ans-10", "question": "A manager is leaving their job, but their manager wants to shorten the notice period. What happens to the staff member's salary?"}
+{"ts": 1795636015.610447, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636016.05354, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 642, "latency_s": 0.44}
+{"ts": 1795636016.0546346, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636017.3084083, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 913, "latency_s": 1.25}
+{"ts": 1795636017.3111627, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636024.17553, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 691, "latency_s": 6.86}
+{"ts": 1795636024.1776273, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636024.9691892, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 691, "latency_s": 0.79}
+{"ts": 1795636024.9704149, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 8, "total": 19, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636024.9709735, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 8, "total": 19, "case": "ans-11", "question": "What is the deadline for submitting expense claims through the finance portal?"}
+{"ts": 1795636025.040507, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636036.2843518, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 542, "latency_s": 11.24}
+{"ts": 1795636036.2865949, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636036.5660057, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 566, "latency_s": 0.28}
+{"ts": 1795636036.5680118, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636037.7459636, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 826, "latency_s": 1.18}
+{"ts": 1795636037.747605, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 9, "total": 19, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636037.747605, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 9, "total": 19, "case": "mul-13", "question": "What is the maximum number of days of annual leave that can be carried forward to the next year?"}
+{"ts": 1795636038.9782016, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636039.4405673, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 0.46}
+{"ts": 1795636039.442217, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636040.5150673, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 962, "latency_s": 1.07}
+{"ts": 1795636040.5172365, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636047.4033034, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 761, "latency_s": 6.89}
+{"ts": 1795636047.4070387, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636048.4044917, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 761, "latency_s": 1.0}
+{"ts": 1795636048.4060674, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 10, "total": 19, "case": "mul-13", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795636048.4066427, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 10, "total": 19, "case": "amb-14", "question": "Can employees take 5 days off without notice?"}
+{"ts": 1795636048.65623, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636060.5833046, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 696, "latency_s": 11.93}
+{"ts": 1795636060.58435, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636062.1785564, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 982, "latency_s": 1.59}
+{"ts": 1795636062.180633, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636070.8427107, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 792, "latency_s": 8.66}
+{"ts": 1795636070.8453882, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636071.8365974, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 792, "latency_s": 0.99}
+{"ts": 1795636071.8386102, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 11, "total": 19, "case": "amb-14", "passed": false, "kind": "ambiguous", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636071.8386102, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 11, "total": 19, "case": "amb-15", "question": "probation period can be extended for how long?"}
+{"ts": 1795636073.650886, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636084.866372, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 11.22}
+{"ts": 1795636084.8685732, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636086.0686119, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 1042, "latency_s": 1.2}
+{"ts": 1795636086.0747094, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636094.615956, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 828, "latency_s": 8.54}
+{"ts": 1795636094.617566, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636095.5845582, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 828, "latency_s": 0.97}
+{"ts": 1795636095.58566, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 12, "total": 19, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795636095.5862107, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 12, "total": 19, "case": "out-17", "question": "How do I calculate my tax deductions for the year?"}
+{"ts": 1795636097.131898, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636111.4538596, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 712, "latency_s": 14.32}
+{"ts": 1795636111.4566116, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636112.742864, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 977, "latency_s": 1.29}
+{"ts": 1795636112.7450864, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 13, "total": 19, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636112.7456207, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 13, "total": 19, "case": "out-19", "question": "Can you explain the process for requesting a performance review?"}
+{"ts": 1795636114.3183718, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636114.7809129, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.46}
+{"ts": 1795636114.783655, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636116.3499024, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 871, "latency_s": 1.57}
+{"ts": 1795636116.3526957, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 14, "total": 19, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636116.3532715, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 14, "total": 19, "case": "too-20", "question": "How many days' pay in lieu of notice is an employee entitled to if they leave the company without adequate notice?"}
+{"ts": 1795636116.5633316, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636117.056018, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.49}
+{"ts": 1795636117.0582561, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636118.7933238, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 951, "latency_s": 1.74}
+{"ts": 1795636118.7949736, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 15, "total": 19, "case": "too-20", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636118.7955291, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 15, "total": 19, "case": "ans-21", "question": "If I need to take a public holiday off, how many days can I carry forward from previous years?"}
+{"ts": 1795636118.8384593, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636119.402056, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 711, "latency_s": 0.56}
+{"ts": 1795636119.404229, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636121.101163, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 1002, "latency_s": 1.7}
+{"ts": 1795636121.1028533, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 16, "total": 19, "case": "ans-21", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636121.1034236, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 16, "total": 19, "case": "ans-24", "question": "A new permanent employee's probation period can be extended by up to what number of months?"}
+{"ts": 1795636121.1434796, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636121.8040278, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.66}
+{"ts": 1795636121.8076048, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636122.7660723, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 1040, "latency_s": 0.96}
+{"ts": 1795636122.7682853, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636132.3946617, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 795, "latency_s": 9.63}
+{"ts": 1795636132.3967857, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795636133.3338065, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 795, "latency_s": 0.94}
+{"ts": 1795636133.3354998, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 17, "total": 19, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636133.3354998, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 17, "total": 19, "case": "ans-26", "question": "What is not reimbursable for travel expenses?"}
+{"ts": 1795636133.359414, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636145.6621284, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 484, "latency_s": 12.3}
+{"ts": 1795636145.6647484, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636146.8546531, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 748, "latency_s": 1.19}
+{"ts": 1795636146.8562605, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 18, "total": 19, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636146.856816, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 18, "total": 19, "case": "ans-27", "question": "A shore staff member has a trip that is less than 4 nights long. What is not covered?"}
+{"ts": 1795636148.0747418, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636148.462574, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 520, "latency_s": 0.39}
+{"ts": 1795636148.463672, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795636149.6123703, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 787, "latency_s": 1.15}
+{"ts": 1795636149.6140265, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 19, "total": 19, "case": "ans-27", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636149.6156402, "stage": "tournament", "status": "progress", "candidate": 0, "dev": 0.684}
+{"ts": 1795636149.6156402, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 0, "total": 19, "case": "ans-01", "question": "What is the maximum duration of paid sick leave per calendar year?"}
+{"ts": 1795636149.6167371, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636150.1685402, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 714, "latency_s": 0.55}
+{"ts": 1795636150.1707416, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636151.4049788, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1021, "latency_s": 1.23}
+{"ts": 1795636151.406661, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 1, "total": 19, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636151.407193, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 1, "total": 19, "case": "ans-02", "question": "What is the minimum documentation required for sick leave exceeding 2 consecutive days?"}
+{"ts": 1795636151.4082735, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636151.9541266, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 701, "latency_s": 0.55}
+{"ts": 1795636151.9563444, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636153.0782433, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1012, "latency_s": 1.12}
+{"ts": 1795636153.0793183, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 2, "total": 19, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636153.0793183, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 2, "total": 19, "case": "ans-03", "question": "I'm a shore staff member, can I work from home on a regular basis?"}
+{"ts": 1795636153.0809212, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636153.6470087, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 685, "latency_s": 0.57}
+{"ts": 1795636153.6486728, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636155.0225804, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1011, "latency_s": 1.37}
+{"ts": 1795636155.0236657, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 3, "total": 19, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636155.0236657, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 3, "total": 19, "case": "ans-04", "question": "My manager wants me to work from home for a month, but I have a 24x7 duty roster. Can I do that?"}
+{"ts": 1795636155.0247643, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636155.6397705, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 809, "latency_s": 0.61}
+{"ts": 1795636155.6414726, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636157.3680017, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1158, "latency_s": 1.73}
+{"ts": 1795636157.3756795, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636165.590635, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 881, "latency_s": 8.22}
+{"ts": 1795636165.5934167, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636167.9123979, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 909, "latency_s": 2.32}
+{"ts": 1795636167.9204588, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 4, "total": 19, "case": "ans-04", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636167.9204588, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 4, "total": 19, "case": "ans-06", "question": "If a General Manager is traveling, what class of service is available for flights over 6 hours?"}
+{"ts": 1795636167.922102, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636179.3412771, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 555, "latency_s": 11.42}
+{"ts": 1795636179.3440297, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636180.2612917, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 851, "latency_s": 0.92}
+{"ts": 1795636180.2618446, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 5, "total": 19, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636180.262381, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 5, "total": 19, "case": "ans-07", "question": "If an employee is leaving the company, how many days of annual leave can they expect to receive on their resignation?"}
+{"ts": 1795636180.2629306, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636180.7971861, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.53}
+{"ts": 1795636180.7983184, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636181.5750039, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 948, "latency_s": 0.78}
+{"ts": 1795636181.5771277, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636193.8171315, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 678, "latency_s": 12.24}
+{"ts": 1795636193.8193486, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636194.7794044, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 678, "latency_s": 0.96}
+{"ts": 1795636194.7806742, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 6, "total": 19, "case": "ans-07", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636194.781232, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 6, "total": 19, "case": "ans-09", "question": "A staff member is leaving their job after being confirmed as an Assistant Manager. What is the required notice period for this role?"}
+{"ts": 1795636194.78344, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636202.8395045, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 641, "latency_s": 8.06}
+{"ts": 1795636202.841103, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636203.9888299, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 946, "latency_s": 1.15}
+{"ts": 1795636203.9904401, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636215.0544589, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 663, "latency_s": 11.06}
+{"ts": 1795636215.0566673, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636215.8485656, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 663, "latency_s": 0.79}
+{"ts": 1795636215.8502362, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 7, "total": 19, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636215.850768, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 7, "total": 19, "case": "ans-10", "question": "A manager is leaving their job, but their manager wants to shorten the notice period. What happens to the staff member's salary?"}
+{"ts": 1795636215.852974, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636223.075996, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 642, "latency_s": 7.22}
+{"ts": 1795636223.0788348, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636224.442347, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 959, "latency_s": 1.36}
+{"ts": 1795636224.4429, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 8, "total": 19, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636224.4434636, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 8, "total": 19, "case": "ans-11", "question": "What is the deadline for submitting expense claims through the finance portal?"}
+{"ts": 1795636224.4445634, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636224.9730897, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 542, "latency_s": 0.53}
+{"ts": 1795636224.9751022, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636225.3166518, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 566, "latency_s": 0.34}
+{"ts": 1795636225.3196604, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636226.4939268, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 882, "latency_s": 1.17}
+{"ts": 1795636226.49562, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636234.36647, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 577, "latency_s": 7.87}
+{"ts": 1795636234.3686259, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636235.1373835, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 577, "latency_s": 0.77}
+{"ts": 1795636235.1389937, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 9, "total": 19, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636235.1395478, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 9, "total": 19, "case": "mul-13", "question": "What is the maximum number of days of annual leave that can be carried forward to the next year?"}
+{"ts": 1795636235.141717, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636242.3470922, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 7.21}
+{"ts": 1795636242.348745, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636243.4508636, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1008, "latency_s": 1.1}
+{"ts": 1795636243.4519515, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 10, "total": 19, "case": "mul-13", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795636243.4519515, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 10, "total": 19, "case": "amb-14", "question": "Can employees take 5 days off without notice?"}
+{"ts": 1795636243.453074, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636244.0177948, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 696, "latency_s": 0.56}
+{"ts": 1795636244.0200784, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636246.6520581, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1094, "latency_s": 2.63}
+{"ts": 1795636246.6569905, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636257.204258, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 851, "latency_s": 10.55}
+{"ts": 1795636257.207375, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636258.269617, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 851, "latency_s": 1.06}
+{"ts": 1795636258.270704, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 11, "total": 19, "case": "amb-14", "passed": false, "kind": "ambiguous", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636258.2712526, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 11, "total": 19, "case": "amb-15", "question": "probation period can be extended for how long?"}
+{"ts": 1795636258.272894, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636265.0861373, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 6.81}
+{"ts": 1795636265.0888848, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636266.2905447, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1088, "latency_s": 1.2}
+{"ts": 1795636266.2916684, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 12, "total": 19, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795636266.2916684, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 12, "total": 19, "case": "out-17", "question": "How do I calculate my tax deductions for the year?"}
+{"ts": 1795636266.2932632, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636266.8638139, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 712, "latency_s": 0.57}
+{"ts": 1795636266.864894, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636268.152477, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1031, "latency_s": 1.29}
+{"ts": 1795636268.1535642, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 13, "total": 19, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636268.154096, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 13, "total": 19, "case": "out-19", "question": "Can you explain the process for requesting a performance review?"}
+{"ts": 1795636268.155736, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636268.6643956, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.51}
+{"ts": 1795636268.666083, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636270.3620856, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 931, "latency_s": 1.7}
+{"ts": 1795636270.3637404, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 14, "total": 19, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636270.3643034, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 14, "total": 19, "case": "too-20", "question": "How many days' pay in lieu of notice is an employee entitled to if they leave the company without adequate notice?"}
+{"ts": 1795636270.3653848, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636270.9239016, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.56}
+{"ts": 1795636270.9255638, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636272.4923587, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 997, "latency_s": 1.57}
+{"ts": 1795636272.4935265, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 15, "total": 19, "case": "too-20", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636272.4940903, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 15, "total": 19, "case": "ans-21", "question": "If I need to take a public holiday off, how many days can I carry forward from previous years?"}
+{"ts": 1795636272.494848, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636273.0630126, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 711, "latency_s": 0.57}
+{"ts": 1795636273.0646744, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636274.38607, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1032, "latency_s": 1.32}
+{"ts": 1795636274.3882666, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636303.4511943, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 1633, "latency_s": 29.06}
+{"ts": 1795636303.4521995, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636303.8473575, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 1725, "latency_s": 0.4}
+{"ts": 1795636303.8490422, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795636305.1544008, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 766, "latency_s": 1.31}
+{"ts": 1795636305.1554666, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 16, "total": 19, "case": "ans-21", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636305.1554666, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 16, "total": 19, "case": "ans-24", "question": "A new permanent employee's probation period can be extended by up to what number of months?"}
+{"ts": 1795636305.15655, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636311.3312063, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 6.17}
+{"ts": 1795636311.3333693, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636312.2361176, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1086, "latency_s": 0.9}
+{"ts": 1795636312.2377727, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 17, "total": 19, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636312.2383246, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 17, "total": 19, "case": "ans-26", "question": "What is not reimbursable for travel expenses?"}
+{"ts": 1795636312.2393873, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636312.7065396, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 484, "latency_s": 0.47}
+{"ts": 1795636312.708295, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636313.8375895, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 801, "latency_s": 1.13}
+{"ts": 1795636313.8381436, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 18, "total": 19, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636313.8386962, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 18, "total": 19, "case": "ans-27", "question": "A shore staff member has a trip that is less than 4 nights long. What is not covered?"}
+{"ts": 1795636313.8398125, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636314.3059044, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 520, "latency_s": 0.47}
+{"ts": 1795636314.307007, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795636315.3453321, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 833, "latency_s": 1.04}
+{"ts": 1795636315.3458703, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 19, "total": 19, "case": "ans-27", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636315.3470106, "stage": "tournament", "status": "progress", "candidate": 1, "dev": 0.632}
+{"ts": 1795636315.3476002, "stage": "tournament", "status": "done", "winner": 0, "dev": 0.684}
+{"ts": 1795636315.3487225, "stage": "iteration", "status": "start", "iteration": 0}
+{"ts": 1795636315.3487225, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 0, "total": 27, "case": "ans-01", "question": "What is the maximum duration of paid sick leave per calendar year?"}
+{"ts": 1795636315.3498385, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636315.9125683, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 714, "latency_s": 0.56}
+{"ts": 1795636315.913715, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636317.1766016, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 968, "latency_s": 1.26}
+{"ts": 1795636317.178264, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 1, "total": 27, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636317.179408, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 1, "total": 27, "case": "ans-02", "question": "What is the minimum documentation required for sick leave exceeding 2 consecutive days?"}
+{"ts": 1795636317.1818573, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636317.755948, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 701, "latency_s": 0.57}
+{"ts": 1795636317.7570648, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636318.8593354, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 959, "latency_s": 1.1}
+{"ts": 1795636318.859865, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 2, "total": 27, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636318.8603868, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 2, "total": 27, "case": "ans-03", "question": "I'm a shore staff member, can I work from home on a regular basis?"}
+{"ts": 1795636318.8614998, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636319.4161754, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 685, "latency_s": 0.55}
+{"ts": 1795636319.4178166, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636320.7981982, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 958, "latency_s": 1.38}
+{"ts": 1795636320.798752, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 3, "total": 27, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636320.798752, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 3, "total": 27, "case": "ans-04", "question": "My manager wants me to work from home for a month, but I have a 24x7 duty roster. Can I do that?"}
+{"ts": 1795636320.7998433, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636321.4207783, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 809, "latency_s": 0.62}
+{"ts": 1795636321.42245, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636323.1568341, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1104, "latency_s": 1.73}
+{"ts": 1795636323.1578984, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 4, "total": 27, "case": "ans-04", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795636323.1578984, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 4, "total": 27, "case": "ans-05", "question": "What is the standard for rail travel?"}
+{"ts": 1795636324.2580137, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636324.7117603, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 540, "latency_s": 0.45}
+{"ts": 1795636324.7133672, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636325.8100946, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 799, "latency_s": 1.1}
+{"ts": 1795636325.8117695, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636331.8846083, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 544, "latency_s": 6.07}
+{"ts": 1795636331.8861754, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636332.5970702, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 544, "latency_s": 0.71}
+{"ts": 1795636332.5981078, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 5, "total": 27, "case": "ans-05", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636332.5986323, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 5, "total": 27, "case": "ans-06", "question": "If a General Manager is traveling, what class of service is available for flights over 6 hours?"}
+{"ts": 1795636332.5996969, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636343.9264212, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 555, "latency_s": 11.33}
+{"ts": 1795636343.9274921, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636344.7950168, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.87}
+{"ts": 1795636344.7957606, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 6, "total": 27, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636344.7963345, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 6, "total": 27, "case": "ans-07", "question": "If an employee is leaving the company, how many days of annual leave can they expect to receive on their resignation?"}
+{"ts": 1795636344.796909, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636345.3382208, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.54}
+{"ts": 1795636345.3398883, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636346.6335506, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 927, "latency_s": 1.29}
+{"ts": 1795636346.6340714, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 7, "total": 27, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636346.6340714, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 7, "total": 27, "case": "ans-08", "question": "What's the deadline for using up carried-forward annual leave days before they lapse?"}
+{"ts": 1795636347.9447644, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636348.4234836, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 720, "latency_s": 0.48}
+{"ts": 1795636348.424602, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636349.725332, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 993, "latency_s": 1.3}
+{"ts": 1795636349.7269597, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 8, "total": 27, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636349.727536, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 8, "total": 27, "case": "ans-09", "question": "A staff member is leaving their job after being confirmed as an Assistant Manager. What is the required notice period for this role?"}
+{"ts": 1795636349.7281063, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636350.2543557, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 641, "latency_s": 0.53}
+{"ts": 1795636350.2559628, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636351.2868307, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 896, "latency_s": 1.03}
+{"ts": 1795636351.2885053, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 9, "total": 27, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636351.2890751, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 9, "total": 27, "case": "ans-10", "question": "A manager is leaving their job, but their manager wants to shorten the notice period. What happens to the staff member's salary?"}
+{"ts": 1795636351.290191, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636351.8181624, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 642, "latency_s": 0.53}
+{"ts": 1795636351.8198984, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636353.0595126, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 913, "latency_s": 1.24}
+{"ts": 1795636353.0606134, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 10, "total": 27, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636353.0606134, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 10, "total": 27, "case": "ans-11", "question": "What is the deadline for submitting expense claims through the finance portal?"}
+{"ts": 1795636353.0616648, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636353.579702, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 542, "latency_s": 0.52}
+{"ts": 1795636353.5813482, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636353.8897107, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 566, "latency_s": 0.31}
+{"ts": 1795636353.8908284, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636355.0103204, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 826, "latency_s": 1.12}
+{"ts": 1795636355.0114443, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 11, "total": 27, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636355.0114443, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 11, "total": 27, "case": "ans-12", "question": "A shore staff member wants to claim a trip to Dubai, but their manager says they need Finance Controller approval. Is that correct?"}
+{"ts": 1795636355.031507, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636355.5159655, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 546, "latency_s": 0.48}
+{"ts": 1795636355.517559, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636357.1041522, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 840, "latency_s": 1.59}
+{"ts": 1795636357.106345, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636368.1213791, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 618, "latency_s": 11.01}
+{"ts": 1795636368.1229815, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636368.8330564, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 618, "latency_s": 0.71}
+{"ts": 1795636368.8335931, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 12, "total": 27, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636368.8341393, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 12, "total": 27, "case": "mul-13", "question": "What is the maximum number of days of annual leave that can be carried forward to the next year?"}
+{"ts": 1795636368.835221, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636379.9567487, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 11.12}
+{"ts": 1795636379.958288, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636381.1207688, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 962, "latency_s": 1.16}
+{"ts": 1795636381.121902, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 13, "total": 27, "case": "mul-13", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795636381.121902, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 13, "total": 27, "case": "amb-14", "question": "Can employees take 5 days off without notice?"}
+{"ts": 1795636381.1230197, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636381.6326804, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 696, "latency_s": 0.51}
+{"ts": 1795636381.6337414, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636383.2312398, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 982, "latency_s": 1.6}
+{"ts": 1795636383.2330384, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 14, "total": 27, "case": "amb-14", "passed": false, "kind": "ambiguous", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636383.2330384, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 14, "total": 27, "case": "amb-15", "question": "probation period can be extended for how long?"}
+{"ts": 1795636383.2347026, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636383.8285747, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 0.59}
+{"ts": 1795636383.830173, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636384.9093032, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1042, "latency_s": 1.08}
+{"ts": 1795636384.9103522, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 15, "total": 27, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795636384.910762, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 15, "total": 27, "case": "amb-16", "question": "can i book premium economy on short flights"}
+{"ts": 1795636386.0022297, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636386.4544144, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 533, "latency_s": 0.45}
+{"ts": 1795636386.456083, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636387.530748, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 793, "latency_s": 1.07}
+{"ts": 1795636387.5329509, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636393.852198, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 587, "latency_s": 6.32}
+{"ts": 1795636393.8552787, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636394.6069896, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 587, "latency_s": 0.75}
+{"ts": 1795636394.607515, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 16, "total": 27, "case": "amb-16", "passed": false, "kind": "ambiguous", "split": "holdout", "failure": "prompt_defect"}
+{"ts": 1795636394.6080487, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 16, "total": 27, "case": "out-17", "question": "How do I calculate my tax deductions for the year?"}
+{"ts": 1795636394.6091545, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636405.980683, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 712, "latency_s": 11.37}
+{"ts": 1795636405.981808, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636407.2986996, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 977, "latency_s": 1.32}
+{"ts": 1795636407.2997603, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 17, "total": 27, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636407.3003032, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 17, "total": 27, "case": "out-18", "question": "What is the weather forecast for tomorrow?"}
+{"ts": 1795636408.3915405, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636408.8267004, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.44}
+{"ts": 1795636408.8285847, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636410.1033943, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 855, "latency_s": 1.28}
+{"ts": 1795636410.1044788, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 18, "total": 27, "case": "out-18", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795636410.1044788, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 18, "total": 27, "case": "out-19", "question": "Can you explain the process for requesting a performance review?"}
+{"ts": 1795636410.105542, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636410.5966258, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.49}
+{"ts": 1795636410.5977316, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636412.1494172, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 871, "latency_s": 1.55}
+{"ts": 1795636412.1505313, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 19, "total": 27, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636412.1505313, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 19, "total": 27, "case": "too-20", "question": "How many days' pay in lieu of notice is an employee entitled to if they leave the company without adequate notice?"}
+{"ts": 1795636412.1516304, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636412.7037668, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.55}
+{"ts": 1795636412.704855, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636414.3827782, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 951, "latency_s": 1.68}
+{"ts": 1795636414.3838902, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 20, "total": 27, "case": "too-20", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636414.3838902, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 20, "total": 27, "case": "ans-21", "question": "If I need to take a public holiday off, how many days can I carry forward from previous years?"}
+{"ts": 1795636414.3853295, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636414.9444246, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 711, "latency_s": 0.56}
+{"ts": 1795636414.9455316, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636416.61486, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1002, "latency_s": 1.67}
+{"ts": 1795636416.6160011, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 21, "total": 27, "case": "ans-21", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636416.6160011, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 21, "total": 27, "case": "ans-22", "question": "What is the deadline for staff to take their compensatory day off after working on a public holiday?"}
+{"ts": 1795636416.7898722, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636417.3274102, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 0.54}
+{"ts": 1795636417.3290331, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636418.4635546, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 968, "latency_s": 1.13}
+{"ts": 1795636418.4650826, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 22, "total": 27, "case": "ans-22", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636418.4659111, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 22, "total": 27, "case": "ans-23", "question": "A manager is leaving their job, but the company and manager can't agree on a shortened notice period. What happens to the staff member's salary?"}
+{"ts": 1795636418.5320182, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636419.0502791, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 646, "latency_s": 0.52}
+{"ts": 1795636419.0513895, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636420.3525112, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 917, "latency_s": 1.3}
+{"ts": 1795636420.3546307, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636426.7878256, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 696, "latency_s": 6.43}
+{"ts": 1795636426.789988, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636427.643185, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 696, "latency_s": 0.85}
+{"ts": 1795636427.6442685, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 23, "total": 27, "case": "ans-23", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636427.644819, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 23, "total": 27, "case": "ans-24", "question": "A new permanent employee's probation period can be extended by up to what number of months?"}
+{"ts": 1795636427.645926, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636438.853034, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 11.21}
+{"ts": 1795636438.8546858, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636439.8383641, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1040, "latency_s": 0.98}
+{"ts": 1795636439.8400073, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 24, "total": 27, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636439.8400073, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 24, "total": 27, "case": "ans-25", "question": "What is the notice period for an employee during their probation, in days?"}
+{"ts": 1795636441.1536727, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636441.66799, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 795, "latency_s": 0.51}
+{"ts": 1795636441.6690867, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636442.5899978, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1039, "latency_s": 0.92}
+{"ts": 1795636442.5916662, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636448.9354694, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 791, "latency_s": 6.34}
+{"ts": 1795636448.9376416, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795636449.8093796, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 791, "latency_s": 0.87}
+{"ts": 1795636449.8104742, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 25, "total": 27, "case": "ans-25", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636449.8104742, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 25, "total": 27, "case": "ans-26", "question": "What is not reimbursable for travel expenses?"}
+{"ts": 1795636449.8121526, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636460.8910697, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 484, "latency_s": 11.08}
+{"ts": 1795636460.8938286, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636462.0887475, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 748, "latency_s": 1.19}
+{"ts": 1795636462.0893161, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 26, "total": 27, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636462.0898507, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 26, "total": 27, "case": "ans-27", "question": "A shore staff member has a trip that is less than 4 nights long. What is not covered?"}
+{"ts": 1795636462.0903866, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636462.4918869, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 520, "latency_s": 0.4}
+{"ts": 1795636462.493, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795636463.628946, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 787, "latency_s": 1.14}
+{"ts": 1795636463.6306102, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 27, "total": 27, "case": "ans-27", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636463.6371927, "stage": "iteration", "status": "done", "iteration": 0, "dev": 0.684, "holdout": 0.875}
+{"ts": 1795636463.637734, "stage": "diagnose", "status": "done", "iteration": 1, "category": "wrong_refusal", "cases": ["ans-21", "ans-26", "ans-27"]}
+{"ts": 1795636463.6398628, "stage": "llm", "status": "start", "llm_stage": "fix_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636466.1703348, "stage": "llm", "status": "done", "llm_stage": "fix_iter1", "model": "qwen2.5:3b", "tokens": 636, "latency_s": 2.53}
+{"ts": 1795636466.1714182, "stage": "fix", "status": "done", "iteration": 1, "category": "wrong_refusal", "target": "prompt.refusal_policy", "rationale": "Changed the last bullet point to cover any information not covered in the provided documents, addressing the refusal of answerable questions in the test cases."}
+{"ts": 1795636466.171961, "stage": "iteration", "status": "start", "iteration": 1}
+{"ts": 1795636466.171961, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 0, "total": 27, "case": "ans-01", "question": "What is the maximum duration of paid sick leave per calendar year?"}
+{"ts": 1795636466.1725342, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636466.7084837, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 714, "latency_s": 0.54}
+{"ts": 1795636466.7096045, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636467.830838, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 983, "latency_s": 1.12}
+{"ts": 1795636467.8321986, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 1, "total": 27, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636467.8321986, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 1, "total": 27, "case": "ans-02", "question": "What is the minimum documentation required for sick leave exceeding 2 consecutive days?"}
+{"ts": 1795636467.83389, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636468.374433, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 701, "latency_s": 0.54}
+{"ts": 1795636468.3749907, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636469.4656656, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 974, "latency_s": 1.09}
+{"ts": 1795636469.4667537, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 2, "total": 27, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636469.4667537, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 2, "total": 27, "case": "ans-03", "question": "I'm a shore staff member, can I work from home on a regular basis?"}
+{"ts": 1795636469.467871, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636470.0164945, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 685, "latency_s": 0.55}
+{"ts": 1795636470.0175931, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636471.3896484, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 973, "latency_s": 1.37}
+{"ts": 1795636471.3907623, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 3, "total": 27, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636471.3907623, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 3, "total": 27, "case": "ans-04", "question": "My manager wants me to work from home for a month, but I have a 24x7 duty roster. Can I do that?"}
+{"ts": 1795636471.3918672, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636472.0079715, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 809, "latency_s": 0.62}
+{"ts": 1795636472.0090585, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636473.568737, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1109, "latency_s": 1.56}
+{"ts": 1795636473.5708764, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636482.3389206, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 869, "latency_s": 8.77}
+{"ts": 1795636482.341243, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636483.7894714, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 871, "latency_s": 1.45}
+{"ts": 1795636483.7932577, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 4, "total": 27, "case": "ans-04", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795636483.7937763, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 4, "total": 27, "case": "ans-05", "question": "What is the standard for rail travel?"}
+{"ts": 1795636483.7948704, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636490.5488553, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 540, "latency_s": 6.75}
+{"ts": 1795636490.5517218, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636491.7869334, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 814, "latency_s": 1.24}
+{"ts": 1795636491.7879488, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 5, "total": 27, "case": "ans-05", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636491.7889452, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 5, "total": 27, "case": "ans-06", "question": "If a General Manager is traveling, what class of service is available for flights over 6 hours?"}
+{"ts": 1795636491.7909474, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636492.321371, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 555, "latency_s": 0.53}
+{"ts": 1795636492.3230264, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636493.114106, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 813, "latency_s": 0.79}
+{"ts": 1795636493.1161122, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 6, "total": 27, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636493.1166947, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 6, "total": 27, "case": "ans-07", "question": "If an employee is leaving the company, how many days of annual leave can they expect to receive on their resignation?"}
+{"ts": 1795636493.119871, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636493.7162247, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.6}
+{"ts": 1795636493.7191107, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636494.9634588, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 931, "latency_s": 1.24}
+{"ts": 1795636494.9651415, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 7, "total": 27, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636494.9661894, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 7, "total": 27, "case": "ans-08", "question": "What's the deadline for using up carried-forward annual leave days before they lapse?"}
+{"ts": 1795636494.967883, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636495.566439, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 720, "latency_s": 0.6}
+{"ts": 1795636495.5680914, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636496.886993, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1010, "latency_s": 1.32}
+{"ts": 1795636496.889433, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 8, "total": 27, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636496.889433, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 8, "total": 27, "case": "ans-09", "question": "A staff member is leaving their job after being confirmed as an Assistant Manager. What is the required notice period for this role?"}
+{"ts": 1795636496.890579, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636497.4523778, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 641, "latency_s": 0.56}
+{"ts": 1795636497.4557042, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636498.5543838, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 911, "latency_s": 1.1}
+{"ts": 1795636498.5555403, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 9, "total": 27, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636498.5555403, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 9, "total": 27, "case": "ans-10", "question": "A manager is leaving their job, but their manager wants to shorten the notice period. What happens to the staff member's salary?"}
+{"ts": 1795636498.5572307, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636499.1081827, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 642, "latency_s": 0.55}
+{"ts": 1795636499.1105113, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636500.4039981, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 928, "latency_s": 1.29}
+{"ts": 1795636500.4057093, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 10, "total": 27, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636500.4062767, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 10, "total": 27, "case": "ans-11", "question": "What is the deadline for submitting expense claims through the finance portal?"}
+{"ts": 1795636500.4079707, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636500.941027, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 542, "latency_s": 0.53}
+{"ts": 1795636500.9433467, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636501.3262782, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 566, "latency_s": 0.38}
+{"ts": 1795636501.332271, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636502.5256188, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 841, "latency_s": 1.19}
+{"ts": 1795636502.5278893, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 11, "total": 27, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636502.5284731, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 11, "total": 27, "case": "ans-12", "question": "A shore staff member wants to claim a trip to Dubai, but their manager says they need Finance Controller approval. Is that correct?"}
+{"ts": 1795636502.533106, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636503.0545902, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 546, "latency_s": 0.52}
+{"ts": 1795636503.056857, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636504.7550027, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 860, "latency_s": 1.7}
+{"ts": 1795636504.757832, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636514.036452, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 623, "latency_s": 9.28}
+{"ts": 1795636514.038624, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636514.823332, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 623, "latency_s": 0.78}
+{"ts": 1795636514.8238628, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 12, "total": 27, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636514.8243933, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 12, "total": 27, "case": "mul-13", "question": "What is the maximum number of days of annual leave that can be carried forward to the next year?"}
+{"ts": 1795636514.8260043, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636525.5712936, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 10.75}
+{"ts": 1795636525.5739315, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636526.8354967, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 977, "latency_s": 1.26}
+{"ts": 1795636526.8365605, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 13, "total": 27, "case": "mul-13", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795636526.8370907, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 13, "total": 27, "case": "amb-14", "question": "Can employees take 5 days off without notice?"}
+{"ts": 1795636526.838225, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636527.423847, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 696, "latency_s": 0.59}
+{"ts": 1795636527.4260595, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636529.3640175, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1007, "latency_s": 1.94}
+{"ts": 1795636529.3667414, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636541.7356684, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 806, "latency_s": 12.37}
+{"ts": 1795636541.7367606, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636542.739254, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 806, "latency_s": 1.0}
+{"ts": 1795636542.7403252, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 14, "total": 27, "case": "amb-14", "passed": false, "kind": "ambiguous", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636542.7403252, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 14, "total": 27, "case": "amb-15", "question": "probation period can be extended for how long?"}
+{"ts": 1795636542.7419577, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636550.763137, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 8.02}
+{"ts": 1795636550.7654092, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636551.948134, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1057, "latency_s": 1.18}
+{"ts": 1795636551.9498053, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 15, "total": 27, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795636551.9503856, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 15, "total": 27, "case": "amb-16", "question": "can i book premium economy on short flights"}
+{"ts": 1795636551.9526482, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636552.498794, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 533, "latency_s": 0.55}
+{"ts": 1795636552.5014417, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636553.6839328, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 808, "latency_s": 1.18}
+{"ts": 1795636553.6850762, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 16, "total": 27, "case": "amb-16", "passed": false, "kind": "ambiguous", "split": "holdout", "failure": "prompt_defect"}
+{"ts": 1795636553.6856372, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 16, "total": 27, "case": "out-17", "question": "How do I calculate my tax deductions for the year?"}
+{"ts": 1795636553.6876187, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636554.275996, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 712, "latency_s": 0.59}
+{"ts": 1795636554.2783248, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636555.3359337, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 975, "latency_s": 1.06}
+{"ts": 1795636555.3381877, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 17, "total": 27, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636555.3387206, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 17, "total": 27, "case": "out-18", "question": "What is the weather forecast for tomorrow?"}
+{"ts": 1795636555.342262, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636555.9340274, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.59}
+{"ts": 1795636555.93681, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636556.8592315, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 843, "latency_s": 0.92}
+{"ts": 1795636556.861321, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 18, "total": 27, "case": "out-18", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795636556.861321, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 18, "total": 27, "case": "out-19", "question": "Can you explain the process for requesting a performance review?"}
+{"ts": 1795636556.8630693, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636557.3976297, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.53}
+{"ts": 1795636557.400737, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636559.262222, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 892, "latency_s": 1.86}
+{"ts": 1795636559.2640305, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 19, "total": 27, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636559.2646103, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 19, "total": 27, "case": "too-20", "question": "How many days' pay in lieu of notice is an employee entitled to if they leave the company without adequate notice?"}
+{"ts": 1795636559.2662818, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636559.8517604, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.59}
+{"ts": 1795636559.8538964, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636561.6271107, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 966, "latency_s": 1.77}
+{"ts": 1795636561.6288006, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 20, "total": 27, "case": "too-20", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636561.6293693, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 20, "total": 27, "case": "ans-21", "question": "If I need to take a public holiday off, how many days can I carry forward from previous years?"}
+{"ts": 1795636561.631043, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636562.2217739, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 711, "latency_s": 0.59}
+{"ts": 1795636562.2239144, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636563.6392617, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 999, "latency_s": 1.42}
+{"ts": 1795636563.641473, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636597.3369167, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 1631, "latency_s": 33.7}
+{"ts": 1795636597.3389218, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636623.7156858, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 2610, "latency_s": 26.38}
+{"ts": 1795636623.7173407, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636650.5898805, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 3589, "latency_s": 26.87}
+{"ts": 1795636650.5920203, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636673.8656745, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 1631, "latency_s": 23.27}
+{"ts": 1795636673.8667471, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636699.7687578, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 2610, "latency_s": 25.9}
+{"ts": 1795636699.7703514, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795636729.6217737, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 3589, "latency_s": 29.85}
+{"ts": 1795636729.6228447, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 21, "total": 27, "case": "ans-21", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636729.623382, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 21, "total": 27, "case": "ans-22", "question": "What is the deadline for staff to take their compensatory day off after working on a public holiday?"}
+{"ts": 1795636729.6244946, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636737.1598928, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 7.54}
+{"ts": 1795636737.1630182, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636739.6070385, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 983, "latency_s": 2.44}
+{"ts": 1795636739.6086984, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 22, "total": 27, "case": "ans-22", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636739.6093245, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 22, "total": 27, "case": "ans-23", "question": "A manager is leaving their job, but the company and manager can't agree on a shortened notice period. What happens to the staff member's salary?"}
+{"ts": 1795636739.611, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636740.1622815, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 646, "latency_s": 0.55}
+{"ts": 1795636740.1639411, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636741.4871123, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 932, "latency_s": 1.32}
+{"ts": 1795636741.4881926, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 23, "total": 27, "case": "ans-23", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636741.4881926, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 23, "total": 27, "case": "ans-24", "question": "A new permanent employee's probation period can be extended by up to what number of months?"}
+{"ts": 1795636741.4893012, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636742.1096022, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.62}
+{"ts": 1795636742.1118243, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636742.944131, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1048, "latency_s": 0.83}
+{"ts": 1795636742.9451556, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 24, "total": 27, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636742.9451556, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 24, "total": 27, "case": "ans-25", "question": "What is the notice period for an employee during their probation, in days?"}
+{"ts": 1795636742.947175, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636743.5635643, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 795, "latency_s": 0.62}
+{"ts": 1795636743.5646262, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636744.4894528, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1054, "latency_s": 0.93}
+{"ts": 1795636744.4905825, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 25, "total": 27, "case": "ans-25", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636744.4905825, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 25, "total": 27, "case": "ans-26", "question": "What is not reimbursable for travel expenses?"}
+{"ts": 1795636744.4916656, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636744.9513724, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 484, "latency_s": 0.46}
+{"ts": 1795636744.953003, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636746.0928671, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 763, "latency_s": 1.14}
+{"ts": 1795636746.0939672, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 26, "total": 27, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636746.0939672, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 26, "total": 27, "case": "ans-27", "question": "A shore staff member has a trip that is less than 4 nights long. What is not covered?"}
+{"ts": 1795636746.0952308, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636746.5601423, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 520, "latency_s": 0.46}
+{"ts": 1795636746.561804, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795636747.7294347, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 802, "latency_s": 1.17}
+{"ts": 1795636747.7305207, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 27, "total": 27, "case": "ans-27", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636747.7377582, "stage": "iteration", "status": "done", "iteration": 1, "dev": 0.684, "holdout": 0.875, "kept": false, "tokens": 63748}
+{"ts": 1795636747.738345, "stage": "diagnose", "status": "done", "iteration": 2, "category": "prompt_defect", "cases": ["amb-14", "too-20"]}
+{"ts": 1795636747.7389445, "stage": "llm", "status": "start", "llm_stage": "fix_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636750.1248136, "stage": "llm", "status": "done", "llm_stage": "fix_iter2", "model": "qwen2.5:3b", "tokens": 567, "latency_s": 2.39}
+{"ts": 1795636750.1264634, "stage": "fix", "status": "done", "iteration": 2, "category": "prompt_defect", "target": "prompt.style", "rationale": "I changed the section to include a general rule for using the provided policy and current_date tool, addressing the failures of missing expected facts and expected tool usage."}
+{"ts": 1795636750.127013, "stage": "iteration", "status": "start", "iteration": 2}
+{"ts": 1795636750.127013, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 0, "total": 27, "case": "ans-01", "question": "What is the maximum duration of paid sick leave per calendar year?"}
+{"ts": 1795636750.1287432, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636750.6994307, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 714, "latency_s": 0.57}
+{"ts": 1795636750.701602, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636751.9432223, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1029, "latency_s": 1.24}
+{"ts": 1795636751.9460666, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 1, "total": 27, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636751.946662, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 1, "total": 27, "case": "ans-02", "question": "What is the minimum documentation required for sick leave exceeding 2 consecutive days?"}
+{"ts": 1795636751.9507153, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636752.5502381, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 701, "latency_s": 0.6}
+{"ts": 1795636752.5513296, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636753.5328639, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1013, "latency_s": 0.98}
+{"ts": 1795636753.533953, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 2, "total": 27, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636753.5345109, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 2, "total": 27, "case": "ans-03", "question": "I'm a shore staff member, can I work from home on a regular basis?"}
+{"ts": 1795636753.5356357, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636754.091018, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 685, "latency_s": 0.56}
+{"ts": 1795636754.0926988, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636755.4196439, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1015, "latency_s": 1.33}
+{"ts": 1795636755.4213226, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 3, "total": 27, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636755.4218817, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 3, "total": 27, "case": "ans-04", "question": "My manager wants me to work from home for a month, but I have a 24x7 duty roster. Can I do that?"}
+{"ts": 1795636755.423567, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636756.0415003, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 809, "latency_s": 0.62}
+{"ts": 1795636756.0431697, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636757.7749157, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1166, "latency_s": 1.73}
+{"ts": 1795636757.7776284, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636790.6978388, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 1748, "latency_s": 32.92}
+{"ts": 1795636790.6993432, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636818.4226441, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 2727, "latency_s": 27.72}
+{"ts": 1795636818.4231815, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636860.9775875, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 3706, "latency_s": 42.55}
+{"ts": 1795636860.979694, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636876.618267, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 910, "latency_s": 15.64}
+{"ts": 1795636876.6230774, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 4, "total": 27, "case": "ans-04", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636876.6235986, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 4, "total": 27, "case": "ans-05", "question": "What is the standard for rail travel?"}
+{"ts": 1795636876.6246707, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636882.9477937, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 540, "latency_s": 6.32}
+{"ts": 1795636882.949968, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636884.0337222, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 848, "latency_s": 1.08}
+{"ts": 1795636884.0347905, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 5, "total": 27, "case": "ans-05", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636884.0347905, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 5, "total": 27, "case": "ans-06", "question": "If a General Manager is traveling, what class of service is available for flights over 6 hours?"}
+{"ts": 1795636884.036483, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636884.5365055, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 555, "latency_s": 0.5}
+{"ts": 1795636884.5381403, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636885.1790524, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 852, "latency_s": 0.64}
+{"ts": 1795636885.1801383, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 6, "total": 27, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636885.1801383, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 6, "total": 27, "case": "ans-07", "question": "If an employee is leaving the company, how many days of annual leave can they expect to receive on their resignation?"}
+{"ts": 1795636885.1818166, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636885.7127502, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.53}
+{"ts": 1795636885.7138364, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636886.930262, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 981, "latency_s": 1.22}
+{"ts": 1795636886.9313626, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 7, "total": 27, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636886.9313626, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 7, "total": 27, "case": "ans-08", "question": "What's the deadline for using up carried-forward annual leave days before they lapse?"}
+{"ts": 1795636886.9324384, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636887.5129838, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 720, "latency_s": 0.58}
+{"ts": 1795636887.5140536, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636888.2866921, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1022, "latency_s": 0.77}
+{"ts": 1795636888.2888663, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636896.4417195, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 738, "latency_s": 8.15}
+{"ts": 1795636896.4438703, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636897.305437, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 738, "latency_s": 0.86}
+{"ts": 1795636897.307001, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 8, "total": 27, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636897.307001, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 8, "total": 27, "case": "ans-09", "question": "A staff member is leaving their job after being confirmed as an Assistant Manager. What is the required notice period for this role?"}
+{"ts": 1795636897.3086233, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636903.388257, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 641, "latency_s": 6.08}
+{"ts": 1795636903.3904057, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636904.4058082, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 949, "latency_s": 1.02}
+{"ts": 1795636904.4074724, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636912.5911884, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 662, "latency_s": 8.18}
+{"ts": 1795636912.593336, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636913.3793, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 662, "latency_s": 0.79}
+{"ts": 1795636913.3798249, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 9, "total": 27, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636913.3803537, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 9, "total": 27, "case": "ans-10", "question": "A manager is leaving their job, but their manager wants to shorten the notice period. What happens to the staff member's salary?"}
+{"ts": 1795636913.3814242, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636920.40699, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 642, "latency_s": 7.03}
+{"ts": 1795636920.409678, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636921.9627535, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 979, "latency_s": 1.55}
+{"ts": 1795636921.9650216, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636930.4843097, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 703, "latency_s": 8.52}
+{"ts": 1795636930.4875984, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636931.3451748, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 703, "latency_s": 0.86}
+{"ts": 1795636931.3462522, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 10, "total": 27, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636931.346793, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 10, "total": 27, "case": "ans-11", "question": "What is the deadline for submitting expense claims through the finance portal?"}
+{"ts": 1795636931.3484092, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636938.2255971, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 542, "latency_s": 6.88}
+{"ts": 1795636938.2277155, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636938.5216196, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 566, "latency_s": 0.29}
+{"ts": 1795636938.522648, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636939.8125372, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 887, "latency_s": 1.29}
+{"ts": 1795636939.8130774, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 11, "total": 27, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636939.8136106, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 11, "total": 27, "case": "ans-12", "question": "A shore staff member wants to claim a trip to Dubai, but their manager says they need Finance Controller approval. Is that correct?"}
+{"ts": 1795636939.8147357, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636940.2996085, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 546, "latency_s": 0.49}
+{"ts": 1795636940.301281, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636941.9892023, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 906, "latency_s": 1.69}
+{"ts": 1795636941.989755, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 12, "total": 27, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636941.989755, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 12, "total": 27, "case": "mul-13", "question": "What is the maximum number of days of annual leave that can be carried forward to the next year?"}
+{"ts": 1795636941.9908671, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636942.5529852, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 0.56}
+{"ts": 1795636942.554089, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636943.542921, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1016, "latency_s": 0.99}
+{"ts": 1795636943.5447388, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 13, "total": 27, "case": "mul-13", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795636943.5452735, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 13, "total": 27, "case": "amb-14", "question": "Can employees take 5 days off without notice?"}
+{"ts": 1795636943.5463326, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636944.1134796, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 696, "latency_s": 0.57}
+{"ts": 1795636944.11511, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636945.887114, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1053, "latency_s": 1.77}
+{"ts": 1795636945.889774, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636954.1253474, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 804, "latency_s": 8.24}
+{"ts": 1795636954.128417, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636955.0982168, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 804, "latency_s": 0.97}
+{"ts": 1795636955.099282, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 14, "total": 27, "case": "amb-14", "passed": false, "kind": "ambiguous", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636955.099282, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 14, "total": 27, "case": "amb-15", "question": "probation period can be extended for how long?"}
+{"ts": 1795636955.1003666, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636961.5373518, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 6.44}
+{"ts": 1795636961.5399833, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636962.618399, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1096, "latency_s": 1.08}
+{"ts": 1795636962.6195111, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 15, "total": 27, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795636962.6201305, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 15, "total": 27, "case": "amb-16", "question": "can i book premium economy on short flights"}
+{"ts": 1795636962.620706, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636963.1317246, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 533, "latency_s": 0.51}
+{"ts": 1795636963.1333334, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636964.2470043, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 854, "latency_s": 1.12}
+{"ts": 1795636964.2496605, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 16, "total": 27, "case": "amb-16", "passed": false, "kind": "ambiguous", "split": "holdout", "failure": "prompt_defect"}
+{"ts": 1795636964.250214, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 16, "total": 27, "case": "out-17", "question": "How do I calculate my tax deductions for the year?"}
+{"ts": 1795636964.2512982, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636964.815205, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 712, "latency_s": 0.56}
+{"ts": 1795636964.816889, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636966.0712616, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1038, "latency_s": 1.25}
+{"ts": 1795636966.0723345, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 17, "total": 27, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636966.0723345, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 17, "total": 27, "case": "out-18", "question": "What is the weather forecast for tomorrow?"}
+{"ts": 1795636966.0734713, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636966.5903835, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.52}
+{"ts": 1795636966.5920095, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636967.50728, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 892, "latency_s": 0.92}
+{"ts": 1795636967.5083869, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 18, "total": 27, "case": "out-18", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795636967.5089402, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 18, "total": 27, "case": "out-19", "question": "Can you explain the process for requesting a performance review?"}
+{"ts": 1795636967.510305, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636968.003506, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 582, "latency_s": 0.49}
+{"ts": 1795636968.0045555, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636969.7142336, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 940, "latency_s": 1.71}
+{"ts": 1795636969.7147698, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 19, "total": 27, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795636969.7153141, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 19, "total": 27, "case": "too-20", "question": "How many days' pay in lieu of notice is an employee entitled to if they leave the company without adequate notice?"}
+{"ts": 1795636969.7164066, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636970.266947, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 658, "latency_s": 0.55}
+{"ts": 1795636970.2688434, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636972.2326164, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1029, "latency_s": 1.96}
+{"ts": 1795636972.2343042, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 20, "total": 27, "case": "too-20", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795636972.2343042, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 20, "total": 27, "case": "ans-21", "question": "If I need to take a public holiday off, how many days can I carry forward from previous years?"}
+{"ts": 1795636972.2353845, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636972.8027325, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 711, "latency_s": 0.57}
+{"ts": 1795636972.8044596, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636974.3251708, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1051, "latency_s": 1.52}
+{"ts": 1795636974.3266902, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 21, "total": 27, "case": "ans-21", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636974.3272045, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 21, "total": 27, "case": "ans-22", "question": "What is the deadline for staff to take their compensatory day off after working on a public holiday?"}
+{"ts": 1795636974.3294632, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636974.9190488, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 706, "latency_s": 0.59}
+{"ts": 1795636974.9207048, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636976.075734, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1029, "latency_s": 1.16}
+{"ts": 1795636976.076854, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 22, "total": 27, "case": "ans-22", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636976.077389, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 22, "total": 27, "case": "ans-23", "question": "A manager is leaving their job, but the company and manager can't agree on a shortened notice period. What happens to the staff member's salary?"}
+{"ts": 1795636976.0784926, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636976.6155593, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 646, "latency_s": 0.54}
+{"ts": 1795636976.6171472, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636977.8913755, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 974, "latency_s": 1.27}
+{"ts": 1795636977.893017, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636987.2093735, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 699, "latency_s": 9.32}
+{"ts": 1795636987.2120397, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795636988.1223733, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 699, "latency_s": 0.91}
+{"ts": 1795636988.1234715, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 23, "total": 27, "case": "ans-23", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636988.1240323, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 23, "total": 27, "case": "ans-24", "question": "A new permanent employee's probation period can be extended by up to what number of months?"}
+{"ts": 1795636988.1257083, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636995.0390046, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 6.91}
+{"ts": 1795636995.041148, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636996.039125, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1094, "latency_s": 1.0}
+{"ts": 1795636996.0408223, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 24, "total": 27, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795636996.0414047, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 24, "total": 27, "case": "ans-25", "question": "What is the notice period for an employee during their probation, in days?"}
+{"ts": 1795636996.0430698, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636996.664668, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 795, "latency_s": 0.62}
+{"ts": 1795636996.667155, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636997.4823098, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1093, "latency_s": 0.82}
+{"ts": 1795636997.4834168, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 25, "total": 27, "case": "ans-25", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795636997.4839783, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 25, "total": 27, "case": "ans-26", "question": "What is not reimbursable for travel expenses?"}
+{"ts": 1795636997.4850998, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636997.9469624, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 484, "latency_s": 0.46}
+{"ts": 1795636997.9486442, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636998.9962442, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 802, "latency_s": 1.05}
+{"ts": 1795636998.9973283, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 26, "total": 27, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795636998.9978592, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 26, "total": 27, "case": "ans-27", "question": "A shore staff member has a trip that is less than 4 nights long. What is not covered?"}
+{"ts": 1795636998.998928, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795636999.4633737, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 520, "latency_s": 0.46}
+{"ts": 1795636999.4660103, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795637000.517819, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 841, "latency_s": 1.05}
+{"ts": 1795637000.519874, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 27, "total": 27, "case": "ans-27", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795637000.529913, "stage": "iteration", "status": "done", "iteration": 2, "dev": 0.684, "holdout": 0.875, "kept": false, "tokens": 60989}
+{"ts": 1795637000.5419118, "stage": "report", "status": "done", "final": {"dev_pass_rate": 0.684, "holdout_pass_rate": 0.875, "overall_pass_rate": 0.741}, "stop_reason": "early stop - two iterations in a row bought no dev improvement"}

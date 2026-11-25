@@ -1,0 +1,58 @@
+[
+  {
+    "tool": "csv_lookup",
+    "attached": false,
+    "why": "no CSV files in the document folder"
+  },
+  {
+    "tool": "calculator",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "tax_deductions (requested, but not covered by the documents)"
+      },
+      {
+        "needed": true,
+        "reason": "calculations or arithmetic not covered in the provided documents"
+      }
+    ]
+  },
+  {
+    "tool": "weather",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "weather (3-day forecast for a named place)"
+      },
+      {
+        "needed": true,
+        "reason": "weather - Live weather and 3-day forecast for a named place (open-meteo) is not needed for this brief as it is not mentioned in the must-answer topics."
+      }
+    ]
+  },
+  {
+    "tool": "current_date",
+    "attached": true,
+    "hinted_by_requirements": false,
+    "evidence_words": [
+      "deadline",
+      "how many days"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "current_date - The assistant needs this tool to answer questions about 'how many days until' a deadline, as mentioned in the must-answer topics."
+      },
+      {
+        "needed": true,
+        "reason": "leave_policy"
+      }
+    ]
+  }
+]

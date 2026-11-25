@@ -1,0 +1,135 @@
+{"ts": 1795627090.5616693, "stage": "ingest", "status": "start"}
+{"ts": 1795627092.3271978, "stage": "ingest", "status": "done", "documents": 2, "chunks": 4, "mode": "hybrid", "skipped": []}
+{"ts": 1795627092.3277304, "stage": "intake", "status": "start"}
+{"ts": 1795627163.5798275, "stage": "intake", "status": "done", "topics": 4, "flags": ["NOT GROUNDABLE: the brief asks for 'Password Resets' but the documents do not cover it. The agent will refuse these questions instead of guessing.", "PARTIAL COVERAGE: 'Ship Email Troubleshooting' is only partly covered; answers may be incomplete."], "unsupported": ["Password Resets"]}
+{"ts": 1795627163.5803707, "stage": "generate", "status": "start"}
+{"ts": 1795627225.8016238, "stage": "generate", "status": "done", "tools": ["calculator"], "candidates": 2}
+{"ts": 1795627225.802175, "stage": "evalgen", "status": "start"}
+{"ts": 1795627333.3741784, "stage": "evalgen", "status": "done", "cases": 20, "kinds": {"answerable": 13, "multi_doc": 1, "ambiguous": 3, "out_of_scope": 2, "tool": 1}}
+{"ts": 1795627333.3741784, "stage": "tournament", "status": "start", "candidates": 2}
+{"ts": 1795627357.4141243, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 1, "total": 14, "case": "ans-01", "passed": false}
+{"ts": 1795627380.2356482, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 2, "total": 14, "case": "ans-02", "passed": false}
+{"ts": 1795627403.957147, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 3, "total": 14, "case": "ans-03", "passed": true}
+{"ts": 1795627425.6292183, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 4, "total": 14, "case": "ans-05", "passed": true}
+{"ts": 1795627447.783658, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 5, "total": 14, "case": "ans-07", "passed": true}
+{"ts": 1795627467.0107193, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 6, "total": 14, "case": "mul-09", "passed": false}
+{"ts": 1795627493.5442195, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 7, "total": 14, "case": "amb-10", "passed": false}
+{"ts": 1795627510.884188, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 8, "total": 14, "case": "amb-11", "passed": false}
+{"ts": 1795627526.8251204, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 9, "total": 14, "case": "out-14", "passed": true}
+{"ts": 1795627529.3199801, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 10, "total": 14, "case": "too-15", "passed": false}
+{"ts": 1795627539.3724344, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 11, "total": 14, "case": "ans-16", "passed": true}
+{"ts": 1795627553.8771124, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 12, "total": 14, "case": "ans-17", "passed": true}
+{"ts": 1795627564.5786598, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 13, "total": 14, "case": "ans-18", "passed": true}
+{"ts": 1795627586.1539953, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 14, "total": 14, "case": "ans-19", "passed": true}
+{"ts": 1795627586.156091, "stage": "tournament", "status": "progress", "candidate": 0, "dev": 0.571}
+{"ts": 1795627593.6435006, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 1, "total": 14, "case": "ans-01", "passed": false}
+{"ts": 1795627605.6917892, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 2, "total": 14, "case": "ans-02", "passed": false}
+{"ts": 1795627623.1394083, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 3, "total": 14, "case": "ans-03", "passed": true}
+{"ts": 1795627630.3922017, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 4, "total": 14, "case": "ans-05", "passed": true}
+{"ts": 1795627641.3961544, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 5, "total": 14, "case": "ans-07", "passed": true}
+{"ts": 1795627656.617936, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 6, "total": 14, "case": "mul-09", "passed": true}
+{"ts": 1795627674.0322227, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 7, "total": 14, "case": "amb-10", "passed": false}
+{"ts": 1795627691.3204284, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 8, "total": 14, "case": "amb-11", "passed": false}
+{"ts": 1795627698.6461487, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 9, "total": 14, "case": "out-14", "passed": true}
+{"ts": 1795627700.2491543, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 10, "total": 14, "case": "too-15", "passed": false}
+{"ts": 1795627710.5476677, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 11, "total": 14, "case": "ans-16", "passed": true}
+{"ts": 1795627718.2703888, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 12, "total": 14, "case": "ans-17", "passed": true}
+{"ts": 1795627728.7063391, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 13, "total": 14, "case": "ans-18", "passed": true}
+{"ts": 1795627743.7325442, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 14, "total": 14, "case": "ans-19", "passed": true}
+{"ts": 1795627743.7341747, "stage": "tournament", "status": "progress", "candidate": 1, "dev": 0.643}
+{"ts": 1795627743.7352586, "stage": "tournament", "status": "done", "winner": 1, "dev": 0.643}
+{"ts": 1795627743.7374868, "stage": "iteration", "status": "start", "iteration": 0}
+{"ts": 1795627750.888854, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 1, "total": 20, "case": "ans-01", "passed": false}
+{"ts": 1795627753.4465308, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 2, "total": 20, "case": "ans-02", "passed": false}
+{"ts": 1795627764.6136863, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 3, "total": 20, "case": "ans-03", "passed": true}
+{"ts": 1795627787.5441828, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 4, "total": 20, "case": "ans-04", "passed": false}
+{"ts": 1795627793.674964, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 5, "total": 20, "case": "ans-05", "passed": true}
+{"ts": 1795627796.2933898, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 6, "total": 20, "case": "ans-06", "passed": true}
+{"ts": 1795627798.5860665, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 7, "total": 20, "case": "ans-07", "passed": true}
+{"ts": 1795627872.8687196, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 8, "total": 20, "case": "ans-08", "passed": true}
+{"ts": 1795627885.287361, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 9, "total": 20, "case": "mul-09", "passed": true}
+{"ts": 1795627888.2939546, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 10, "total": 20, "case": "amb-10", "passed": false}
+{"ts": 1795627900.1063519, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 11, "total": 20, "case": "amb-11", "passed": false}
+{"ts": 1795627923.2544954, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 12, "total": 20, "case": "amb-12", "passed": true}
+{"ts": 1795627938.7166934, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 13, "total": 20, "case": "out-13", "passed": false}
+{"ts": 1795627941.4562383, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 14, "total": 20, "case": "out-14", "passed": true}
+{"ts": 1795627943.0911005, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 15, "total": 20, "case": "too-15", "passed": false}
+{"ts": 1795627945.206124, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 16, "total": 20, "case": "ans-16", "passed": true}
+{"ts": 1795627948.6546094, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 17, "total": 20, "case": "ans-17", "passed": true}
+{"ts": 1795627959.81499, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 18, "total": 20, "case": "ans-18", "passed": false}
+{"ts": 1795627967.3509564, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 19, "total": 20, "case": "ans-19", "passed": true}
+{"ts": 1795627970.6316593, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 20, "total": 20, "case": "ans-20", "passed": false}
+{"ts": 1795627970.6321998, "stage": "iteration", "status": "done", "iteration": 0, "dev": 0.571, "holdout": 0.5}
+{"ts": 1795627970.6327412, "stage": "diagnose", "status": "done", "iteration": 1, "category": "hallucination", "cases": ["ans-02", "amb-10", "amb-11"]}
+{"ts": 1795627972.9771652, "stage": "fix", "status": "done", "iteration": 1, "category": "hallucination", "target": "prompt.grounding_rules + retrieval.require_citation", "rationale": "Changed the section to address unsupported claims and provide clearer guidelines for what information is acceptable based on the provided documents. (+ answers without citations are now blocked)"}
+{"ts": 1795627972.9771652, "stage": "iteration", "status": "start", "iteration": 1}
+{"ts": 1795627987.3827074, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 1, "total": 20, "case": "ans-01", "passed": false}
+{"ts": 1795628000.1955154, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 2, "total": 20, "case": "ans-02", "passed": false}
+{"ts": 1795628013.0947223, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 3, "total": 20, "case": "ans-03", "passed": true}
+{"ts": 1795628029.9201436, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 4, "total": 20, "case": "ans-04", "passed": false}
+{"ts": 1795628037.2288568, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 5, "total": 20, "case": "ans-05", "passed": true}
+{"ts": 1795628038.761829, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 6, "total": 20, "case": "ans-06", "passed": true}
+{"ts": 1795628041.0585501, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 7, "total": 20, "case": "ans-07", "passed": false}
+{"ts": 1795628043.4097292, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 8, "total": 20, "case": "ans-08", "passed": false}
+{"ts": 1795628045.167299, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 9, "total": 20, "case": "mul-09", "passed": true}
+{"ts": 1795628047.662552, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 10, "total": 20, "case": "amb-10", "passed": false}
+{"ts": 1795628128.47709, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 11, "total": 20, "case": "amb-11", "passed": false}
+{"ts": 1795628136.636736, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 12, "total": 20, "case": "amb-12", "passed": false}
+{"ts": 1795628139.0065207, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 13, "total": 20, "case": "out-13", "passed": true}
+{"ts": 1795628141.8920197, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 14, "total": 20, "case": "out-14", "passed": true}
+{"ts": 1795628143.637081, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 15, "total": 20, "case": "too-15", "passed": false}
+{"ts": 1795628154.8063924, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 16, "total": 20, "case": "ans-16", "passed": true}
+{"ts": 1795628164.694423, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 17, "total": 20, "case": "ans-17", "passed": true}
+{"ts": 1795628166.6827705, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 18, "total": 20, "case": "ans-18", "passed": true}
+{"ts": 1795628168.7778764, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 19, "total": 20, "case": "ans-19", "passed": false}
+{"ts": 1795628170.677081, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 20, "total": 20, "case": "ans-20", "passed": true}
+{"ts": 1795628170.678131, "stage": "iteration", "status": "done", "iteration": 1, "dev": 0.5, "holdout": 0.5, "kept": false, "tokens": 52619}
+{"ts": 1795628170.6786625, "stage": "diagnose", "status": "done", "iteration": 2, "category": "prompt_defect", "cases": ["too-15", "ans-18"]}
+{"ts": 1795628172.7993944, "stage": "fix", "status": "done", "iteration": 2, "category": "prompt_defect", "target": "prompt.style", "rationale": "Changed the tone and added general rules for using tools and providing relevant facts, addressing the prompt_defect failure."}
+{"ts": 1795628172.7999473, "stage": "iteration", "status": "start", "iteration": 2}
+{"ts": 1795628184.7106402, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 1, "total": 20, "case": "ans-01", "passed": false}
+{"ts": 1795628201.5329258, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 2, "total": 20, "case": "ans-02", "passed": false}
+{"ts": 1795628210.6343093, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 3, "total": 20, "case": "ans-03", "passed": true}
+{"ts": 1795628220.7762802, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 4, "total": 20, "case": "ans-04", "passed": false}
+{"ts": 1795628227.758997, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 5, "total": 20, "case": "ans-05", "passed": true}
+{"ts": 1795628237.9965775, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 6, "total": 20, "case": "ans-06", "passed": true}
+{"ts": 1795628245.4554439, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 7, "total": 20, "case": "ans-07", "passed": true}
+{"ts": 1795628323.7979064, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 8, "total": 20, "case": "ans-08", "passed": true}
+{"ts": 1795628330.865352, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 9, "total": 20, "case": "mul-09", "passed": true}
+{"ts": 1795628341.9164736, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 10, "total": 20, "case": "amb-10", "passed": true}
+{"ts": 1795628358.6481798, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 11, "total": 20, "case": "amb-11", "passed": false}
+{"ts": 1795628375.5104017, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 12, "total": 20, "case": "amb-12", "passed": true}
+{"ts": 1795628383.3064485, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 13, "total": 20, "case": "out-13", "passed": false}
+{"ts": 1795628386.012506, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 14, "total": 20, "case": "out-14", "passed": true}
+{"ts": 1795628387.6440763, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 15, "total": 20, "case": "too-15", "passed": false}
+{"ts": 1795628399.7279987, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 16, "total": 20, "case": "ans-16", "passed": true}
+{"ts": 1795628409.5287745, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 17, "total": 20, "case": "ans-17", "passed": true}
+{"ts": 1795628420.917117, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 18, "total": 20, "case": "ans-18", "passed": true}
+{"ts": 1795628430.5220351, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 19, "total": 20, "case": "ans-19", "passed": true}
+{"ts": 1795628432.7480013, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 20, "total": 20, "case": "ans-20", "passed": false}
+{"ts": 1795628432.7490404, "stage": "iteration", "status": "done", "iteration": 2, "dev": 0.714, "holdout": 0.5, "kept": true, "tokens": 61304}
+{"ts": 1795628432.749554, "stage": "diagnose", "status": "done", "iteration": 3, "category": "prompt_defect", "cases": ["too-15"]}
+{"ts": 1795628435.3692455, "stage": "fix", "status": "done", "iteration": 3, "category": "prompt_defect", "target": "prompt.style", "rationale": "Changed the section to include general rules for using a calculator tool for data-related questions and to specify the maximum attachment size per message for attachment size questions."}
+{"ts": 1795628435.3702617, "stage": "iteration", "status": "start", "iteration": 3}
+{"ts": 1795628437.823127, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 1, "total": 20, "case": "ans-01", "passed": false}
+{"ts": 1795628450.032366, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 2, "total": 20, "case": "ans-02", "passed": false}
+{"ts": 1795628459.4414644, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 3, "total": 20, "case": "ans-03", "passed": true}
+{"ts": 1795628471.3758545, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 4, "total": 20, "case": "ans-04", "passed": false}
+{"ts": 1795628478.975681, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 5, "total": 20, "case": "ans-05", "passed": true}
+{"ts": 1795628480.7284691, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 6, "total": 20, "case": "ans-06", "passed": true}
+{"ts": 1795628483.1407125, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 7, "total": 20, "case": "ans-07", "passed": true}
+{"ts": 1795628485.4801753, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 8, "total": 20, "case": "ans-08", "passed": true}
+{"ts": 1795628487.2248178, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 9, "total": 20, "case": "mul-09", "passed": true}
+{"ts": 1795628498.8435938, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 10, "total": 20, "case": "amb-10", "passed": false}
+{"ts": 1795628506.6668248, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 11, "total": 20, "case": "amb-11", "passed": true}
+{"ts": 1795628508.993338, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 12, "total": 20, "case": "amb-12", "passed": true}
+{"ts": 1795628511.2680438, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 13, "total": 20, "case": "out-13", "passed": false}
+{"ts": 1795628514.2537448, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 14, "total": 20, "case": "out-14", "passed": true}
+{"ts": 1795628515.912437, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 15, "total": 20, "case": "too-15", "passed": false}
+{"ts": 1795628525.6517947, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 16, "total": 20, "case": "ans-16", "passed": true}
+{"ts": 1795628536.0703616, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 17, "total": 20, "case": "ans-17", "passed": true}
+{"ts": 1795628545.828425, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 18, "total": 20, "case": "ans-18", "passed": true}
+{"ts": 1795628553.0657666, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 19, "total": 20, "case": "ans-19", "passed": true}
+{"ts": 1795628555.2218232, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 20, "total": 20, "case": "ans-20", "passed": true}
+{"ts": 1795628555.223092, "stage": "iteration", "status": "done", "iteration": 3, "dev": 0.714, "holdout": 0.667, "kept": false, "tokens": 46360}
+{"ts": 1795628555.2280226, "stage": "report", "status": "done", "final": {"dev_pass_rate": 0.714, "holdout_pass_rate": 0.5, "overall_pass_rate": 0.65}, "stop_reason": "iteration limit (3) reached"}

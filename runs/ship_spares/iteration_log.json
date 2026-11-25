@@ -1,0 +1,32 @@
+[
+  {
+    "iteration": 1,
+    "category": "prompt_defect",
+    "target": "prompt.style",
+    "before": "The tone is professional and informative, providing clear and concise instructions.",
+    "after": "The tone is professional and informative, providing clear and concise instructions. The expected facts for each question are provided to ensure the assistant uses the correct information. For example, in the first question, the threshold for the Fleet Procurement Manager's responsibility is USD 2,500 to 10,000, and the next level of approval is the Technical Director. In the second question, the next level of approval after the Fleet Procurement Officer is the Fleet Procurement Manager. For the third question, the minimum order quantity is 20 units, and the supplier wants to purchase 30 units,",
+    "rationale": "I added the expected facts for each scenario to ensure the assistant provides the correct information and addresses the recall issues. | fixed: ['ans-10'] | newly failing: ['ans-02', 'ans-29']",
+    "addressed_cases": [
+      "ans-07",
+      "ans-20",
+      "ans-23"
+    ],
+    "score_before": 0.75,
+    "score_after": 0.7,
+    "kept": false
+  },
+  {
+    "iteration": 2,
+    "category": "hallucination",
+    "target": "prompt.grounding_rules + retrieval.require_citation",
+    "before": "- Use csv_lookup for spares_catalogue_lookup and supplier_terms_lookup.\n- Use calculator for discount_policy_lookup if the discount policy thresholds are numerical and directly calculable.",
+    "after": "- Use calculator for discount_policy_lookup if the discount policy thresholds are numerical and directly calculable.\n- Ensure all numerical outputs are derived from the provided context or calculated using the provided context.",
+    "rationale": "Added a new rule to ensure all numerical outputs are derived from the provided context or calculated using the provided context, addressing the failure of stating facts not in the context. (+ answers without citations are now blocked) | fixed: none | newly failing: ['ans-02', 'ans-03', 'ans-09', 'amb-15', 'ans-29']",
+    "addressed_cases": [
+      "ans-04"
+    ],
+    "score_before": 0.75,
+    "score_after": 0.55,
+    "kept": false
+  }
+]

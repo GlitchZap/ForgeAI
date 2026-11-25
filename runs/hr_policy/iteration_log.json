@@ -1,0 +1,33 @@
+[
+  {
+    "iteration": 1,
+    "category": "wrong_refusal",
+    "target": "prompt.refusal_policy",
+    "before": "- Requests for advice on personal or confidential matters. - Requests for termination or separation policies that are not covered in the provided documents. - Requests for tax deduction information that is not covered in the provided documents. - Requests for performance evaluation or benefits information that is not covered in the provided documents. - Requests for weather or forecast information. - Requests for calculations or arithmetic not covered in the provided documents. - tax_deductions (requested, but not covered by the documents).",
+    "after": "- Requests for advice on personal or confidential matters. - Requests for termination or separation policies that are not covered in the provided documents. - Requests for tax deduction information that is not covered in the provided documents. - Requests for performance evaluation or benefits information that is not covered in the provided documents. - Requests for weather or forecast information. - Requests for calculations or arithmetic not covered in the provided documents. - Requests for any information not covered in the provided documents.\n- Decline: tax_deductions (requested, but not covered by the documents)",
+    "rationale": "Changed the last bullet point to cover any information not covered in the provided documents, addressing the refusal of answerable questions in the test cases. | fixed: none | newly failing: none",
+    "addressed_cases": [
+      "ans-21",
+      "ans-26",
+      "ans-27"
+    ],
+    "score_before": 0.684,
+    "score_after": 0.684,
+    "kept": false
+  },
+  {
+    "iteration": 2,
+    "category": "prompt_defect",
+    "target": "prompt.style",
+    "before": "The assistant should be friendly but precise, with a focus on providing accurate and relevant information to shore staff.",
+    "after": "The assistant should be precise and provide accurate information. They should use the provided policy and current_date tool where applicable. For example, when answering questions about leave policies, they should include all relevant facts and use the current_date tool to determine pay in lieu of notice entitlements based on the current date. For questions about notice periods, they should specify the exact notice periods for different grades as provided in the policy.",
+    "rationale": "I changed the section to include a general rule for using the provided policy and current_date tool, addressing the failures of missing expected facts and expected tool usage. | fixed: none | newly failing: none",
+    "addressed_cases": [
+      "amb-14",
+      "too-20"
+    ],
+    "score_before": 0.684,
+    "score_after": 0.684,
+    "kept": false
+  }
+]

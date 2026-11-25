@@ -1,0 +1,71 @@
+[
+  {
+    "tool": "csv_lookup",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "weather_forecast"
+      },
+      {
+        "needed": true,
+        "reason": "Weather Forecast"
+      }
+    ]
+  },
+  {
+    "tool": "calculator",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "Weather Forecast - This requires a tool to provide the current weather and the next few days' forecast for the port."
+      },
+      {
+        "needed": true,
+        "reason": "Weather Forecast"
+      }
+    ]
+  },
+  {
+    "tool": "weather",
+    "attached": true,
+    "hinted_by_requirements": true,
+    "evidence_words": [
+      "forecast",
+      "weather"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "weather"
+      },
+      {
+        "needed": true,
+        "reason": "Weather Forecast"
+      }
+    ]
+  },
+  {
+    "tool": "current_date",
+    "attached": true,
+    "hinted_by_requirements": false,
+    "evidence_words": [
+      "due"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "current_date - for providing 'how many days until' questions related to deadlines and notice periods"
+      },
+      {
+        "needed": true,
+        "reason": "Weather Forecast"
+      }
+    ]
+  }
+]

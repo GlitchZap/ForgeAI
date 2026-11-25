@@ -1,0 +1,387 @@
+[
+  {
+    "id": "ans-01",
+    "kind": "answerable",
+    "question": "When contacting Coastal Line Agencies in Mangaluru, what is the best time to reach them?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "pan_hours",
+      "72",
+      "duty_phone",
+      "+91-824-555-0303"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row3"
+  },
+  {
+    "id": "ans-02",
+    "kind": "answerable",
+    "question": "A ship arrives at Mangaluru port with a cargo that exceeds the maximum load allowed for the night. What is the maximum allowed load for the night?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "max_loa_night_m",
+      "180"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row3"
+  },
+  {
+    "id": "ans-03",
+    "kind": "answerable",
+    "question": "When should container and bulk cargo operations be suspended due to wind speed?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "sustained wind speed exceeds 45 km/h",
+      "about 25 knots"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "port_call_procedures.md#3"
+  },
+  {
+    "id": "ans-04",
+    "kind": "answerable",
+    "question": "What happens to bulk cargo operations of fertiliser, grain and cement during rain?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "stopped during any rain"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "port_call_procedures.md#3"
+  },
+  {
+    "id": "ans-05",
+    "kind": "answerable",
+    "question": "What are the phone hours for Seaways Port Agency in Mumbai?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "pan_hours",
+      "96"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "agents_and_contacts.csv#row1"
+  },
+  {
+    "id": "ans-06",
+    "kind": "answerable",
+    "question": "If you're calling Seaways Port Agency in Mumbai, what's the best time to reach them?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "pan_hours",
+      "96"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row1"
+  },
+  {
+    "id": "ans-07",
+    "kind": "answerable",
+    "question": "What is the minimum notice period for an agent to receive a Pre-arrival Notice (PAN) for Mumbai?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "at least 96 hours",
+      "ETA"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "port_call_procedures.md#1"
+  },
+  {
+    "id": "ans-08",
+    "kind": "answerable",
+    "question": "A ship is scheduled to arrive in Kochi with an ETA of 12 hours. What should the crew do?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "72 hours",
+      "ETA change"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "port_call_procedures.md#1"
+  },
+  {
+    "id": "ans-09",
+    "kind": "answerable",
+    "question": "What is the correct duration for the port's PAN hours?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "72"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row2"
+  },
+  {
+    "id": "ans-10",
+    "kind": "answerable",
+    "question": "If a ship arrives at Kochi port after 200 meters, what is the agent's response?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "Malabar Ship Agents"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row2"
+  },
+  {
+    "id": "ans-11",
+    "kind": "answerable",
+    "question": "What is the minimum length overall for a vessel to be allowed to berthe at night in Kochi?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "below",
+      "200"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "port_call_procedures.md#2"
+  },
+  {
+    "id": "ans-12",
+    "kind": "answerable",
+    "question": "If a vessel is above 200 GT, what is required for pilotage?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "compulsory",
+      "all"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "port_call_procedures.md#2"
+  },
+  {
+    "id": "amb-13",
+    "kind": "ambiguous",
+    "question": "wht r th pnt o f 72 hr pns fr mbl shp agnts?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "Port: Kochi",
+      "City: Kochi"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row2"
+  },
+  {
+    "id": "amb-14",
+    "kind": "ambiguous",
+    "question": "can u tell me the max time i can change eta without notice",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "An ETA change of more than 4 hours must be re-notified to the agent and the port"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "port_call_procedures.md#1"
+  },
+  {
+    "id": "amb-15",
+    "kind": "ambiguous",
+    "question": "can u tell me if cargo gets stuck in bad weather?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "sustained wind speed exceeds 45 km/h",
+      "bulk cargo operations are stopped during rain",
+      "mooring lines must be doubled at 55 km/h"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "port_call_procedures.md#3"
+  },
+  {
+    "id": "out-16",
+    "kind": "out_of_scope",
+    "question": "Can you provide advice on the best route to take for a ship traveling from the India West Coast to the South Coast?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-17",
+    "kind": "out_of_scope",
+    "question": "What is the procedure for handling a port call at the port of Chennai?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-18",
+    "kind": "out_of_scope",
+    "question": "What is the average temperature in January in the city of Kochi?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "too-19",
+    "kind": "tool",
+    "question": "What is the current weather condition and forecast for Chennai, India?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "weather",
+    "split": "dev",
+    "origin": "tool:weather"
+  },
+  {
+    "id": "too-20",
+    "kind": "tool",
+    "question": "Will there be heavy rain in Mumbai, India for the next 3 days?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "weather",
+    "split": "holdout",
+    "origin": "tool:weather"
+  },
+  {
+    "id": "too-21",
+    "kind": "tool",
+    "question": "How many days until the next low tide at the Port of Chennai?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "current_date",
+    "split": "dev",
+    "origin": "tool:current_date"
+  },
+  {
+    "id": "ans-22",
+    "kind": "answerable",
+    "question": "A ship is scheduled to arrive in Kochi with an ETA change of 5 hours. What does the crew need to do?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "re-notified",
+      "to the agent",
+      "to the port"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "port_call_procedures.md#1"
+  },
+  {
+    "id": "ans-23",
+    "kind": "answerable",
+    "question": "What is the duty phone number for Kutch Maritime Services in Gandhidham?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "+91-2836-555-0404"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row4"
+  },
+  {
+    "id": "ans-24",
+    "kind": "answerable",
+    "question": "A port call planner needs to contact Kutch Maritime Services in Gandhidham for assistance. What is the duration of their working hours?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "96"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row4"
+  },
+  {
+    "id": "ans-25",
+    "kind": "answerable",
+    "question": "If a ship is arriving at JNPA, what can you call to get assistance?",
+    "should_refuse": false,
+    "expected_sources": [
+      "agents_and_contacts.csv"
+    ],
+    "key_facts": [
+      "duty_phone",
+      "+91-22-5550-0101",
+      "Seaways Port Agency"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "agents_and_contacts.csv#row1"
+  },
+  {
+    "id": "ans-26",
+    "kind": "answerable",
+    "question": "A vessel with a length overall of 250m is approaching Kochi. What should the pilot do?",
+    "should_refuse": false,
+    "expected_sources": [
+      "port_call_procedures.md"
+    ],
+    "key_facts": [
+      "compulsory for all vessels above 200 GT",
+      "Pilotage is compulsory for all vessels above 200 GT"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "port_call_procedures.md#2"
+  }
+]

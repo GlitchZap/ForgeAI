@@ -1,0 +1,111 @@
+{
+  "title": "Structured Requirements Document for Document-Grounded Assistant",
+  "scope": "This document-grounded assistant will provide answers to HR policy questions for Meridian Marine Services shore staff, covering leave (annual, sick, parental), work-from-home rules, travel and expense claims, and notice periods. The assistant will also help understand tax deductions from salaries and provide guidance on termination and separation policies. The assistant will be friendly but precise, and will direct users to HR when policies do not cover their situation.",
+  "audience": "Meridian Marine Services shore staff and their managers",
+  "tone": "Friendly and precise, with a focus on providing accurate and relevant information to shore staff.",
+  "must_answer": [
+    {
+      "name": "leave_policy",
+      "description": "Answers questions about leave policies, including annual, sick, and parental leave.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "work_from_home_rules",
+      "description": "Provides information about work-from-home rules and their application.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "travel_expense_policy",
+      "description": "Provides information about travel and expense claims policies.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "termination_and_separation",
+      "description": "Provides information about termination and separation policies, including notice periods.",
+      "source_hint": "documents"
+    }
+  ],
+  "must_refuse": [
+    "Requests for advice on personal or confidential matters.",
+    "Requests for termination or separation policies that are not covered in the provided documents.",
+    "Requests for tax deduction information that is not covered in the provided documents.",
+    "Requests for performance evaluation or benefits information that is not covered in the provided documents.",
+    "Requests for weather or forecast information.",
+    "Requests for calculations or arithmetic not covered in the provided documents.",
+    "tax_deductions (requested, but not covered by the documents)"
+  ],
+  "clarifications": [
+    {
+      "question": "Are there any specific HR policies related to termination or separation that are not covered by Document HR-RW-02?",
+      "answer": "No specific HR policies related to termination or separation are not covered by Document HR-RW-02.",
+      "assumed": true
+    },
+    {
+      "question": "Does the leave policy document include any information about the tax deductions from salaries, or should I refer to a separate document for that information?",
+      "answer": "The leave policy document does not include information about tax deductions from salaries. You should refer to a separate document for that information.",
+      "assumed": true
+    },
+    {
+      "question": "Are there any specific guidelines or rules regarding parental leave that are not covered in the leave policy document?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    },
+    {
+      "question": "Is there any additional information or clarification needed regarding the work-from-home rules that is not covered in Document HR-RW-02?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    },
+    {
+      "question": "Are there any other HR policies or documents that you would like the assistant to be able to address, such as those related to performance evaluations or benefits?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    }
+  ],
+  "groundability": [
+    {
+      "topic": "leave_policy",
+      "status": "supported",
+      "evidence": [
+        "leave_policy.pdf"
+      ],
+      "quote": "Employees receive 12 days of paid sick leave per calendar year.",
+      "note": "The excerpts directly state the facts needed about leave policies"
+    },
+    {
+      "topic": "work_from_home_rules",
+      "status": "supported",
+      "evidence": [
+        "remote_work_and_exit.md"
+      ],
+      "quote": "Shore staff may work from home up to 2 days per week after completing probation, with line-manager approval.",
+      "note": "Directly states the fact that shore staff can work from home after probation"
+    },
+    {
+      "topic": "travel_expense_policy",
+      "status": "supported",
+      "evidence": [
+        "travel_expense_policy.md"
+      ],
+      "quote": "Claims submitted later than 60 days are rejected.",
+      "note": "The excerpts directly state the facts needed about travel expense policy"
+    },
+    {
+      "topic": "tax_deductions",
+      "status": "unsupported",
+      "evidence": [],
+      "quote": "",
+      "note": "none of ['deduc', 'tax'] appear in any document"
+    },
+    {
+      "topic": "termination_and_separation",
+      "status": "partial",
+      "evidence": [],
+      "quote": "",
+      "note": "quoted evidence is not about this topic; Directly states the notice period for staff up to Assistant Manager grade."
+    }
+  ],
+  "flags": [
+    "NOT GROUNDABLE: the brief asks for 'tax_deductions' but the documents do not cover it. The agent will refuse these questions instead of guessing.",
+    "PARTIAL COVERAGE: 'termination_and_separation' is only partly covered; answers may be incomplete."
+  ]
+}

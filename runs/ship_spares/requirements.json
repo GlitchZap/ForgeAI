@@ -1,0 +1,98 @@
+{
+  "title": "Structured Requirements Document for Document-Grounded Assistant",
+  "scope": "This document outlines the requirements for a document-grounded assistant to support the fleet procurement team in managing their spare parts procurement process. The assistant will handle specific tasks related to the catalogue, supplier terms, order totals, and warranty claim processes.",
+  "audience": "Fleet Procurement Team",
+  "tone": "Professional and informative, providing clear and concise instructions for the assistant's functionality.",
+  "must_answer": [
+    {
+      "name": "spares_catalogue_lookup",
+      "description": "Look up part numbers, vessel classes, unit prices, stock quantities, and suppliers in the spares_catalogue.csv file.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "supplier_terms_lookup",
+      "description": "Retrieve supplier terms such as lead times, minimum order quantities, and delivery charges from the supplier_terms.md document.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "discount_policy_lookup",
+      "description": "Determine the discount policy and thresholds for orders from the purchase_approval_matrix.md document.",
+      "source_hint": "documents"
+    }
+  ],
+  "must_refuse": [
+    "Requests for personal or confidential data.",
+    "Requests for advice or recommendations on how to handle specific situations.",
+    "Requests for information on delivery requirements or preferences for certain parts or suppliers.",
+    "Requests for information on exceptions or special conditions for specific vessel classes or part numbers.",
+    "Requests for information on specific discount policies or thresholds.",
+    "Requests for information on warranty claim processes for parts that fail.",
+    "warranty_claim_process (requested, but not covered by the documents)"
+  ],
+  "clarifications": [
+    {
+      "question": "Are there any specific vessel classes or part numbers that require special attention or additional information in the catalogue?",
+      "answer": "No specific vessel classes or part numbers require special attention or additional information in the catalogue.",
+      "assumed": true
+    },
+    {
+      "question": "Does the supplier terms document include any exceptions or special conditions that we should be aware of for certain suppliers or parts?",
+      "answer": "The supplier terms document does not include any exceptions or special conditions that require specific awareness.",
+      "assumed": true
+    },
+    {
+      "question": "Is there a specific discount policy or threshold for discounts that we should consider when placing orders?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    },
+    {
+      "question": "Should the assistant be able to handle warranty claim processes for parts that fail, or is this a separate process that the fleet procurement team should handle independently?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    },
+    {
+      "question": "Are there any specific delivery requirements or preferences for certain parts or suppliers that we should incorporate into the assistant's functionality?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    }
+  ],
+  "groundability": [
+    {
+      "topic": "spares_catalogue_lookup",
+      "status": "supported",
+      "evidence": [
+        "spares_catalogue.csv"
+      ],
+      "quote": "part_no: MMS-EL-7003; description: Emergency generator AVR; vessel_class: Bulk-Supramax; maker: Stamford; unit: pc; unit_price_usd: 1980; stock_qty: 2; supplier: Konkan Marine Spares; min_order_qty: 1",
+      "note": "contains all required information"
+    },
+    {
+      "topic": "supplier_terms_lookup",
+      "status": "supported",
+      "evidence": [
+        "supplier_terms.md"
+      ],
+      "quote": "Standard lead time: 14 calendar days to an Indian port; express 5 calendar days at a 12% surcharge on the parts value.",
+      "note": "Quote directly states the fact needed: lead time for Nordline Supply (Singapore)"
+    },
+    {
+      "topic": "discount_policy_lookup",
+      "status": "supported",
+      "evidence": [
+        "purchase_approval_matrix.md"
+      ],
+      "quote": "Orders above USD 5,000 need at least two quotations unless the part is maker-specific (OEM only).",
+      "note": "Directly states the discount policy and thresholds for orders"
+    },
+    {
+      "topic": "warranty_claim_process",
+      "status": "unsupported",
+      "evidence": [],
+      "quote": "",
+      "note": "none of ['claim', 'warra'] appear in any document"
+    }
+  ],
+  "flags": [
+    "NOT GROUNDABLE: the brief asks for 'warranty_claim_process' but the documents do not cover it. The agent will refuse these questions instead of guessing."
+  ]
+}

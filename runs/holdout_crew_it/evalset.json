@@ -1,0 +1,308 @@
+[
+  {
+    "id": "ans-01",
+    "kind": "answerable",
+    "question": "My personal laptop is trying to connect to the ship's business network, what's the issue?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Personal laptops and phones may only join MMS-CREW",
+      "never the ship's business network (MMS-OPS)",
+      "USB drives must not be connected to any ship computer"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "crew_connectivity_guide.md#2"
+  },
+  {
+    "id": "ans-02",
+    "kind": "answerable",
+    "question": "I just got a warning that my phone's OS is no longer receiving security updates, what should I do?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Devices must run an operating system that still receives security updates",
+      "cyber-security rule (ISM cyber annex)"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "crew_connectivity_guide.md#2"
+  },
+  {
+    "id": "ans-03",
+    "kind": "answerable",
+    "question": "Our ship's email isn't syncing in real time, what should we do first?",
+    "should_refuse": false,
+    "expected_sources": [
+      "ship_email_troubleshooting.txt"
+    ],
+    "key_facts": [
+      "Check the satellite link status light on the bridge PC. Amber or red means no link; wait until it is green.",
+      "Restart the MMS Mail client. Do not reinstall it."
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "ship_email_troubleshooting.txt#1"
+  },
+  {
+    "id": "ans-04",
+    "kind": "answerable",
+    "question": "A crew member is trying to send a large email attachment, what should they do?",
+    "should_refuse": false,
+    "expected_sources": [
+      "ship_email_troubleshooting.txt"
+    ],
+    "key_facts": [
+      "Attachments: maximum 10 MB per message. Compress photos before sending."
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "ship_email_troubleshooting.txt#1"
+  },
+  {
+    "id": "ans-05",
+    "kind": "answerable",
+    "question": "What happens to crew Wi-Fi speed when the monthly allowance is used up?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "speed drops to 128 kbps",
+      "until the next reset"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "crew_connectivity_guide.md#1"
+  },
+  {
+    "id": "ans-06",
+    "kind": "answerable",
+    "question": "How are access vouchers issued for crew Wi-Fi?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "issued by the Master or the Chief Officer",
+      "One voucher works on up to 2 devices"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "crew_connectivity_guide.md#1"
+  },
+  {
+    "id": "ans-07",
+    "kind": "answerable",
+    "question": "My crew portal password has expired, what should I do?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Ship email and crew portal passwords expire every 90 days",
+      "The reset takes up to 24 hours because it is processed by the shore IT team in Mumbai",
+      "To reset, ask the Master to raise a reset request in the IT ticket system"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "crew_connectivity_guide.md#3"
+  },
+  {
+    "id": "ans-08",
+    "kind": "answerable",
+    "question": "I need to reset my crew portal password, how should I share it with my crew?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Never share passwords over radio or write them on the bridge"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "crew_connectivity_guide.md#3"
+  },
+  {
+    "id": "mul-09",
+    "kind": "multi_doc",
+    "question": "What is the maximum file size allowed for attachments in MMS Mail client?",
+    "should_refuse": false,
+    "expected_sources": [
+      "ship_email_troubleshooting.txt",
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Attachments: maximum 10 MB per message.",
+      "Each crew member gets a personal data allowance of 3 GB per calendar month, reset on the 1st at 00:00 UTC."
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "ship_email_troubleshooting.txt#1+crew_connectivity_guide.md#1"
+  },
+  {
+    "id": "amb-10",
+    "kind": "ambiguous",
+    "question": "can we use crew wifi on our vessel when its not operational",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Network name: MMS-CREW",
+      "Access vouchers are issued by the Master or the Chief Officer",
+      "Video streaming is blocked between 08:00 and 18:00 ship time"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "crew_connectivity_guide.md#1"
+  },
+  {
+    "id": "amb-11",
+    "kind": "ambiguous",
+    "question": "whats the deal w/ the 5mb limit on emails?",
+    "should_refuse": false,
+    "expected_sources": [
+      "ship_email_troubleshooting.txt"
+    ],
+    "key_facts": [
+      "Check the outbox. Messages larger than 5 MB are held and must be approved by the Master before they are sent."
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "ship_email_troubleshooting.txt#1"
+  },
+  {
+    "id": "amb-12",
+    "kind": "ambiguous",
+    "question": "can u pls help me get my email password reset on the ship's network",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Ship email and crew portal passwords expire every 90 days",
+      "The reset takes up to 24 hours because it is processed by the shore IT team in Mumbai"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "crew_connectivity_guide.md#3"
+  },
+  {
+    "id": "out-13",
+    "kind": "out_of_scope",
+    "question": "Can I reset my password?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-14",
+    "kind": "out_of_scope",
+    "question": "What is the best way to cook a steak?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "too-15",
+    "kind": "tool",
+    "question": "What is the total data allowance for Wi-Fi access on our vessel for the month of March?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "calculator",
+    "split": "dev",
+    "origin": "tool:calculator"
+  },
+  {
+    "id": "ans-16",
+    "kind": "answerable",
+    "question": "I'm trying to update the security on my personal phone, what's the minimum requirement?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "Devices must run an operating system that still receives security updates",
+      "cyber-security rule (ISM cyber annex)"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "crew_connectivity_guide.md#2"
+  },
+  {
+    "id": "ans-17",
+    "kind": "answerable",
+    "question": "What should I do if my ship email doesn't arrive?",
+    "should_refuse": false,
+    "expected_sources": [
+      "ship_email_troubleshooting.txt"
+    ],
+    "key_facts": [
+      "Check the satellite link status light on the bridge PC",
+      "Messages larger than 5 MB are held"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "ship_email_troubleshooting.txt#1"
+  },
+  {
+    "id": "ans-18",
+    "kind": "answerable",
+    "question": "How do I send a large attachment via ship email?",
+    "should_refuse": false,
+    "expected_sources": [
+      "ship_email_troubleshooting.txt"
+    ],
+    "key_facts": [
+      "Compress photos before sending",
+      "Attachments maximum 10 MB per message"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "ship_email_troubleshooting.txt#1"
+  },
+  {
+    "id": "ans-19",
+    "kind": "answerable",
+    "question": "I need to reset my crew portal password, how do I share the reset request with the shore IT team?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "To reset, ask the Master to raise a reset request in the IT ticket system",
+      "Never share passwords over radio or write them on the bridge"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "crew_connectivity_guide.md#3"
+  },
+  {
+    "id": "ans-20",
+    "kind": "answerable",
+    "question": "Can officers and ratings use different Wi-Fi networks on the vessel?",
+    "should_refuse": false,
+    "expected_sources": [
+      "crew_connectivity_guide.md"
+    ],
+    "key_facts": [
+      "same",
+      "Officers and ratings use the same network."
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "crew_connectivity_guide.md#1"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "tool": "csv_lookup",
+    "attached": true,
+    "hinted_by_requirements": false,
+    "evidence_words": [
+      "catalog",
+      "look up",
+      "part",
+      "price",
+      "stock",
+      "supplier"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "spares_catalogue_lookup"
+      },
+      {
+        "needed": true,
+        "reason": "spares_catalogue_lookup"
+      }
+    ]
+  },
+  {
+    "tool": "calculator",
+    "attached": true,
+    "hinted_by_requirements": false,
+    "evidence_words": [
+      "discount",
+      "total",
+      "work out"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "calculator - Arithmetic on numbers the user or the documents provide (totals, pro-rating, unit conversion)"
+      },
+      {
+        "needed": true,
+        "reason": "discount_policy_lookup"
+      }
+    ]
+  },
+  {
+    "tool": "weather",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": false,
+        "reason": "warranty_claim_process (requested, but not covered by the documents)"
+      },
+      {
+        "needed": false,
+        "reason": "The tool for weather is not needed as there is no mention of weather-related tasks in the brief."
+      }
+    ]
+  },
+  {
+    "tool": "current_date",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "current_date - The original brief mentions 'work out order totals including discounts', which could involve calculating deadlines or notice periods. The current_date tool could be used to provide such information if needed."
+      },
+      {
+        "needed": false,
+        "reason": "warranty_claim_process (requested, but not covered by the documents)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+fastapi==0.165.0
+fpdf2==2.9.0
+httpx==0.28.1
+numpy==2.5.5
+pydantic==2.14.4
+pypdf==7.1.1
+pytest==9.2.0
+python-multipart==0.0.34
+sse-starlette==3.7.1
+uvicorn==0.54.0

@@ -1,0 +1,413 @@
+[
+  {
+    "id": "ans-01",
+    "kind": "answerable",
+    "question": "What is the maximum duration of paid sick leave per calendar year?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "12 days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#3"
+  },
+  {
+    "id": "ans-02",
+    "kind": "answerable",
+    "question": "What is the minimum documentation required for sick leave exceeding 2 consecutive days?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "medical certificate",
+      "registered medical practitioner"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#3"
+  },
+  {
+    "id": "ans-03",
+    "kind": "answerable",
+    "question": "I'm a shore staff member, can I work from home on a regular basis?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "up to 2 days per week",
+      "after completing probation",
+      "with line-manager approval"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#1"
+  },
+  {
+    "id": "ans-04",
+    "kind": "answerable",
+    "question": "My manager wants me to work from home for a month, but I have a 24x7 duty roster. Can I do that?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "not available to Marine Operations staff on the 24x7 duty roster"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#1"
+  },
+  {
+    "id": "ans-05",
+    "kind": "answerable",
+    "question": "What is the standard for rail travel?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "AC 2-tier"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "travel_expense_policy.md#3"
+  },
+  {
+    "id": "ans-06",
+    "kind": "answerable",
+    "question": "If a General Manager is traveling, what class of service is available for flights over 6 hours?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "Premium economy"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "travel_expense_policy.md#3"
+  },
+  {
+    "id": "ans-07",
+    "kind": "answerable",
+    "question": "If an employee is leaving the company, how many days of annual leave can they expect to receive on their resignation?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "unused annual leave",
+      "up to a maximum of",
+      "30 days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#2"
+  },
+  {
+    "id": "ans-08",
+    "kind": "answerable",
+    "question": "What's the deadline for using up carried-forward annual leave days before they lapse?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "must be used by",
+      "30 June of that year"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "leave_policy.pdf#2"
+  },
+  {
+    "id": "ans-09",
+    "kind": "answerable",
+    "question": "A staff member is leaving their job after being confirmed as an Assistant Manager. What is the required notice period for this role?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "Staff up to Assistant Manager grade",
+      "30 days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#3"
+  },
+  {
+    "id": "ans-10",
+    "kind": "answerable",
+    "question": "A manager is leaving their job, but their manager wants to shorten the notice period. What happens to the staff member's salary?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "Notice may be shortened by mutual agreement",
+      "salary in lieu of the unserved notice is recovered from the final settlement"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#3"
+  },
+  {
+    "id": "ans-11",
+    "kind": "answerable",
+    "question": "What is the deadline for submitting expense claims through the finance portal?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "within 30 days",
+      "of returning from the trip"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "travel_expense_policy.md#5"
+  },
+  {
+    "id": "ans-12",
+    "kind": "answerable",
+    "question": "A shore staff member wants to claim a trip to Dubai, but their manager says they need Finance Controller approval. Is that correct?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "Claims above INR 25,000 need Finance Controller approval",
+      "Claims up to INR 25,000 are approved by the line manager"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "travel_expense_policy.md#5"
+  },
+  {
+    "id": "mul-13",
+    "kind": "multi_doc",
+    "question": "What is the maximum number of days of annual leave that can be carried forward to the next year?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md",
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "A1. Shore staff may work from home up to 2 days per week after completing probation, with line-manager approval.",
+      "Up to 10 unused annual leave days may be carried forward to the next year."
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#1+leave_policy.pdf#2"
+  },
+  {
+    "id": "amb-14",
+    "kind": "ambiguous",
+    "question": "Can employees take 5 days off without notice?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "Employees in their first year may take annual leave only after completing 3 months of service.",
+      "Leave of more than 5 consecutive working days must be applied for at least 15 calendar days in advance.",
+      "Unused annual leave days may be carried forward to the next year."
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#2"
+  },
+  {
+    "id": "amb-15",
+    "kind": "ambiguous",
+    "question": "probation period can be extended for how long?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "New permanent employees serve a probation period of 6 months.",
+      "It may be extended once by up to 3 months.",
+      "During probation the notice period is 15 days on either side."
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#2"
+  },
+  {
+    "id": "amb-16",
+    "kind": "ambiguous",
+    "question": "can i book premium economy on short flights",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "Premium economy may be booked for flights of 6 hours or more",
+      "Economy class for all flights under 6 hours"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "travel_expense_policy.md#3"
+  },
+  {
+    "id": "out-17",
+    "kind": "out_of_scope",
+    "question": "How do I calculate my tax deductions for the year?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-18",
+    "kind": "out_of_scope",
+    "question": "What is the weather forecast for tomorrow?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-19",
+    "kind": "out_of_scope",
+    "question": "Can you explain the process for requesting a performance review?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "too-20",
+    "kind": "tool",
+    "question": "How many days' pay in lieu of notice is an employee entitled to if they leave the company without adequate notice?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "current_date",
+    "split": "dev",
+    "origin": "tool:current_date"
+  },
+  {
+    "id": "ans-21",
+    "kind": "answerable",
+    "question": "If I need to take a public holiday off, how many days can I carry forward from previous years?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "the older 2022 policy allowing 15 carry-forward days no longer applies"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#5"
+  },
+  {
+    "id": "ans-22",
+    "kind": "answerable",
+    "question": "What is the deadline for staff to take their compensatory day off after working on a public holiday?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "Staff required to work on a public holiday receive a compensatory day off, to be taken within 60 days"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "leave_policy.pdf#5"
+  },
+  {
+    "id": "ans-23",
+    "kind": "answerable",
+    "question": "A manager is leaving their job, but the company and manager can't agree on a shortened notice period. What happens to the staff member's salary?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "Notice may be shortened by mutual agreement",
+      "otherwise salary in lieu of the unserved notice is recovered from the final settlement"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "remote_work_and_exit.md#3"
+  },
+  {
+    "id": "ans-24",
+    "kind": "answerable",
+    "question": "A new permanent employee's probation period can be extended by up to what number of months?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "6 months",
+      "up to 3 months"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#2"
+  },
+  {
+    "id": "ans-25",
+    "kind": "answerable",
+    "question": "What is the notice period for an employee during their probation, in days?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "15 days",
+      "on either side"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "remote_work_and_exit.md#2"
+  },
+  {
+    "id": "ans-26",
+    "kind": "answerable",
+    "question": "What is not reimbursable for travel expenses?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "Alcohol",
+      "traffic fines",
+      "personal entertainment"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "travel_expense_policy.md#6"
+  },
+  {
+    "id": "ans-27",
+    "kind": "answerable",
+    "question": "A shore staff member has a trip that is less than 4 nights long. What is not covered?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "laundry for trips shorter than 4 nights"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "travel_expense_policy.md#6"
+  }
+]

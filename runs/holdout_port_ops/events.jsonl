@@ -1,0 +1,1207 @@
+{"ts": 1795628558.889078, "stage": "ingest", "status": "start"}
+{"ts": 1795628560.3149128, "stage": "ingest", "status": "done", "documents": 2, "chunks": 7, "mode": "hybrid", "skipped": []}
+{"ts": 1795628560.3149128, "stage": "intake", "status": "start"}
+{"ts": 1795628560.3179135, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen2.5:3b"}
+{"ts": 1795628560.9569454, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen2.5:3b", "tokens": 389, "latency_s": 0.64}
+{"ts": 1795628560.9585297, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen2.5:3b"}
+{"ts": 1795628561.371574, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen2.5:3b", "tokens": 245, "latency_s": 0.41}
+{"ts": 1795628561.3759465, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen2.5:3b"}
+{"ts": 1795628568.6704824, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen2.5:3b", "tokens": 1031, "latency_s": 7.29}
+{"ts": 1795628568.7320273, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795628575.7770326, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 736, "latency_s": 7.05}
+{"ts": 1795628575.7985396, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795628577.234008, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 705, "latency_s": 1.44}
+{"ts": 1795628577.269704, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795628578.8509238, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 718, "latency_s": 1.58}
+{"ts": 1795628578.8756585, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "llama3.2:3b"}
+{"ts": 1795628579.8184743, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "llama3.2:3b", "tokens": 593, "latency_s": 0.94}
+{"ts": 1795628579.822013, "stage": "intake", "status": "done", "topics": 4, "flags": ["NOT GROUNDABLE: the brief asks for 'Customs Duty for Ship Stores' but the documents do not cover it. The agent will refuse these questions instead of guessing."], "unsupported": ["Customs Duty for Ship Stores"]}
+{"ts": 1795628579.8225932, "stage": "generate", "status": "start"}
+{"ts": 1795628579.8268385, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795628590.98217, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 665, "latency_s": 11.16}
+{"ts": 1795628590.9832702, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "llama3.2:3b"}
+{"ts": 1795628598.2955759, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "llama3.2:3b", "tokens": 660, "latency_s": 7.31}
+{"ts": 1795628598.2983236, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795628604.238598, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 679, "latency_s": 5.94}
+{"ts": 1795628604.2396991, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "llama3.2:3b"}
+{"ts": 1795628611.2304049, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "llama3.2:3b", "tokens": 654, "latency_s": 6.99}
+{"ts": 1795628611.2314665, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795628616.8489995, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 664, "latency_s": 5.62}
+{"ts": 1795628616.8502681, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "llama3.2:3b"}
+{"ts": 1795628623.8772354, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "llama3.2:3b", "tokens": 661, "latency_s": 7.03}
+{"ts": 1795628623.8782938, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795628629.7529051, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 675, "latency_s": 5.87}
+{"ts": 1795628629.7540312, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "llama3.2:3b"}
+{"ts": 1795628636.8368025, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "llama3.2:3b", "tokens": 655, "latency_s": 7.08}
+{"ts": 1795628636.8397398, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795628647.204655, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 1016, "latency_s": 10.37}
+{"ts": 1795628647.206318, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen2.5:3b"}
+{"ts": 1795628651.040017, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen2.5:3b", "tokens": 1019, "latency_s": 3.83}
+{"ts": 1795628651.0423226, "stage": "generate", "status": "done", "tools": ["weather", "current_date"], "candidates": 2}
+{"ts": 1795628651.0423226, "stage": "evalgen", "status": "start"}
+{"ts": 1795628651.043429, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628665.4199555, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 639, "latency_s": 14.38}
+{"ts": 1795628665.4221177, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628668.7748616, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 462, "latency_s": 3.35}
+{"ts": 1795628668.776544, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628671.9640267, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 389, "latency_s": 3.19}
+{"ts": 1795628671.965619, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628675.5430834, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 499, "latency_s": 3.58}
+{"ts": 1795628675.5448906, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628678.525425, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 390, "latency_s": 2.98}
+{"ts": 1795628678.5275836, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628681.828541, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 436, "latency_s": 3.3}
+{"ts": 1795628681.8313916, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628683.3364124, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 419, "latency_s": 1.51}
+{"ts": 1795628683.338587, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628684.5671432, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 421, "latency_s": 1.23}
+{"ts": 1795628684.5874107, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628686.4533894, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 458, "latency_s": 1.87}
+{"ts": 1795628686.4549918, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628687.7037594, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 401, "latency_s": 1.25}
+{"ts": 1795628687.7064419, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628688.85224, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 401, "latency_s": 1.15}
+{"ts": 1795628688.8538525, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628690.1549718, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 425, "latency_s": 1.3}
+{"ts": 1795628690.1576385, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628691.5800622, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 259, "latency_s": 1.42}
+{"ts": 1795628691.5816894, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628692.8741498, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 336, "latency_s": 1.29}
+{"ts": 1795628692.8752203, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628694.37625, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 261, "latency_s": 1.5}
+{"ts": 1795628694.3778603, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628695.8336809, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 325, "latency_s": 1.46}
+{"ts": 1795628695.8371124, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628698.8332834, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 387, "latency_s": 3.0}
+{"ts": 1795628698.8357332, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628699.7255373, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 197, "latency_s": 0.89}
+{"ts": 1795628699.7265713, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628700.6211255, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 191, "latency_s": 0.9}
+{"ts": 1795628700.630074, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628704.6077752, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 440, "latency_s": 3.98}
+{"ts": 1795628704.6093965, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628707.1599693, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 452, "latency_s": 2.55}
+{"ts": 1795628707.1622953, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628709.591674, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 355, "latency_s": 2.43}
+{"ts": 1795628709.5932598, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628712.8359184, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 462, "latency_s": 3.24}
+{"ts": 1795628712.8369286, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628715.153986, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 348, "latency_s": 2.32}
+{"ts": 1795628715.1555915, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "llama3.2:3b"}
+{"ts": 1795628719.3597097, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "llama3.2:3b", "tokens": 482, "latency_s": 4.2}
+{"ts": 1795628719.395366, "stage": "evalgen", "status": "done", "cases": 26, "kinds": {"answerable": 17, "ambiguous": 3, "out_of_scope": 3, "tool": 3}}
+{"ts": 1795628719.395366, "stage": "tournament", "status": "start", "candidates": 2}
+{"ts": 1795628719.3963668, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 0, "total": 18, "case": "ans-01", "question": "When contacting Coastal Line Agencies in Mangaluru, what is the best time to reach them?"}
+{"ts": 1795628720.6406853, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628731.77306, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 733, "latency_s": 11.13}
+{"ts": 1795628731.7746806, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628733.3768134, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 939, "latency_s": 1.6}
+{"ts": 1795628733.3812768, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628740.905046, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 727, "latency_s": 7.52}
+{"ts": 1795628740.9072878, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628741.836437, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 711, "latency_s": 0.93}
+{"ts": 1795628741.8401663, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 1, "total": 18, "case": "ans-01", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795628741.8401663, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 1, "total": 18, "case": "ans-02", "question": "A ship arrives at Mangaluru port with a cargo that exceeds the maximum load allowed for the night. What is the maximum allowed load for the night?"}
+{"ts": 1795628743.6337955, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628754.8892817, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 807, "latency_s": 11.26}
+{"ts": 1795628754.8904033, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628755.8220851, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 971, "latency_s": 0.93}
+{"ts": 1795628755.824481, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628764.9023643, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 734, "latency_s": 9.08}
+{"ts": 1795628764.9039629, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628765.8150377, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 734, "latency_s": 0.91}
+{"ts": 1795628765.8176856, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 2, "total": 18, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795628765.8182082, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 2, "total": 18, "case": "ans-04", "question": "What happens to bulk cargo operations of fertiliser, grain and cement during rain?"}
+{"ts": 1795628767.3426092, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628780.8843539, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 783, "latency_s": 13.54}
+{"ts": 1795628780.8872883, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628781.9904537, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 955, "latency_s": 1.1}
+{"ts": 1795628781.9921343, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628812.7006233, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 1601, "latency_s": 30.71}
+{"ts": 1795628812.7038307, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628839.1167662, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 2580, "latency_s": 26.41}
+{"ts": 1795628839.1175547, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628869.5431366, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 3559, "latency_s": 30.43}
+{"ts": 1795628869.5451994, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628892.218685, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 1601, "latency_s": 22.67}
+{"ts": 1795628892.219755, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628919.275618, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 2580, "latency_s": 27.06}
+{"ts": 1795628919.2772243, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628951.2312202, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 3559, "latency_s": 31.95}
+{"ts": 1795628951.2322738, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 3, "total": 18, "case": "ans-04", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795628951.232814, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 3, "total": 18, "case": "ans-06", "question": "If you're calling Seaways Port Agency in Mumbai, what's the best time to reach them?"}
+{"ts": 1795628964.7737048, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628986.2553325, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 734, "latency_s": 21.48}
+{"ts": 1795628986.2580252, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795628987.4267485, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 912, "latency_s": 1.17}
+{"ts": 1795628987.431569, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628996.0378985, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 670, "latency_s": 8.61}
+{"ts": 1795628996.0394983, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795628996.788426, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 670, "latency_s": 0.75}
+{"ts": 1795628996.7894707, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 4, "total": 18, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795628996.7894707, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 4, "total": 18, "case": "ans-07", "question": "What is the minimum notice period for an agent to receive a Pre-arrival Notice (PAN) for Mumbai?"}
+{"ts": 1795628998.296809, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629009.877834, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 766, "latency_s": 11.58}
+{"ts": 1795629009.879524, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629010.7766628, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 928, "latency_s": 0.9}
+{"ts": 1795629010.780058, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629019.8723989, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 686, "latency_s": 9.09}
+{"ts": 1795629019.874566, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629020.6519134, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 686, "latency_s": 0.78}
+{"ts": 1795629020.6530144, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 5, "total": 18, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629020.653939, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 5, "total": 18, "case": "ans-09", "question": "What is the correct duration for the port's PAN hours?"}
+{"ts": 1795629022.1534746, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629033.338125, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 11.18}
+{"ts": 1795629033.3391929, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629034.7505116, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 974, "latency_s": 1.41}
+{"ts": 1795629034.7527328, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629060.8104987, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 1611, "latency_s": 26.06}
+{"ts": 1795629060.8117185, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629061.9130375, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 1735, "latency_s": 1.1}
+{"ts": 1795629061.914284, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629062.8846884, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 730, "latency_s": 0.97}
+{"ts": 1795629062.886852, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 6, "total": 18, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629062.887374, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 6, "total": 18, "case": "ans-10", "question": "If a ship arrives at Kochi port after 200 meters, what is the agent's response?"}
+{"ts": 1795629064.222321, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629075.3576212, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 736, "latency_s": 11.14}
+{"ts": 1795629075.3592737, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629077.1597757, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 953, "latency_s": 1.8}
+{"ts": 1795629077.1608796, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 7, "total": 18, "case": "ans-10", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795629077.1608796, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 7, "total": 18, "case": "amb-13", "question": "wht r th pnt o f 72 hr pns fr mbl shp agnts?"}
+{"ts": 1795629078.0559795, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629078.5643165, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.51}
+{"ts": 1795629078.565431, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629080.0494142, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 997, "latency_s": 1.48}
+{"ts": 1795629080.0510151, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629087.2532184, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 7.2}
+{"ts": 1795629087.2553594, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629088.1384218, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 0.88}
+{"ts": 1795629088.1394877, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 8, "total": 18, "case": "amb-13", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795629088.140033, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 8, "total": 18, "case": "amb-14", "question": "can u tell me the max time i can change eta without notice"}
+{"ts": 1795629088.3136468, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629100.383167, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 12.07}
+{"ts": 1795629100.3847923, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629101.5123208, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 963, "latency_s": 1.13}
+{"ts": 1795629101.513988, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629110.1818268, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 745, "latency_s": 8.67}
+{"ts": 1795629110.1834543, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629133.655424, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 1622, "latency_s": 23.47}
+{"ts": 1795629133.656813, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629157.8916566, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 2601, "latency_s": 24.24}
+{"ts": 1795629157.8927543, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629183.9363112, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 3580, "latency_s": 26.04}
+{"ts": 1795629183.937898, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 9, "total": 18, "case": "amb-14", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795629183.938445, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 9, "total": 18, "case": "out-16", "question": "Can you provide advice on the best route to take for a ship traveling from the India West Coast to the South Coast?"}
+{"ts": 1795629185.782707, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629192.833956, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 738, "latency_s": 7.05}
+{"ts": 1795629192.8350382, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629194.443235, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 934, "latency_s": 1.61}
+{"ts": 1795629194.444289, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 10, "total": 18, "case": "out-16", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795629194.444289, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 10, "total": 18, "case": "out-17", "question": "What is the procedure for handling a port call at the port of Chennai?"}
+{"ts": 1795629195.6928866, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629196.20956, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 781, "latency_s": 0.52}
+{"ts": 1795629196.2112825, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629197.5621629, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 973, "latency_s": 1.35}
+{"ts": 1795629197.5632093, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 11, "total": 18, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795629197.5637422, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 11, "total": 18, "case": "too-19", "question": "What is the current weather condition and forecast for Chennai, India?"}
+{"ts": 1795629197.6258576, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629198.2945607, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 0.67}
+{"ts": 1795629199.7946546, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629200.2132874, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 975, "latency_s": 0.42}
+{"ts": 1795629200.2159402, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629203.5473685, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 1261, "latency_s": 3.33}
+{"ts": 1795629203.549405, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 12, "total": 18, "case": "too-19", "passed": true, "kind": "tool", "split": "dev", "failure": null}
+{"ts": 1795629203.549985, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 12, "total": 18, "case": "too-21", "question": "How many days until the next low tide at the Port of Chennai?"}
+{"ts": 1795629203.6226444, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629204.3233883, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 780, "latency_s": 0.7}
+{"ts": 1795629204.3264017, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629206.1224377, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 979, "latency_s": 1.8}
+{"ts": 1795629206.124333, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 13, "total": 18, "case": "too-21", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795629206.124906, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 13, "total": 18, "case": "ans-22", "question": "A ship is scheduled to arrive in Kochi with an ETA change of 5 hours. What does the crew need to do?"}
+{"ts": 1795629206.202563, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629206.8652668, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 792, "latency_s": 0.66}
+{"ts": 1795629206.8681285, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629208.7931435, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 1012, "latency_s": 1.93}
+{"ts": 1795629208.7952569, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629215.505344, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 783, "latency_s": 6.71}
+{"ts": 1795629215.508099, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629216.5177279, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 783, "latency_s": 1.01}
+{"ts": 1795629216.518791, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 14, "total": 18, "case": "ans-22", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629216.5193305, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 14, "total": 18, "case": "ans-23", "question": "What is the duty phone number for Kutch Maritime Services in Gandhidham?"}
+{"ts": 1795629216.5540864, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629228.4618185, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 730, "latency_s": 11.91}
+{"ts": 1795629228.4635007, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629229.6223378, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 903, "latency_s": 1.16}
+{"ts": 1795629229.6245224, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629237.7495935, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 663, "latency_s": 8.13}
+{"ts": 1795629237.751809, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629238.6322396, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 663, "latency_s": 0.88}
+{"ts": 1795629238.6327937, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 15, "total": 18, "case": "ans-23", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629238.6333292, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 15, "total": 18, "case": "ans-24", "question": "A port call planner needs to contact Kutch Maritime Services in Gandhidham for assistance. What is the duration of their working hours?"}
+{"ts": 1795629239.811636, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629251.8029304, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 793, "latency_s": 11.99}
+{"ts": 1795629251.8056815, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629252.9730177, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 967, "latency_s": 1.17}
+{"ts": 1795629252.9758248, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629284.2706048, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 1610, "latency_s": 31.29}
+{"ts": 1795629284.2721736, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629311.767054, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 2589, "latency_s": 27.5}
+{"ts": 1795629311.7681353, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629341.1237519, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 3568, "latency_s": 29.36}
+{"ts": 1795629341.1254075, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629342.1054509, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 725, "latency_s": 0.98}
+{"ts": 1795629342.1065414, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 16, "total": 18, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629342.107079, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 16, "total": 18, "case": "ans-25", "question": "If a ship is arriving at JNPA, what can you call to get assistance?"}
+{"ts": 1795629343.667302, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629355.187221, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 732, "latency_s": 11.52}
+{"ts": 1795629355.1896703, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629356.1763327, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 893, "latency_s": 0.99}
+{"ts": 1795629356.178052, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629365.9724064, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 669, "latency_s": 9.79}
+{"ts": 1795629365.9740977, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629366.7853646, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 669, "latency_s": 0.81}
+{"ts": 1795629366.785908, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 17, "total": 18, "case": "ans-25", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629366.78646, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 17, "total": 18, "case": "ans-26", "question": "A vessel with a length overall of 250m is approaching Kochi. What should the pilot do?"}
+{"ts": 1795629368.4009428, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629375.4725916, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 7.07}
+{"ts": 1795629375.474939, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b"}
+{"ts": 1795629376.7805407, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen2.5:3b", "tokens": 967, "latency_s": 1.31}
+{"ts": 1795629376.782592, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629384.72847, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 7.95}
+{"ts": 1795629384.730013, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "llama3.2:3b"}
+{"ts": 1795629385.8153076, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 1.09}
+{"ts": 1795629385.8176033, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 18, "total": 18, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795629385.8219526, "stage": "tournament", "status": "progress", "candidate": 0, "dev": 0.778}
+{"ts": 1795629385.823063, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 0, "total": 18, "case": "ans-01", "question": "When contacting Coastal Line Agencies in Mangaluru, what is the best time to reach them?"}
+{"ts": 1795629385.8251338, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629392.2248852, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 733, "latency_s": 6.4}
+{"ts": 1795629392.226523, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629393.6530004, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 923, "latency_s": 1.43}
+{"ts": 1795629393.6557925, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629402.6226752, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 705, "latency_s": 8.97}
+{"ts": 1795629402.6248238, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629403.5314887, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 697, "latency_s": 0.91}
+{"ts": 1795629403.5344515, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 1, "total": 18, "case": "ans-01", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795629403.5351763, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 1, "total": 18, "case": "ans-02", "question": "A ship arrives at Mangaluru port with a cargo that exceeds the maximum load allowed for the night. What is the maximum allowed load for the night?"}
+{"ts": 1795629403.537055, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629410.398811, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 807, "latency_s": 6.86}
+{"ts": 1795629410.4018116, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629411.6636264, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 984, "latency_s": 1.26}
+{"ts": 1795629411.6652942, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629419.019635, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 747, "latency_s": 7.35}
+{"ts": 1795629419.0219007, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629419.922693, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 747, "latency_s": 0.9}
+{"ts": 1795629419.9238436, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 2, "total": 18, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629419.9243956, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 2, "total": 18, "case": "ans-04", "question": "What happens to bulk cargo operations of fertiliser, grain and cement during rain?"}
+{"ts": 1795629419.9260523, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629427.708648, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 783, "latency_s": 7.78}
+{"ts": 1795629427.7102556, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629428.9974227, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 964, "latency_s": 1.29}
+{"ts": 1795629428.9979706, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 3, "total": 18, "case": "ans-04", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629428.9985137, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 3, "total": 18, "case": "ans-06", "question": "If you're calling Seaways Port Agency in Mumbai, what's the best time to reach them?"}
+{"ts": 1795629428.999605, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629429.5550315, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 734, "latency_s": 0.56}
+{"ts": 1795629429.5567057, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629430.779691, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 916, "latency_s": 1.22}
+{"ts": 1795629430.7837029, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629440.4326262, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 670, "latency_s": 9.65}
+{"ts": 1795629440.4336755, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629441.1933246, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 670, "latency_s": 0.76}
+{"ts": 1795629441.1943953, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 4, "total": 18, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629441.1943953, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 4, "total": 18, "case": "ans-07", "question": "What is the minimum notice period for an agent to receive a Pre-arrival Notice (PAN) for Mumbai?"}
+{"ts": 1795629441.1960702, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629448.2043736, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 766, "latency_s": 7.01}
+{"ts": 1795629448.2054617, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629449.558788, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 952, "latency_s": 1.35}
+{"ts": 1795629449.560411, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629458.9119823, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 708, "latency_s": 9.35}
+{"ts": 1795629458.913622, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629459.7182732, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 708, "latency_s": 0.8}
+{"ts": 1795629459.719349, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 5, "total": 18, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629459.7198792, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 5, "total": 18, "case": "ans-09", "question": "What is the correct duration for the port's PAN hours?"}
+{"ts": 1795629459.7209668, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629466.2254336, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 6.5}
+{"ts": 1795629466.2272952, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629467.7716186, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 976, "latency_s": 1.54}
+{"ts": 1795629467.7738345, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629477.46399, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 725, "latency_s": 9.69}
+{"ts": 1795629477.466009, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629478.4031384, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 725, "latency_s": 0.94}
+{"ts": 1795629478.4036977, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 6, "total": 18, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629478.404243, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 6, "total": 18, "case": "ans-10", "question": "If a ship arrives at Kochi port after 200 meters, what is the agent's response?"}
+{"ts": 1795629478.4059129, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629484.5645323, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 736, "latency_s": 6.16}
+{"ts": 1795629484.5667434, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629486.2897522, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 947, "latency_s": 1.72}
+{"ts": 1795629486.291384, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 7, "total": 18, "case": "ans-10", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795629486.2919407, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 7, "total": 18, "case": "amb-13", "question": "wht r th pnt o f 72 hr pns fr mbl shp agnts?"}
+{"ts": 1795629486.2935946, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629486.8896587, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.6}
+{"ts": 1795629486.891914, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629488.4597046, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1002, "latency_s": 1.57}
+{"ts": 1795629488.4613256, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629497.227481, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 754, "latency_s": 8.77}
+{"ts": 1795629497.2297974, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629498.1874435, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 754, "latency_s": 0.96}
+{"ts": 1795629498.1889136, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 8, "total": 18, "case": "amb-13", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795629498.1894236, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 8, "total": 18, "case": "amb-14", "question": "can u tell me the max time i can change eta without notice"}
+{"ts": 1795629498.1910324, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629504.7550318, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 6.56}
+{"ts": 1795629504.7582343, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629506.0741513, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 972, "latency_s": 1.32}
+{"ts": 1795629506.0764697, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629516.5051072, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 747, "latency_s": 10.43}
+{"ts": 1795629516.5073388, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629539.2809029, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 1624, "latency_s": 22.77}
+{"ts": 1795629539.2819948, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629563.9640687, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 2603, "latency_s": 24.68}
+{"ts": 1795629563.965119, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629594.2408376, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 3582, "latency_s": 30.28}
+{"ts": 1795629594.2429407, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 9, "total": 18, "case": "amb-14", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795629594.2439406, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 9, "total": 18, "case": "out-16", "question": "Can you provide advice on the best route to take for a ship traveling from the India West Coast to the South Coast?"}
+{"ts": 1795629594.2489402, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629604.1109574, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 738, "latency_s": 9.86}
+{"ts": 1795629604.1138086, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629605.537368, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 926, "latency_s": 1.42}
+{"ts": 1795629605.5390494, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 10, "total": 18, "case": "out-16", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795629605.5396144, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 10, "total": 18, "case": "out-17", "question": "What is the procedure for handling a port call at the port of Chennai?"}
+{"ts": 1795629605.5419512, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629606.1327548, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 781, "latency_s": 0.59}
+{"ts": 1795629606.1349778, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629607.5513005, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 977, "latency_s": 1.42}
+{"ts": 1795629607.5523846, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 11, "total": 18, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795629607.55294, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 11, "total": 18, "case": "too-19", "question": "What is the current weather condition and forecast for Chennai, India?"}
+{"ts": 1795629607.5540864, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629608.2408597, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 0.69}
+{"ts": 1795629609.8102553, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629610.1663346, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 975, "latency_s": 0.36}
+{"ts": 1795629610.168547, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629612.5392196, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 1214, "latency_s": 2.37}
+{"ts": 1795629612.5409577, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 12, "total": 18, "case": "too-19", "passed": true, "kind": "tool", "split": "dev", "failure": null}
+{"ts": 1795629612.5421166, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 12, "total": 18, "case": "too-21", "question": "How many days until the next low tide at the Port of Chennai?"}
+{"ts": 1795629612.5437915, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629613.1411567, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 780, "latency_s": 0.6}
+{"ts": 1795629613.1435108, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629614.1293983, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 947, "latency_s": 0.99}
+{"ts": 1795629614.1299472, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 13, "total": 18, "case": "too-21", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795629614.1304839, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 13, "total": 18, "case": "ans-22", "question": "A ship is scheduled to arrive in Kochi with an ETA change of 5 hours. What does the crew need to do?"}
+{"ts": 1795629614.1315472, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629614.745055, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 792, "latency_s": 0.61}
+{"ts": 1795629614.7466974, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629616.3406615, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 998, "latency_s": 1.59}
+{"ts": 1795629616.3430612, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629625.9571273, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 772, "latency_s": 9.61}
+{"ts": 1795629625.9592843, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629626.9969995, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 772, "latency_s": 1.04}
+{"ts": 1795629626.998401, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 14, "total": 18, "case": "ans-22", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629626.9997256, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 14, "total": 18, "case": "ans-23", "question": "What is the duty phone number for Kutch Maritime Services in Gandhidham?"}
+{"ts": 1795629627.0053928, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629634.7918992, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 730, "latency_s": 7.79}
+{"ts": 1795629634.7950132, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629636.0458274, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 908, "latency_s": 1.25}
+{"ts": 1795629636.0474665, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629645.9752843, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 663, "latency_s": 9.93}
+{"ts": 1795629645.9769444, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629646.901269, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 663, "latency_s": 0.92}
+{"ts": 1795629646.902352, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 15, "total": 18, "case": "ans-23", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629646.9028933, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 15, "total": 18, "case": "ans-24", "question": "A port call planner needs to contact Kutch Maritime Services in Gandhidham for assistance. What is the duration of their working hours?"}
+{"ts": 1795629646.9045486, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629653.8007083, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 793, "latency_s": 6.9}
+{"ts": 1795629653.8028495, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629655.0934205, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 971, "latency_s": 1.29}
+{"ts": 1795629655.0956233, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 16, "total": 18, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629655.0961602, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 16, "total": 18, "case": "ans-25", "question": "If a ship is arriving at JNPA, what can you call to get assistance?"}
+{"ts": 1795629655.0977979, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629655.6593204, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 732, "latency_s": 0.56}
+{"ts": 1795629655.6675844, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629656.6518626, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 899, "latency_s": 0.98}
+{"ts": 1795629656.6540852, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629668.9834259, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 675, "latency_s": 12.33}
+{"ts": 1795629668.9850426, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629669.919304, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 675, "latency_s": 0.93}
+{"ts": 1795629669.9209924, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 17, "total": 18, "case": "ans-25", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629669.9209924, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 17, "total": 18, "case": "ans-26", "question": "A vessel with a length overall of 250m is approaching Kochi. What should the pilot do?"}
+{"ts": 1795629669.9231708, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629679.594406, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 9.67}
+{"ts": 1795629679.5966938, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b"}
+{"ts": 1795629681.057129, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen2.5:3b", "tokens": 978, "latency_s": 1.46}
+{"ts": 1795629681.0598862, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629691.6775913, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 751, "latency_s": 10.62}
+{"ts": 1795629691.679959, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "llama3.2:3b"}
+{"ts": 1795629692.6580756, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "llama3.2:3b", "tokens": 751, "latency_s": 0.98}
+{"ts": 1795629692.6591346, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 18, "total": 18, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795629692.6621568, "stage": "tournament", "status": "progress", "candidate": 1, "dev": 0.778}
+{"ts": 1795629692.6644309, "stage": "tournament", "status": "done", "winner": 1, "dev": 0.778}
+{"ts": 1795629692.6661203, "stage": "iteration", "status": "start", "iteration": 0}
+{"ts": 1795629692.667237, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 0, "total": 26, "case": "ans-01", "question": "When contacting Coastal Line Agencies in Mangaluru, what is the best time to reach them?"}
+{"ts": 1795629692.6698682, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629701.1369412, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 733, "latency_s": 8.47}
+{"ts": 1795629701.1402433, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629702.5441465, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 923, "latency_s": 1.4}
+{"ts": 1795629702.545254, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 1, "total": 26, "case": "ans-01", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795629702.5458083, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 1, "total": 26, "case": "ans-02", "question": "A ship arrives at Mangaluru port with a cargo that exceeds the maximum load allowed for the night. What is the maximum allowed load for the night?"}
+{"ts": 1795629702.5469286, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629703.1430292, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 807, "latency_s": 0.6}
+{"ts": 1795629703.1447127, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629704.3062837, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 984, "latency_s": 1.16}
+{"ts": 1795629704.3068242, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 2, "total": 26, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629704.3073745, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 2, "total": 26, "case": "ans-03", "question": "When should container and bulk cargo operations be suspended due to wind speed?"}
+{"ts": 1795629705.6714714, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629706.1963346, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.52}
+{"ts": 1795629706.1989005, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629707.4486687, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 971, "latency_s": 1.25}
+{"ts": 1795629707.4516528, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629714.6626015, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 740, "latency_s": 7.21}
+{"ts": 1795629714.6665058, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629715.639962, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 740, "latency_s": 0.97}
+{"ts": 1795629715.6410751, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 3, "total": 26, "case": "ans-03", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795629715.6416123, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 3, "total": 26, "case": "ans-04", "question": "What happens to bulk cargo operations of fertiliser, grain and cement during rain?"}
+{"ts": 1795629715.642715, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629728.35576, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 783, "latency_s": 12.71}
+{"ts": 1795629728.3579402, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629729.6200533, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 964, "latency_s": 1.26}
+{"ts": 1795629729.6213393, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 4, "total": 26, "case": "ans-04", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629729.6213393, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 4, "total": 26, "case": "ans-05", "question": "What are the phone hours for Seaways Port Agency in Mumbai?"}
+{"ts": 1795629731.12077, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629731.5980153, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 727, "latency_s": 0.48}
+{"ts": 1795629731.600228, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629732.636161, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 899, "latency_s": 1.04}
+{"ts": 1795629732.6378498, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629739.2245328, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 657, "latency_s": 6.59}
+{"ts": 1795629739.2266495, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629740.326506, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 657, "latency_s": 1.1}
+{"ts": 1795629740.3281286, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 5, "total": 26, "case": "ans-05", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795629740.3281286, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 5, "total": 26, "case": "ans-06", "question": "If you're calling Seaways Port Agency in Mumbai, what's the best time to reach them?"}
+{"ts": 1795629740.3298042, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629751.8739412, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 734, "latency_s": 11.54}
+{"ts": 1795629751.8761625, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629753.094405, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 916, "latency_s": 1.22}
+{"ts": 1795629753.094947, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 6, "total": 26, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629753.0954971, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 6, "total": 26, "case": "ans-07", "question": "What is the minimum notice period for an agent to receive a Pre-arrival Notice (PAN) for Mumbai?"}
+{"ts": 1795629753.0966358, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629753.62621, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 766, "latency_s": 0.53}
+{"ts": 1795629753.6277962, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629754.8756852, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 952, "latency_s": 1.25}
+{"ts": 1795629754.8767996, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 7, "total": 26, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629754.8767996, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 7, "total": 26, "case": "ans-08", "question": "A ship is scheduled to arrive in Kochi with an ETA of 12 hours. What should the crew do?"}
+{"ts": 1795629756.2005308, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629756.7220407, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.52}
+{"ts": 1795629756.7240593, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629758.7841, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1028, "latency_s": 2.06}
+{"ts": 1795629758.786549, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629770.2932727, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 782, "latency_s": 11.51}
+{"ts": 1795629770.2998948, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629771.1858685, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 782, "latency_s": 0.89}
+{"ts": 1795629771.1869974, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 8, "total": 26, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795629771.1875727, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 8, "total": 26, "case": "ans-09", "question": "What is the correct duration for the port's PAN hours?"}
+{"ts": 1795629771.189273, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629778.5794084, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 7.39}
+{"ts": 1795629778.5816631, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629780.1049068, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 976, "latency_s": 1.52}
+{"ts": 1795629780.1060264, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 9, "total": 26, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629780.1060264, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 9, "total": 26, "case": "ans-10", "question": "If a ship arrives at Kochi port after 200 meters, what is the agent's response?"}
+{"ts": 1795629780.1071334, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629780.626595, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 736, "latency_s": 0.52}
+{"ts": 1795629780.6291652, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629782.3111527, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 947, "latency_s": 1.68}
+{"ts": 1795629782.3122394, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 10, "total": 26, "case": "ans-10", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795629782.3127794, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 10, "total": 26, "case": "ans-11", "question": "What is the minimum length overall for a vessel to be allowed to berthe at night in Kochi?"}
+{"ts": 1795629783.5788915, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629784.0987725, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 800, "latency_s": 0.52}
+{"ts": 1795629784.1003923, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629785.3808107, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 985, "latency_s": 1.28}
+{"ts": 1795629785.3839097, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629792.029665, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 740, "latency_s": 6.65}
+{"ts": 1795629792.0313094, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629792.8194656, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 740, "latency_s": 0.79}
+{"ts": 1795629792.8211133, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 11, "total": 26, "case": "ans-11", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795629792.8222442, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 11, "total": 26, "case": "ans-12", "question": "If a vessel is above 200 GT, what is required for pilotage?"}
+{"ts": 1795629792.9863102, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629806.7278388, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 13.74}
+{"ts": 1795629806.7368417, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629807.9337947, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 955, "latency_s": 1.2}
+{"ts": 1795629807.9375513, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629821.5909154, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 715, "latency_s": 13.65}
+{"ts": 1795629821.5955768, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629822.640647, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 715, "latency_s": 1.04}
+{"ts": 1795629822.6417406, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 12, "total": 26, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795629822.6423025, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 12, "total": 26, "case": "amb-13", "question": "wht r th pnt o f 72 hr pns fr mbl shp agnts?"}
+{"ts": 1795629822.6444674, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629833.473907, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 10.83}
+{"ts": 1795629833.4807794, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629835.2782714, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 999, "latency_s": 1.8}
+{"ts": 1795629835.2822678, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629849.3170636, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 14.03}
+{"ts": 1795629849.322631, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629850.5816004, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 1.26}
+{"ts": 1795629850.5836883, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 13, "total": 26, "case": "amb-13", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795629850.5846677, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 13, "total": 26, "case": "amb-14", "question": "can u tell me the max time i can change eta without notice"}
+{"ts": 1795629850.5891159, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629862.3656442, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 11.78}
+{"ts": 1795629862.374078, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629863.897079, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 972, "latency_s": 1.52}
+{"ts": 1795629863.8998184, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 14, "total": 26, "case": "amb-14", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795629863.9009445, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 14, "total": 26, "case": "amb-15", "question": "can u tell me if cargo gets stuck in bad weather?"}
+{"ts": 1795629866.1194842, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629866.736752, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 0.62}
+{"ts": 1795629866.7409108, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629868.4507618, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 979, "latency_s": 1.71}
+{"ts": 1795629868.4550376, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629880.5490398, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 765, "latency_s": 12.09}
+{"ts": 1795629880.5549212, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629882.014737, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 765, "latency_s": 1.46}
+{"ts": 1795629882.0188115, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 15, "total": 26, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "holdout", "failure": null}
+{"ts": 1795629882.020996, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 15, "total": 26, "case": "out-16", "question": "Can you provide advice on the best route to take for a ship traveling from the India West Coast to the South Coast?"}
+{"ts": 1795629882.025589, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629894.8587813, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 738, "latency_s": 12.83}
+{"ts": 1795629894.865483, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629896.4846668, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 926, "latency_s": 1.62}
+{"ts": 1795629896.487104, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 16, "total": 26, "case": "out-16", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795629896.488331, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 16, "total": 26, "case": "out-17", "question": "What is the procedure for handling a port call at the port of Chennai?"}
+{"ts": 1795629896.4906967, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629897.1804507, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 781, "latency_s": 0.69}
+{"ts": 1795629897.1838086, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629898.9208193, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 977, "latency_s": 1.74}
+{"ts": 1795629898.9240894, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 17, "total": 26, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795629898.9256284, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 17, "total": 26, "case": "out-18", "question": "What is the average temperature in January in the city of Kochi?"}
+{"ts": 1795629901.4526644, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629902.178131, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 786, "latency_s": 0.73}
+{"ts": 1795629903.842393, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629904.4342067, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 980, "latency_s": 0.59}
+{"ts": 1795629904.4410625, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629905.5288165, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1131, "latency_s": 1.09}
+{"ts": 1795629905.5304828, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 18, "total": 26, "case": "out-18", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795629905.5310304, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 18, "total": 26, "case": "too-19", "question": "What is the current weather condition and forecast for Chennai, India?"}
+{"ts": 1795629905.534514, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629906.2614343, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 0.73}
+{"ts": 1795629907.7325323, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629908.1524498, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 975, "latency_s": 0.42}
+{"ts": 1795629908.160248, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629910.9203157, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1214, "latency_s": 2.76}
+{"ts": 1795629910.924036, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 19, "total": 26, "case": "too-19", "passed": true, "kind": "tool", "split": "dev", "failure": null}
+{"ts": 1795629910.926812, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 19, "total": 26, "case": "too-20", "question": "Will there be heavy rain in Mumbai, India for the next 3 days?"}
+{"ts": 1795629911.341276, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629912.1094165, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 764, "latency_s": 0.77}
+{"ts": 1795629913.6621277, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629914.0422032, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 955, "latency_s": 0.38}
+{"ts": 1795629914.0438788, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629918.5267255, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 1326, "latency_s": 4.48}
+{"ts": 1795629918.5288928, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 20, "total": 26, "case": "too-20", "passed": true, "kind": "tool", "split": "holdout", "failure": null}
+{"ts": 1795629918.5294278, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 20, "total": 26, "case": "too-21", "question": "How many days until the next low tide at the Port of Chennai?"}
+{"ts": 1795629918.5304902, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629919.1396267, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 780, "latency_s": 0.61}
+{"ts": 1795629919.142972, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629920.2897782, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 947, "latency_s": 1.15}
+{"ts": 1795629920.291483, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 21, "total": 26, "case": "too-21", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795629920.292038, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 21, "total": 26, "case": "ans-22", "question": "A ship is scheduled to arrive in Kochi with an ETA change of 5 hours. What does the crew need to do?"}
+{"ts": 1795629920.2942805, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629920.9488058, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 792, "latency_s": 0.65}
+{"ts": 1795629920.9510117, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629922.564247, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 998, "latency_s": 1.61}
+{"ts": 1795629922.565853, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 22, "total": 26, "case": "ans-22", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629922.5663946, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 22, "total": 26, "case": "ans-23", "question": "What is the duty phone number for Kutch Maritime Services in Gandhidham?"}
+{"ts": 1795629922.5674903, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629923.1128435, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 730, "latency_s": 0.55}
+{"ts": 1795629923.1150155, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629924.2470994, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 906, "latency_s": 1.13}
+{"ts": 1795629924.2487543, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 23, "total": 26, "case": "ans-23", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629924.2487543, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 23, "total": 26, "case": "ans-24", "question": "A port call planner needs to contact Kutch Maritime Services in Gandhidham for assistance. What is the duration of their working hours?"}
+{"ts": 1795629924.2503953, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629924.8960845, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 793, "latency_s": 0.65}
+{"ts": 1795629924.8988128, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629926.0978837, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 971, "latency_s": 1.2}
+{"ts": 1795629926.098426, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 24, "total": 26, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629926.098984, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 24, "total": 26, "case": "ans-25", "question": "If a ship is arriving at JNPA, what can you call to get assistance?"}
+{"ts": 1795629926.1001124, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629926.698354, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 732, "latency_s": 0.6}
+{"ts": 1795629926.70004, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629927.682, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 899, "latency_s": 0.98}
+{"ts": 1795629927.6830888, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 25, "total": 26, "case": "ans-25", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629927.6830888, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 25, "total": 26, "case": "ans-26", "question": "A vessel with a length overall of 250m is approaching Kochi. What should the pilot do?"}
+{"ts": 1795629927.6841877, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629928.3172817, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 0.63}
+{"ts": 1795629928.3218756, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen2.5:3b"}
+{"ts": 1795629929.7154882, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen2.5:3b", "tokens": 981, "latency_s": 1.39}
+{"ts": 1795629929.7171109, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629938.7255569, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 9.01}
+{"ts": 1795629938.728758, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "llama3.2:3b"}
+{"ts": 1795629940.0515342, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "llama3.2:3b", "tokens": 751, "latency_s": 1.32}
+{"ts": 1795629940.0531824, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 26, "total": 26, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795629940.0665963, "stage": "iteration", "status": "done", "iteration": 0, "dev": 0.778, "holdout": 1.0}
+{"ts": 1795629940.0686364, "stage": "diagnose", "status": "done", "iteration": 1, "category": "prompt_defect", "cases": ["too-21", "ans-26"]}
+{"ts": 1795629940.0766468, "stage": "llm", "status": "start", "llm_stage": "fix_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629953.245167, "stage": "llm", "status": "done", "llm_stage": "fix_iter1", "model": "qwen2.5:3b", "tokens": 447, "latency_s": 13.17}
+{"ts": 1795629953.2457118, "stage": "fix", "status": "done", "iteration": 1, "category": "prompt_defect", "target": "prompt.style", "rationale": "Ensured the assistant uses the correct tool for date-related questions and provides the necessary facts for regulatory questions."}
+{"ts": 1795629953.2462568, "stage": "iteration", "status": "start", "iteration": 1}
+{"ts": 1795629953.2468174, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 0, "total": 26, "case": "ans-01", "question": "When contacting Coastal Line Agencies in Mangaluru, what is the best time to reach them?"}
+{"ts": 1795629953.2484806, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629953.8248756, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 733, "latency_s": 0.58}
+{"ts": 1795629953.8265433, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629955.3497934, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 963, "latency_s": 1.52}
+{"ts": 1795629955.3508534, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 1, "total": 26, "case": "ans-01", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795629955.3514123, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 1, "total": 26, "case": "ans-02", "question": "A ship arrives at Mangaluru port with a cargo that exceeds the maximum load allowed for the night. What is the maximum allowed load for the night?"}
+{"ts": 1795629955.3524923, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629955.9674761, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 807, "latency_s": 0.61}
+{"ts": 1795629955.9691584, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629957.106396, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1024, "latency_s": 1.14}
+{"ts": 1795629957.1075304, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 2, "total": 26, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629957.1075304, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 2, "total": 26, "case": "ans-03", "question": "When should container and bulk cargo operations be suspended due to wind speed?"}
+{"ts": 1795629957.1086633, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629957.7259972, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.62}
+{"ts": 1795629957.727724, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629958.9542973, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1011, "latency_s": 1.23}
+{"ts": 1795629958.95593, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 3, "total": 26, "case": "ans-03", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795629958.956498, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 3, "total": 26, "case": "ans-04", "question": "What happens to bulk cargo operations of fertiliser, grain and cement during rain?"}
+{"ts": 1795629958.9576106, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629959.5539799, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 783, "latency_s": 0.6}
+{"ts": 1795629959.5556154, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629960.6449804, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1004, "latency_s": 1.09}
+{"ts": 1795629960.646048, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 4, "total": 26, "case": "ans-04", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629960.6465852, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 4, "total": 26, "case": "ans-05", "question": "What are the phone hours for Seaways Port Agency in Mumbai?"}
+{"ts": 1795629960.6476805, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629961.2281559, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 727, "latency_s": 0.58}
+{"ts": 1795629961.2297878, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629962.3235538, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 941, "latency_s": 1.09}
+{"ts": 1795629962.3257852, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795629969.7818906, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 657, "latency_s": 7.46}
+{"ts": 1795629969.7837777, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795629970.5511265, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 657, "latency_s": 0.77}
+{"ts": 1795629970.552179, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 5, "total": 26, "case": "ans-05", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795629970.5527148, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 5, "total": 26, "case": "ans-06", "question": "If you're calling Seaways Port Agency in Mumbai, what's the best time to reach them?"}
+{"ts": 1795629970.554354, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629976.5560699, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 734, "latency_s": 6.0}
+{"ts": 1795629976.5582702, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629977.8510497, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 954, "latency_s": 1.29}
+{"ts": 1795629977.8527057, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795629986.0642128, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 670, "latency_s": 8.21}
+{"ts": 1795629986.0658672, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795629986.8096356, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 670, "latency_s": 0.74}
+{"ts": 1795629986.810707, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 6, "total": 26, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629986.810707, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 6, "total": 26, "case": "ans-07", "question": "What is the minimum notice period for an agent to receive a Pre-arrival Notice (PAN) for Mumbai?"}
+{"ts": 1795629986.8118474, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629994.4241118, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 766, "latency_s": 7.61}
+{"ts": 1795629994.4266434, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629995.9486444, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 992, "latency_s": 1.52}
+{"ts": 1795629995.9497802, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 7, "total": 26, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795629995.950342, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 7, "total": 26, "case": "ans-08", "question": "A ship is scheduled to arrive in Kochi with an ETA of 12 hours. What should the crew do?"}
+{"ts": 1795629995.9520693, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629996.569476, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.62}
+{"ts": 1795629996.5722182, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795629999.0286176, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1085, "latency_s": 2.46}
+{"ts": 1795629999.0314834, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630008.8182015, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 807, "latency_s": 9.79}
+{"ts": 1795630008.8209407, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630009.7126696, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 807, "latency_s": 0.89}
+{"ts": 1795630009.7138765, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 8, "total": 26, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630009.7144308, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 8, "total": 26, "case": "ans-09", "question": "What is the correct duration for the port's PAN hours?"}
+{"ts": 1795630009.7155194, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630017.0301602, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 7.31}
+{"ts": 1795630017.0317826, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630018.8057787, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1027, "latency_s": 1.77}
+{"ts": 1795630018.8069046, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 9, "total": 26, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630018.8069046, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 9, "total": 26, "case": "ans-10", "question": "If a ship arrives at Kochi port after 200 meters, what is the agent's response?"}
+{"ts": 1795630018.8085845, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630019.3882613, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 736, "latency_s": 0.58}
+{"ts": 1795630019.38935, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630020.9357693, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 974, "latency_s": 1.55}
+{"ts": 1795630020.9391158, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 10, "total": 26, "case": "ans-10", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630020.939733, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 10, "total": 26, "case": "ans-11", "question": "What is the minimum length overall for a vessel to be allowed to berthe at night in Kochi?"}
+{"ts": 1795630020.9422338, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630021.5708017, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 800, "latency_s": 0.63}
+{"ts": 1795630021.5736175, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630022.8911214, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1025, "latency_s": 1.32}
+{"ts": 1795630022.8927872, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630030.9683821, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 740, "latency_s": 8.08}
+{"ts": 1795630030.9699903, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630031.8745642, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 740, "latency_s": 0.9}
+{"ts": 1795630031.8760498, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 11, "total": 26, "case": "ans-11", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630031.876619, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 11, "total": 26, "case": "ans-12", "question": "If a vessel is above 200 GT, what is required for pilotage?"}
+{"ts": 1795630031.878314, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630038.4287405, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 6.55}
+{"ts": 1795630038.4309237, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630039.5488205, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 994, "latency_s": 1.12}
+{"ts": 1795630039.5510156, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630047.395088, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 714, "latency_s": 7.84}
+{"ts": 1795630047.3973238, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630048.3066554, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 714, "latency_s": 0.91}
+{"ts": 1795630048.307483, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 12, "total": 26, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630048.307483, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 12, "total": 26, "case": "amb-13", "question": "wht r th pnt o f 72 hr pns fr mbl shp agnts?"}
+{"ts": 1795630048.3097084, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630055.3452804, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 7.04}
+{"ts": 1795630055.3483272, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630057.021201, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1040, "latency_s": 1.67}
+{"ts": 1795630057.0228636, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630066.268781, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 754, "latency_s": 9.25}
+{"ts": 1795630066.2715065, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630067.2142673, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 754, "latency_s": 0.94}
+{"ts": 1795630067.2159407, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 13, "total": 26, "case": "amb-13", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795630067.216508, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 13, "total": 26, "case": "amb-14", "question": "can u tell me the max time i can change eta without notice"}
+{"ts": 1795630067.2192907, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630074.9937387, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 7.77}
+{"ts": 1795630074.9970253, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630076.1529994, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1001, "latency_s": 1.16}
+{"ts": 1795630076.1553874, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630085.8687067, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 747, "latency_s": 9.71}
+{"ts": 1795630085.871363, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630108.5712757, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 1624, "latency_s": 22.7}
+{"ts": 1795630108.572899, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630136.5846033, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 2603, "latency_s": 28.01}
+{"ts": 1795630136.5881677, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630167.824333, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 3582, "latency_s": 31.24}
+{"ts": 1795630167.8254395, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 14, "total": 26, "case": "amb-14", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795630167.8259861, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 14, "total": 26, "case": "amb-15", "question": "can u tell me if cargo gets stuck in bad weather?"}
+{"ts": 1795630167.8281643, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630175.7838714, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 7.96}
+{"ts": 1795630175.7878947, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630177.485276, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1017, "latency_s": 1.7}
+{"ts": 1795630177.4908147, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630187.218382, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 765, "latency_s": 9.73}
+{"ts": 1795630187.2205427, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630188.0868814, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 765, "latency_s": 0.87}
+{"ts": 1795630188.0879686, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 15, "total": 26, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "holdout", "failure": null}
+{"ts": 1795630188.0885289, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 15, "total": 26, "case": "out-16", "question": "Can you provide advice on the best route to take for a ship traveling from the India West Coast to the South Coast?"}
+{"ts": 1795630188.090724, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630195.990129, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 738, "latency_s": 7.9}
+{"ts": 1795630195.9947288, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630196.9458635, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 939, "latency_s": 0.95}
+{"ts": 1795630196.947517, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 16, "total": 26, "case": "out-16", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795630196.947517, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 16, "total": 26, "case": "out-17", "question": "What is the procedure for handling a port call at the port of Chennai?"}
+{"ts": 1795630196.9486382, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630197.5238335, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 781, "latency_s": 0.58}
+{"ts": 1795630197.5261207, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630198.8816223, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1015, "latency_s": 1.36}
+{"ts": 1795630198.8832574, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 17, "total": 26, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795630198.8832574, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 17, "total": 26, "case": "out-18", "question": "What is the average temperature in January in the city of Kochi?"}
+{"ts": 1795630198.885977, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630199.558098, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 786, "latency_s": 0.67}
+{"ts": 1795630200.9674397, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630201.4183986, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 980, "latency_s": 0.45}
+{"ts": 1795630201.421098, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630202.4257982, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1171, "latency_s": 1.0}
+{"ts": 1795630202.4273803, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 18, "total": 26, "case": "out-18", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795630202.4273803, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 18, "total": 26, "case": "too-19", "question": "What is the current weather condition and forecast for Chennai, India?"}
+{"ts": 1795630202.429637, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630203.1140409, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 0.68}
+{"ts": 1795630204.5567784, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630204.9065154, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 975, "latency_s": 0.35}
+{"ts": 1795630204.9082355, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630208.0968053, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1301, "latency_s": 3.19}
+{"ts": 1795630208.0978858, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 19, "total": 26, "case": "too-19", "passed": true, "kind": "tool", "split": "dev", "failure": null}
+{"ts": 1795630208.0985432, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 19, "total": 26, "case": "too-20", "question": "Will there be heavy rain in Mumbai, India for the next 3 days?"}
+{"ts": 1795630208.0996337, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630208.7570448, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 764, "latency_s": 0.66}
+{"ts": 1795630210.1626477, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630211.3416483, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 955, "latency_s": 1.18}
+{"ts": 1795630211.3448517, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630221.1255364, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1570, "latency_s": 9.78}
+{"ts": 1795630221.1277633, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 20, "total": 26, "case": "too-20", "passed": true, "kind": "tool", "split": "holdout", "failure": null}
+{"ts": 1795630221.1283062, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 20, "total": 26, "case": "too-21", "question": "How many days until the next low tide at the Port of Chennai?"}
+{"ts": 1795630221.1326997, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630221.784737, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 780, "latency_s": 0.65}
+{"ts": 1795630221.7894363, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630222.9902604, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 987, "latency_s": 1.2}
+{"ts": 1795630222.9913704, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 21, "total": 26, "case": "too-21", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795630222.9923818, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 21, "total": 26, "case": "ans-22", "question": "A ship is scheduled to arrive in Kochi with an ETA change of 5 hours. What does the crew need to do?"}
+{"ts": 1795630222.9947317, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630223.6412265, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 792, "latency_s": 0.65}
+{"ts": 1795630223.6428483, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630225.2596538, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1038, "latency_s": 1.62}
+{"ts": 1795630225.2619357, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 22, "total": 26, "case": "ans-22", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630225.2625105, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 22, "total": 26, "case": "ans-23", "question": "What is the duty phone number for Kutch Maritime Services in Gandhidham?"}
+{"ts": 1795630225.26421, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630225.878872, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 730, "latency_s": 0.61}
+{"ts": 1795630225.8821425, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630227.0868895, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 947, "latency_s": 1.2}
+{"ts": 1795630227.0896733, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630241.7052205, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 663, "latency_s": 14.62}
+{"ts": 1795630241.706828, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630242.6664267, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 663, "latency_s": 0.96}
+{"ts": 1795630242.6675093, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 23, "total": 26, "case": "ans-23", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630242.6680665, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 23, "total": 26, "case": "ans-24", "question": "A port call planner needs to contact Kutch Maritime Services in Gandhidham for assistance. What is the duration of their working hours?"}
+{"ts": 1795630242.6697743, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630249.1642199, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 793, "latency_s": 6.49}
+{"ts": 1795630249.1663966, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630250.3450253, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1010, "latency_s": 1.18}
+{"ts": 1795630250.346791, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 24, "total": 26, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630250.3473206, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 24, "total": 26, "case": "ans-25", "question": "If a ship is arriving at JNPA, what can you call to get assistance?"}
+{"ts": 1795630250.3484147, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630250.8715787, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 732, "latency_s": 0.52}
+{"ts": 1795630250.8726258, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630251.7886617, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 939, "latency_s": 0.92}
+{"ts": 1795630251.7897336, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 25, "total": 26, "case": "ans-25", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630251.790674, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 25, "total": 26, "case": "ans-26", "question": "A vessel with a length overall of 250m is approaching Kochi. What should the pilot do?"}
+{"ts": 1795630251.792876, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630252.3608582, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 0.57}
+{"ts": 1795630252.3625443, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen2.5:3b"}
+{"ts": 1795630253.9083762, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen2.5:3b", "tokens": 1031, "latency_s": 1.55}
+{"ts": 1795630253.9104238, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630261.9262278, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 762, "latency_s": 8.02}
+{"ts": 1795630261.9278336, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "llama3.2:3b"}
+{"ts": 1795630263.644667, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "llama3.2:3b", "tokens": 794, "latency_s": 1.72}
+{"ts": 1795630263.6477437, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 26, "total": 26, "case": "ans-26", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630263.6581364, "stage": "iteration", "status": "done", "iteration": 1, "dev": 0.833, "holdout": 1.0, "kept": true, "tokens": 71627}
+{"ts": 1795630263.659136, "stage": "diagnose", "status": "done", "iteration": 2, "category": "hallucination", "cases": ["ans-01"]}
+{"ts": 1795630263.6601405, "stage": "llm", "status": "start", "llm_stage": "fix_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630270.9487019, "stage": "llm", "status": "done", "llm_stage": "fix_iter2", "model": "qwen2.5:3b", "tokens": 421, "latency_s": 7.29}
+{"ts": 1795630270.9497983, "stage": "fix", "status": "done", "iteration": 2, "category": "hallucination", "target": "prompt.grounding_rules + retrieval.require_citation", "rationale": "Changed the section to address unsupported claims and numbers not in context, ensuring answers are derived solely from the provided documents. (+ answers without citations are now blocked)"}
+{"ts": 1795630270.9503727, "stage": "iteration", "status": "start", "iteration": 2}
+{"ts": 1795630270.9503727, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 0, "total": 26, "case": "ans-01", "question": "When contacting Coastal Line Agencies in Mangaluru, what is the best time to reach them?"}
+{"ts": 1795630270.9515219, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630271.441488, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 733, "latency_s": 0.49}
+{"ts": 1795630271.442587, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630272.925954, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 993, "latency_s": 1.48}
+{"ts": 1795630272.9276013, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795630280.7569337, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 705, "latency_s": 7.83}
+{"ts": 1795630280.758917, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "llama3.2:3b"}
+{"ts": 1795630281.5818956, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "llama3.2:3b", "tokens": 697, "latency_s": 0.82}
+{"ts": 1795630281.5843427, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 1, "total": 26, "case": "ans-01", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795630281.584859, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 1, "total": 26, "case": "ans-02", "question": "A ship arrives at Mangaluru port with a cargo that exceeds the maximum load allowed for the night. What is the maximum allowed load for the night?"}
+{"ts": 1795630281.5859318, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630287.869888, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 807, "latency_s": 6.28}
+{"ts": 1795630287.8737032, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630289.1054099, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1051, "latency_s": 1.23}
+{"ts": 1795630289.1077778, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 2, "total": 26, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630289.1083431, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 2, "total": 26, "case": "ans-03", "question": "When should container and bulk cargo operations be suspended due to wind speed?"}
+{"ts": 1795630289.1118026, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630289.6972485, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.59}
+{"ts": 1795630289.6994514, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630290.885923, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1038, "latency_s": 1.19}
+{"ts": 1795630290.887799, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 3, "total": 26, "case": "ans-03", "passed": false, "kind": "answerable", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795630290.8883512, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 3, "total": 26, "case": "ans-04", "question": "What happens to bulk cargo operations of fertiliser, grain and cement during rain?"}
+{"ts": 1795630290.89063, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630291.460449, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 783, "latency_s": 0.57}
+{"ts": 1795630291.462982, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630292.3840501, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1022, "latency_s": 0.92}
+{"ts": 1795630292.3857799, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 4, "total": 26, "case": "ans-04", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630292.38634, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 4, "total": 26, "case": "ans-05", "question": "What are the phone hours for Seaways Port Agency in Mumbai?"}
+{"ts": 1795630292.387996, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630292.9698217, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 727, "latency_s": 0.58}
+{"ts": 1795630292.9720476, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630294.0317564, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 966, "latency_s": 1.06}
+{"ts": 1795630294.033416, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 5, "total": 26, "case": "ans-05", "passed": false, "kind": "answerable", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795630294.0339854, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 5, "total": 26, "case": "ans-06", "question": "If you're calling Seaways Port Agency in Mumbai, what's the best time to reach them?"}
+{"ts": 1795630294.0356183, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630294.6025627, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 734, "latency_s": 0.57}
+{"ts": 1795630294.6042452, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630295.7869768, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 984, "latency_s": 1.18}
+{"ts": 1795630295.788076, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 6, "total": 26, "case": "ans-06", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630295.7886152, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 6, "total": 26, "case": "ans-07", "question": "What is the minimum notice period for an agent to receive a Pre-arrival Notice (PAN) for Mumbai?"}
+{"ts": 1795630295.7897077, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630296.3601456, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 766, "latency_s": 0.57}
+{"ts": 1795630296.362383, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630297.5575976, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1015, "latency_s": 1.2}
+{"ts": 1795630297.558694, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 7, "total": 26, "case": "ans-07", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630297.5592918, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 7, "total": 26, "case": "ans-08", "question": "A ship is scheduled to arrive in Kochi with an ETA of 12 hours. What should the crew do?"}
+{"ts": 1795630297.561029, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630298.1608944, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.6}
+{"ts": 1795630298.1627026, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630300.4232142, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1104, "latency_s": 2.26}
+{"ts": 1795630300.4243326, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 8, "total": 26, "case": "ans-08", "passed": false, "kind": "answerable", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795630300.4243326, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 8, "total": 26, "case": "ans-09", "question": "What is the correct duration for the port's PAN hours?"}
+{"ts": 1795630300.4254527, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630301.015697, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 0.59}
+{"ts": 1795630301.0174084, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630302.8014839, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1066, "latency_s": 1.78}
+{"ts": 1795630302.8037708, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 9, "total": 26, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630302.8037708, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 9, "total": 26, "case": "ans-10", "question": "If a ship arrives at Kochi port after 200 meters, what is the agent's response?"}
+{"ts": 1795630302.805423, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630303.4003258, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 736, "latency_s": 0.59}
+{"ts": 1795630303.4019487, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630304.8807023, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1001, "latency_s": 1.48}
+{"ts": 1795630304.8823185, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 10, "total": 26, "case": "ans-10", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630304.8823185, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 10, "total": 26, "case": "ans-11", "question": "What is the minimum length overall for a vessel to be allowed to berthe at night in Kochi?"}
+{"ts": 1795630304.8834121, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630305.5224867, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 800, "latency_s": 0.64}
+{"ts": 1795630305.524155, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630306.7708347, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1048, "latency_s": 1.25}
+{"ts": 1795630306.7724426, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 11, "total": 26, "case": "ans-11", "passed": false, "kind": "answerable", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795630306.7730076, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 11, "total": 26, "case": "ans-12", "question": "If a vessel is above 200 GT, what is required for pilotage?"}
+{"ts": 1795630306.775262, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630307.4205835, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 0.65}
+{"ts": 1795630307.4222164, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630308.3794456, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1022, "latency_s": 0.96}
+{"ts": 1795630308.3805425, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 12, "total": 26, "case": "ans-12", "passed": false, "kind": "answerable", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795630308.3810842, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 12, "total": 26, "case": "amb-13", "question": "wht r th pnt o f 72 hr pns fr mbl shp agnts?"}
+{"ts": 1795630308.3827407, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630309.00039, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.62}
+{"ts": 1795630309.001476, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630310.5946126, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1067, "latency_s": 1.59}
+{"ts": 1795630310.5951524, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 13, "total": 26, "case": "amb-13", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795630310.5957127, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 13, "total": 26, "case": "amb-14", "question": "can u tell me the max time i can change eta without notice"}
+{"ts": 1795630310.5969057, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630311.2115235, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.61}
+{"ts": 1795630311.2131677, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630312.4069088, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1035, "latency_s": 1.19}
+{"ts": 1795630312.4097855, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 14, "total": 26, "case": "amb-14", "passed": false, "kind": "ambiguous", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630312.4103541, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 14, "total": 26, "case": "amb-15", "question": "can u tell me if cargo gets stuck in bad weather?"}
+{"ts": 1795630312.4125712, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630313.0248003, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 0.61}
+{"ts": 1795630313.0270267, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630314.4953737, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1041, "latency_s": 1.47}
+{"ts": 1795630314.4964483, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 15, "total": 26, "case": "amb-15", "passed": false, "kind": "ambiguous", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795630314.4969652, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 15, "total": 26, "case": "out-16", "question": "Can you provide advice on the best route to take for a ship traveling from the India West Coast to the South Coast?"}
+{"ts": 1795630314.4980156, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630315.0813117, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 738, "latency_s": 0.58}
+{"ts": 1795630315.0828853, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630316.3178601, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 988, "latency_s": 1.24}
+{"ts": 1795630316.318958, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 16, "total": 26, "case": "out-16", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795630316.3195364, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 16, "total": 26, "case": "out-17", "question": "What is the procedure for handling a port call at the port of Chennai?"}
+{"ts": 1795630316.3212051, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630316.9205694, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 781, "latency_s": 0.6}
+{"ts": 1795630316.9222229, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630317.8616498, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1015, "latency_s": 0.94}
+{"ts": 1795630317.862746, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 17, "total": 26, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795630317.863282, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 17, "total": 26, "case": "out-18", "question": "What is the average temperature in January in the city of Kochi?"}
+{"ts": 1795630317.864418, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630318.574086, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 786, "latency_s": 0.71}
+{"ts": 1795630319.9806015, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630320.4431942, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 980, "latency_s": 0.46}
+{"ts": 1795630320.4448197, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630321.4463317, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1198, "latency_s": 1.0}
+{"ts": 1795630321.447348, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 18, "total": 26, "case": "out-18", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795630321.447856, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 18, "total": 26, "case": "too-19", "question": "What is the current weather condition and forecast for Chennai, India?"}
+{"ts": 1795630321.4489684, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630322.1338058, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 0.68}
+{"ts": 1795630323.4957118, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630323.8409836, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 975, "latency_s": 0.34}
+{"ts": 1795630323.8437786, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630327.1381578, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1334, "latency_s": 3.29}
+{"ts": 1795630327.1392832, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 19, "total": 26, "case": "too-19", "passed": true, "kind": "tool", "split": "dev", "failure": null}
+{"ts": 1795630327.139818, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 19, "total": 26, "case": "too-20", "question": "Will there be heavy rain in Mumbai, India for the next 3 days?"}
+{"ts": 1795630327.1420004, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630327.8274713, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 764, "latency_s": 0.69}
+{"ts": 1795630329.2091599, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630329.585469, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 955, "latency_s": 0.38}
+{"ts": 1795630329.5871012, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630333.887217, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1383, "latency_s": 4.3}
+{"ts": 1795630333.8883176, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 20, "total": 26, "case": "too-20", "passed": true, "kind": "tool", "split": "holdout", "failure": null}
+{"ts": 1795630333.8883176, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 20, "total": 26, "case": "too-21", "question": "How many days until the next low tide at the Port of Chennai?"}
+{"ts": 1795630333.8900242, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630334.4930353, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 780, "latency_s": 0.6}
+{"ts": 1795630334.4946337, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630335.4138107, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1008, "latency_s": 0.92}
+{"ts": 1795630335.4143538, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 21, "total": 26, "case": "too-21", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795630335.41489, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 21, "total": 26, "case": "ans-22", "question": "A ship is scheduled to arrive in Kochi with an ETA change of 5 hours. What does the crew need to do?"}
+{"ts": 1795630335.4177732, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630336.0310574, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 792, "latency_s": 0.61}
+{"ts": 1795630336.0326848, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630337.5944824, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1063, "latency_s": 1.56}
+{"ts": 1795630337.595547, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 22, "total": 26, "case": "ans-22", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630337.596556, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 22, "total": 26, "case": "ans-23", "question": "What is the duty phone number for Kutch Maritime Services in Gandhidham?"}
+{"ts": 1795630337.5976055, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630338.1799521, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 730, "latency_s": 0.58}
+{"ts": 1795630338.1815846, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630339.2774878, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 970, "latency_s": 1.1}
+{"ts": 1795630339.2795389, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 23, "total": 26, "case": "ans-23", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630339.2800996, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 23, "total": 26, "case": "ans-24", "question": "A port call planner needs to contact Kutch Maritime Services in Gandhidham for assistance. What is the duration of their working hours?"}
+{"ts": 1795630339.2817378, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630339.9010358, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 793, "latency_s": 0.62}
+{"ts": 1795630339.9021745, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630340.9904199, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1033, "latency_s": 1.09}
+{"ts": 1795630340.9921367, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 24, "total": 26, "case": "ans-24", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630340.9927025, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 24, "total": 26, "case": "ans-25", "question": "If a ship is arriving at JNPA, what can you call to get assistance?"}
+{"ts": 1795630340.9938383, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630341.5852008, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 732, "latency_s": 0.59}
+{"ts": 1795630341.58629, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630342.5767837, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 966, "latency_s": 0.99}
+{"ts": 1795630342.578357, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 25, "total": 26, "case": "ans-25", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630342.5789003, "stage": "evaluate", "status": "case", "iteration": 2, "label": "", "done": 25, "total": 26, "case": "ans-26", "question": "A vessel with a length overall of 250m is approaching Kochi. What should the pilot do?"}
+{"ts": 1795630342.580735, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630343.2018595, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 0.62}
+{"ts": 1795630343.2038517, "stage": "llm", "status": "start", "llm_stage": "eval_iter2", "model": "qwen2.5:3b"}
+{"ts": 1795630344.500836, "stage": "llm", "status": "done", "llm_stage": "eval_iter2", "model": "qwen2.5:3b", "tokens": 1041, "latency_s": 1.3}
+{"ts": 1795630344.5019004, "stage": "evaluate", "status": "progress", "iteration": 2, "label": "", "done": 26, "total": 26, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630344.5121424, "stage": "iteration", "status": "done", "iteration": 2, "dev": 0.333, "holdout": 0.25, "kept": false, "tokens": 51829}
+{"ts": 1795630344.5121424, "stage": "diagnose", "status": "done", "iteration": 3, "category": "wrong_refusal", "cases": ["ans-10"]}
+{"ts": 1795630344.5141428, "stage": "llm", "status": "start", "llm_stage": "fix_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630347.3426242, "stage": "llm", "status": "done", "llm_stage": "fix_iter3", "model": "qwen2.5:3b", "tokens": 505, "latency_s": 2.83}
+{"ts": 1795630347.3447819, "stage": "fix", "status": "done", "iteration": 3, "category": "wrong_refusal", "target": "prompt.refusal_policy", "rationale": "Changed the wording to ensure consistency and clarity, addressing the failure of refusing answerable questions."}
+{"ts": 1795630347.3447819, "stage": "iteration", "status": "start", "iteration": 3}
+{"ts": 1795630347.3453243, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 0, "total": 26, "case": "ans-01", "question": "When contacting Coastal Line Agencies in Mangaluru, what is the best time to reach them?"}
+{"ts": 1795630347.3464284, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630347.9121485, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 733, "latency_s": 0.57}
+{"ts": 1795630347.9137516, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630349.4431665, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 997, "latency_s": 1.53}
+{"ts": 1795630349.4442606, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 1, "total": 26, "case": "ans-01", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795630349.4448276, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 1, "total": 26, "case": "ans-02", "question": "A ship arrives at Mangaluru port with a cargo that exceeds the maximum load allowed for the night. What is the maximum allowed load for the night?"}
+{"ts": 1795630349.4461453, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630349.6925771, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 807, "latency_s": 0.25}
+{"ts": 1795630349.6949494, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630351.009901, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1066, "latency_s": 1.31}
+{"ts": 1795630351.0115106, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 2, "total": 26, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630351.012035, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 2, "total": 26, "case": "ans-03", "question": "When should container and bulk cargo operations be suspended due to wind speed?"}
+{"ts": 1795630351.0131497, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630351.2613904, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.25}
+{"ts": 1795630351.2630484, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630352.492771, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1045, "latency_s": 1.23}
+{"ts": 1795630352.4938428, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 3, "total": 26, "case": "ans-03", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630352.494383, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 3, "total": 26, "case": "ans-04", "question": "What happens to bulk cargo operations of fertiliser, grain and cement during rain?"}
+{"ts": 1795630352.4954662, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630352.745276, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 783, "latency_s": 0.25}
+{"ts": 1795630352.7463894, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630353.8425407, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1038, "latency_s": 1.1}
+{"ts": 1795630353.843661, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 4, "total": 26, "case": "ans-04", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630353.8442187, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 4, "total": 26, "case": "ans-05", "question": "What are the phone hours for Seaways Port Agency in Mumbai?"}
+{"ts": 1795630353.845342, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630354.092696, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 727, "latency_s": 0.25}
+{"ts": 1795630354.0938466, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630355.1093965, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 973, "latency_s": 1.02}
+{"ts": 1795630355.1104982, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 5, "total": 26, "case": "ans-05", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630355.1110563, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 5, "total": 26, "case": "ans-06", "question": "If you're calling Seaways Port Agency in Mumbai, what's the best time to reach them?"}
+{"ts": 1795630355.112717, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630355.3590224, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 734, "latency_s": 0.25}
+{"ts": 1795630355.3611977, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630356.4749465, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 986, "latency_s": 1.11}
+{"ts": 1795630356.4760344, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 6, "total": 26, "case": "ans-06", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630356.4765763, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 6, "total": 26, "case": "ans-07", "question": "What is the minimum notice period for an agent to receive a Pre-arrival Notice (PAN) for Mumbai?"}
+{"ts": 1795630356.4771028, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630356.725117, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 766, "latency_s": 0.25}
+{"ts": 1795630356.726732, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630357.9589577, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1022, "latency_s": 1.23}
+{"ts": 1795630357.9616482, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630366.5674205, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 708, "latency_s": 8.61}
+{"ts": 1795630366.5706558, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630367.4163506, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 708, "latency_s": 0.85}
+{"ts": 1795630367.4173703, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 7, "total": 26, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630367.4178896, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 7, "total": 26, "case": "ans-08", "question": "A ship is scheduled to arrive in Kochi with an ETA of 12 hours. What should the crew do?"}
+{"ts": 1795630367.4195664, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630374.0472066, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 6.63}
+{"ts": 1795630374.0493789, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630376.1952178, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1092, "latency_s": 2.15}
+{"ts": 1795630376.1973464, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630384.1567216, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 772, "latency_s": 7.96}
+{"ts": 1795630384.15881, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630385.0735, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 772, "latency_s": 0.91}
+{"ts": 1795630385.0745587, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 8, "total": 26, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630385.0751045, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 8, "total": 26, "case": "ans-09", "question": "What is the correct duration for the port's PAN hours?"}
+{"ts": 1795630385.0761817, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630392.1189942, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 7.04}
+{"ts": 1795630392.121842, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630393.7897751, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1055, "latency_s": 1.67}
+{"ts": 1795630393.7903063, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 9, "total": 26, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630393.79086, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 9, "total": 26, "case": "ans-10", "question": "If a ship arrives at Kochi port after 200 meters, what is the agent's response?"}
+{"ts": 1795630393.7919688, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630394.294265, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 736, "latency_s": 0.5}
+{"ts": 1795630394.295918, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630395.7893138, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1008, "latency_s": 1.49}
+{"ts": 1795630395.7904103, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 10, "total": 26, "case": "ans-10", "passed": false, "kind": "answerable", "split": "dev", "failure": "wrong_refusal"}
+{"ts": 1795630395.7909732, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 10, "total": 26, "case": "ans-11", "question": "What is the minimum length overall for a vessel to be allowed to berthe at night in Kochi?"}
+{"ts": 1795630395.7920916, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630396.4102952, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 800, "latency_s": 0.62}
+{"ts": 1795630396.411931, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630397.7151942, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1060, "latency_s": 1.3}
+{"ts": 1795630397.717719, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630406.2318022, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 740, "latency_s": 8.51}
+{"ts": 1795630406.2361856, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630407.0464716, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 740, "latency_s": 0.81}
+{"ts": 1795630407.0475225, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 11, "total": 26, "case": "ans-11", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630407.0475225, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 11, "total": 26, "case": "ans-12", "question": "If a vessel is above 200 GT, what is required for pilotage?"}
+{"ts": 1795630407.0493708, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630413.6250486, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 6.58}
+{"ts": 1795630413.626712, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630414.7584589, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1028, "latency_s": 1.13}
+{"ts": 1795630414.7595282, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 12, "total": 26, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795630414.7600663, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 12, "total": 26, "case": "amb-13", "question": "wht r th pnt o f 72 hr pns fr mbl shp agnts?"}
+{"ts": 1795630414.7611516, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630415.3366427, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 798, "latency_s": 0.58}
+{"ts": 1795630415.3388073, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630416.894519, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1074, "latency_s": 1.56}
+{"ts": 1795630416.8956413, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 13, "total": 26, "case": "amb-13", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795630416.8956413, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 13, "total": 26, "case": "amb-14", "question": "can u tell me the max time i can change eta without notice"}
+{"ts": 1795630416.8967483, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630417.486785, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 790, "latency_s": 0.59}
+{"ts": 1795630417.4883716, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630418.6454964, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1041, "latency_s": 1.16}
+{"ts": 1795630418.6465366, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 14, "total": 26, "case": "amb-14", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795630418.6470468, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 14, "total": 26, "case": "amb-15", "question": "can u tell me if cargo gets stuck in bad weather?"}
+{"ts": 1795630418.6480951, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630419.2294521, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 779, "latency_s": 0.58}
+{"ts": 1795630419.2313845, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630420.664191, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1048, "latency_s": 1.43}
+{"ts": 1795630420.666397, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630429.1277535, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 765, "latency_s": 8.46}
+{"ts": 1795630429.1299272, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630430.0001495, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 765, "latency_s": 0.87}
+{"ts": 1795630430.0012398, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 15, "total": 26, "case": "amb-15", "passed": true, "kind": "ambiguous", "split": "holdout", "failure": null}
+{"ts": 1795630430.0017948, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 15, "total": 26, "case": "out-16", "question": "Can you provide advice on the best route to take for a ship traveling from the India West Coast to the South Coast?"}
+{"ts": 1795630430.003473, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630436.591123, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 738, "latency_s": 6.59}
+{"ts": 1795630436.5927835, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630437.532065, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 973, "latency_s": 0.94}
+{"ts": 1795630437.5331898, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 16, "total": 26, "case": "out-16", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795630437.5331898, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 16, "total": 26, "case": "out-17", "question": "What is the procedure for handling a port call at the port of Chennai?"}
+{"ts": 1795630437.5342941, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630438.084253, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 781, "latency_s": 0.55}
+{"ts": 1795630438.0864105, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630439.3491101, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1044, "latency_s": 1.26}
+{"ts": 1795630439.3507922, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 17, "total": 26, "case": "out-17", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795630439.3528082, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 17, "total": 26, "case": "out-18", "question": "What is the average temperature in January in the city of Kochi?"}
+{"ts": 1795630439.354431, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630440.0264006, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 786, "latency_s": 0.67}
+{"ts": 1795630441.4312148, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630441.8717875, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 980, "latency_s": 0.44}
+{"ts": 1795630441.875021, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630442.8443956, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1205, "latency_s": 0.97}
+{"ts": 1795630442.845497, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 18, "total": 26, "case": "out-18", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795630442.845497, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 18, "total": 26, "case": "too-19", "question": "What is the current weather condition and forecast for Chennai, India?"}
+{"ts": 1795630442.846615, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630443.4820678, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 784, "latency_s": 0.64}
+{"ts": 1795630444.8528118, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630445.1956265, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 975, "latency_s": 0.34}
+{"ts": 1795630445.1972554, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630448.4070544, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1339, "latency_s": 3.21}
+{"ts": 1795630448.4081345, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 19, "total": 26, "case": "too-19", "passed": true, "kind": "tool", "split": "dev", "failure": null}
+{"ts": 1795630448.4086998, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 19, "total": 26, "case": "too-20", "question": "Will there be heavy rain in Mumbai, India for the next 3 days?"}
+{"ts": 1795630448.4098003, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630449.0849936, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 764, "latency_s": 0.68}
+{"ts": 1795630450.5050433, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630450.885071, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 955, "latency_s": 0.38}
+{"ts": 1795630450.8873014, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630452.1628814, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1212, "latency_s": 1.28}
+{"ts": 1795630452.1646872, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 20, "total": 26, "case": "too-20", "passed": true, "kind": "tool", "split": "holdout", "failure": null}
+{"ts": 1795630452.1646872, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 20, "total": 26, "case": "too-21", "question": "How many days until the next low tide at the Port of Chennai?"}
+{"ts": 1795630452.1663954, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630452.72987, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 780, "latency_s": 0.56}
+{"ts": 1795630452.7326815, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630453.6096294, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1015, "latency_s": 0.88}
+{"ts": 1795630453.610687, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 21, "total": 26, "case": "too-21", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795630453.6112366, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 21, "total": 26, "case": "ans-22", "question": "A ship is scheduled to arrive in Kochi with an ETA change of 5 hours. What does the crew need to do?"}
+{"ts": 1795630453.6123478, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630454.2077265, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 792, "latency_s": 0.6}
+{"ts": 1795630454.2093773, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630455.7871342, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1072, "latency_s": 1.58}
+{"ts": 1795630455.7882042, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 22, "total": 26, "case": "ans-22", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630455.7887516, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 22, "total": 26, "case": "ans-23", "question": "What is the duty phone number for Kutch Maritime Services in Gandhidham?"}
+{"ts": 1795630455.7898579, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630456.3517582, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 730, "latency_s": 0.56}
+{"ts": 1795630456.353392, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630457.6563659, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 992, "latency_s": 1.3}
+{"ts": 1795630457.6586266, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630466.4323912, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 677, "latency_s": 8.77}
+{"ts": 1795630466.4361832, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630467.3273497, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 677, "latency_s": 0.89}
+{"ts": 1795630467.327876, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 23, "total": 26, "case": "ans-23", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630467.3284247, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 23, "total": 26, "case": "ans-24", "question": "A port call planner needs to contact Kutch Maritime Services in Gandhidham for assistance. What is the duration of their working hours?"}
+{"ts": 1795630467.3300724, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630474.914103, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 793, "latency_s": 7.58}
+{"ts": 1795630474.917908, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630476.1200213, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1041, "latency_s": 1.2}
+{"ts": 1795630476.121106, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 24, "total": 26, "case": "ans-24", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630476.1217062, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 24, "total": 26, "case": "ans-25", "question": "If a ship is arriving at JNPA, what can you call to get assistance?"}
+{"ts": 1795630476.123881, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630476.667622, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 732, "latency_s": 0.54}
+{"ts": 1795630476.6693118, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630477.6537538, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 973, "latency_s": 0.98}
+{"ts": 1795630477.6562462, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 25, "total": 26, "case": "ans-25", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795630477.6573913, "stage": "evaluate", "status": "case", "iteration": 3, "label": "", "done": 25, "total": 26, "case": "ans-26", "question": "A vessel with a length overall of 250m is approaching Kochi. What should the pilot do?"}
+{"ts": 1795630477.6584864, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630478.2524843, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 789, "latency_s": 0.59}
+{"ts": 1795630478.2541854, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "qwen2.5:3b"}
+{"ts": 1795630479.7225416, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "qwen2.5:3b", "tokens": 1060, "latency_s": 1.47}
+{"ts": 1795630479.725536, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630489.449726, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 765, "latency_s": 9.72}
+{"ts": 1795630489.4524117, "stage": "llm", "status": "start", "llm_stage": "eval_iter3", "model": "llama3.2:3b"}
+{"ts": 1795630492.0419066, "stage": "llm", "status": "done", "llm_stage": "eval_iter3", "model": "llama3.2:3b", "tokens": 832, "latency_s": 2.59}
+{"ts": 1795630492.0478506, "stage": "evaluate", "status": "progress", "iteration": 3, "label": "", "done": 26, "total": 26, "case": "ans-26", "passed": false, "kind": "answerable", "split": "dev", "failure": "hallucination"}
+{"ts": 1795630492.066115, "stage": "iteration", "status": "done", "iteration": 3, "dev": 0.778, "holdout": 1.0, "kept": false, "tokens": 59355}
+{"ts": 1795630492.087113, "stage": "report", "status": "done", "final": {"dev_pass_rate": 0.833, "holdout_pass_rate": 1.0, "overall_pass_rate": 0.885}, "stop_reason": "iteration limit (3) reached"}

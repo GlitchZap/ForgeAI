@@ -1,0 +1,31 @@
+{
+  "name": "HR policy assistant",
+  "docs_path": "demos/hr_policy/docs",
+  "model": "qwen2.5:3b",
+  "judge_model": "llama3.2:3b",
+  "embed_model": "nomic-embed-text",
+  "started": 1795635702.5671132,
+  "stop_reason": "early stop - two iterations in a row bought no dev improvement",
+  "budget": {
+    "tokens": null,
+    "seconds": null
+  },
+  "documents": [
+    "leave_policy.pdf",
+    "remote_work_and_exit.md",
+    "travel_expense_policy.md"
+  ],
+  "skipped_files": [],
+  "retrieval_mode": "hybrid",
+  "chunks": 15,
+  "finished": 1795637000.538912,
+  "duration_s": 1298.0,
+  "tokens": 287627,
+  "llm_calls": 348,
+  "final_version": 0,
+  "final": {
+    "dev_pass_rate": 0.684,
+    "holdout_pass_rate": 0.875,
+    "overall_pass_rate": 0.741
+  }
+}

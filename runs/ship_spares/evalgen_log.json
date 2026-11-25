@@ -1,0 +1,42 @@
+[
+  {
+    "rejected": "What is the minimum order quantity for the Lube oil separator bowl gasket set?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the maximum amount the Superintendent can approve for emergency purchases?",
+    "why": "question is not about the facts from both documents"
+  },
+  {
+    "rejected": "What is the delivery cost to an Indian port for orders above USD 10,000?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the lead time preference for orders of equivalent parts within 30 days of a planned port call?",
+    "why": "question is not about the facts from both documents"
+  },
+  {
+    "rejected": "What is the standard lead time for orders above USD 3,000?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the standard lead time for orders above USD 3,000 from Nordline Supply?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "Can you provide me with the supplier's contact information?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "What is the discount policy for parts over $100?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "How do I handle a situation where a supplier is late with delivery?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "Can you recommend a supplier for a particular type of part?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  }
+]

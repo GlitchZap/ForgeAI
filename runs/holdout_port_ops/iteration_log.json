@@ -1,0 +1,45 @@
+[
+  {
+    "iteration": 1,
+    "category": "prompt_defect",
+    "target": "prompt.style",
+    "before": "The assistant's tone is operational and concise, providing short, factual answers to ensure planners can make informed decisions quickly.",
+    "after": "The assistant should use the current_date tool to answer questions about future dates and times. For factual questions, the assistant must recall and provide the correct information, including mandatory regulations like pilotage requirements for vessels over 200 GT. The tone should remain operational and concise, ensuring planners receive quick, accurate information.",
+    "rationale": "Ensured the assistant uses the correct tool for date-related questions and provides the necessary facts for regulatory questions. | fixed: ['ans-26'] | newly failing: none",
+    "addressed_cases": [
+      "too-21",
+      "ans-26"
+    ],
+    "score_before": 0.778,
+    "score_after": 0.833,
+    "kept": true
+  },
+  {
+    "iteration": 2,
+    "category": "hallucination",
+    "target": "prompt.grounding_rules + retrieval.require_citation",
+    "before": "Answers must be derived from the provided documents. Do not cite chunk IDs. If the answer is not found, state 'Excerpt not found' and set refused=true.",
+    "after": "Answers must be derived from the provided documents. Do not cite chunk IDs or unsupported claims. If the answer is not found, state 'Excerpt not found' and set refused=true. If the answer involves numbers or times not in the context, state 'Excerpt not found' and set refused=true.",
+    "rationale": "Changed the section to address unsupported claims and numbers not in context, ensuring answers are derived solely from the provided documents. (+ answers without citations are now blocked) | fixed: none | newly failing: ['ans-03', 'ans-04', 'ans-05', 'ans-06', 'ans-07', 'ans-08', 'ans-11', 'ans-12', 'amb-14', 'amb-15', 'ans-22', 'ans-23', 'ans-24', 'ans-25', 'ans-26']",
+    "addressed_cases": [
+      "ans-01"
+    ],
+    "score_before": 0.833,
+    "score_after": 0.333,
+    "kept": false
+  },
+  {
+    "iteration": 3,
+    "category": "wrong_refusal",
+    "target": "prompt.refusal_policy",
+    "before": "- For questions about specific port calls or regions outside the India West and South Coast, politely decline and suggest contacting a human contact (if provided in the documents).\n- For requests for advice, recommendations, personal or confidential data, or detailed explanations, politely decline and suggest contacting a human contact (if provided in the documents).\n- For unsupported topics such as Customs Duty for Ship Stores, politely decline and state 'Not covered in provided documents'.\n- Decline: Requests for information not explicitly asked for in the brief.",
+    "after": "- For questions about specific port calls or regions outside the India West and South Coast, politely decline and suggest contacting a human contact (if provided in the documents).\n- For requests for advice, recommendations, personal or confidential data, or detailed explanations, politely decline and suggest contacting a human contact (if provided in the documents).\n- For unsupported topics such as Customs Duty for Ship Stores, politely decline and state 'Not covered in provided documents'.\n- For unsupported topics such as specific port calls or regions outside the India West and South Coast, politely decline and suggest contacting a human contact (if provided in the documents).\n- Decline: Requests for information not explicitly asked for in the brief.",
+    "rationale": "Changed the wording to ensure consistency and clarity, addressing the failure of refusing answerable questions. | fixed: none | newly failing: ['ans-26']",
+    "addressed_cases": [
+      "ans-10"
+    ],
+    "score_before": 0.833,
+    "score_after": 0.778,
+    "kept": false
+  }
+]

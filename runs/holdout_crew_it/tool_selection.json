@@ -1,0 +1,57 @@
+[
+  {
+    "tool": "csv_lookup",
+    "attached": false,
+    "why": "no CSV files in the document folder"
+  },
+  {
+    "tool": "calculator",
+    "attached": true,
+    "hinted_by_requirements": false,
+    "evidence_words": [
+      "cost"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "Extra Satellite Data Costs needs a tool for calculating costs if the allowance is exceeded."
+      },
+      {
+        "needed": true,
+        "reason": "Data Allowances"
+      }
+    ]
+  },
+  {
+    "tool": "weather",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "Extra Satellite Data Costs needs the weather tool for providing information on the cost of extra satellite data if their allowance is exceeded, which might be affected by weather conditions such as storms or extreme weather events that could impact satellite communication."
+      },
+      {
+        "needed": true,
+        "reason": "Extra Satellite Data Costs"
+      }
+    ]
+  },
+  {
+    "tool": "current_date",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": false,
+        "reason": "current_date tool is not needed based on the provided requirements and original brief."
+      },
+      {
+        "needed": true,
+        "reason": "Extra Satellite Data Costs"
+      }
+    ]
+  }
+]

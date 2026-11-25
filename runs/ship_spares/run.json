@@ -1,0 +1,31 @@
+{
+  "name": "Ship spares procurement assistant",
+  "docs_path": "demos/ship_spares/docs",
+  "model": "qwen2.5:3b",
+  "judge_model": "llama3.2:3b",
+  "embed_model": "nomic-embed-text",
+  "started": 1795638278.6266985,
+  "stop_reason": "early stop - two iterations in a row bought no dev improvement",
+  "budget": {
+    "tokens": null,
+    "seconds": null
+  },
+  "documents": [
+    "purchase_approval_matrix.md",
+    "spares_catalogue.csv",
+    "supplier_terms.md"
+  ],
+  "skipped_files": [],
+  "retrieval_mode": "hybrid",
+  "chunks": 39,
+  "finished": 1795639768.6627707,
+  "duration_s": 1490.0,
+  "tokens": 295184,
+  "llm_calls": 422,
+  "final_version": 0,
+  "final": {
+    "dev_pass_rate": 0.75,
+    "holdout_pass_rate": 0.8,
+    "overall_pass_rate": 0.767
+  }
+}

@@ -1,0 +1,470 @@
+[
+  {
+    "id": "ans-01",
+    "kind": "answerable",
+    "question": "A vessel is off-hire due to a class condition. What is the maximum amount the Superintendent can approve by email?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "USD 15,000",
+      "within 2 working days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "purchase_approval_matrix.md#2"
+  },
+  {
+    "id": "ans-02",
+    "kind": "answerable",
+    "question": "The Superintendent needs to regularise a purchase that was approved by email due to a vessel being off-hire. How many working days does the Superintendent have to do this?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "2 working days",
+      "regularisation",
+      "in the purchase system"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "purchase_approval_matrix.md#2"
+  },
+  {
+    "id": "ans-03",
+    "kind": "answerable",
+    "question": "What is the minimum order quantity for the MMS-AE-4004 part?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "min_order_qty",
+      "12"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row13"
+  },
+  {
+    "id": "ans-04",
+    "kind": "answerable",
+    "question": "If we want to order 15 of the MMS-AE-4004 parts, what is the total cost in USD?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "unit_price_usd",
+      "stock_qty",
+      "60"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row13"
+  },
+  {
+    "id": "ans-05",
+    "kind": "answerable",
+    "question": "What is the currency used for prices in the catalogue?",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "USD"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "supplier_terms.md#1"
+  },
+  {
+    "id": "ans-06",
+    "kind": "answerable",
+    "question": "What is the condition of prices in the catalogue regarding delivery and taxes?",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "Prices exclude"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "supplier_terms.md#1"
+  },
+  {
+    "id": "ans-07",
+    "kind": "answerable",
+    "question": "A new order for spare parts exceeds the threshold for which the Fleet Procurement Manager is responsible. What is the next step in the approval process?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "USD 2,500 to 10,000",
+      "USD 10,000 to 50,000",
+      "Technical Director"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "purchase_approval_matrix.md#1"
+  },
+  {
+    "id": "ans-08",
+    "kind": "answerable",
+    "question": "What is the minimum order value required for the Chief Executive Officer to be involved in the approval process?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "USD 50,000",
+      "Two competing quotations"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "purchase_approval_matrix.md#1"
+  },
+  {
+    "id": "ans-09",
+    "kind": "answerable",
+    "question": "What is the minimum order quantity for the MMS-EL-7003 part?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "1",
+      "min_order_qty"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row21"
+  },
+  {
+    "id": "ans-10",
+    "kind": "answerable",
+    "question": "If I want to purchase the MMS-EL-7003 from Konkan Marine Spares, how much will I pay?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "1980",
+      "unit_price_usd"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row21"
+  },
+  {
+    "id": "ans-11",
+    "kind": "answerable",
+    "question": "What is the standard lead time for in-stock items?",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "10 working days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "supplier_terms.md#2"
+  },
+  {
+    "id": "ans-12",
+    "kind": "answerable",
+    "question": "If we order over USD 15,000, what discount will we get?",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "8% on orders above USD 15,000",
+      "calculated on the parts value"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "supplier_terms.md#2"
+  },
+  {
+    "id": "amb-13",
+    "kind": "ambiguous",
+    "question": "can u get 15000 approval via email w/o rego in 2 days?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "USD 15,000",
+      "2 working days",
+      "Regularisation in the purchase system"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "purchase_approval_matrix.md#2"
+  },
+  {
+    "id": "amb-14",
+    "kind": "ambiguous",
+    "question": "What is the min order quantity for Shinko pumps?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "min_order_qty: 1",
+      "maker: Shinko",
+      "unit_price_usd: 2310"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row8"
+  },
+  {
+    "id": "amb-15",
+    "kind": "ambiguous",
+    "question": "whats the diff btw 30 days and a planned port call",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "prefer shorter lead time",
+      "within 30 days"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "supplier_terms.md#5"
+  },
+  {
+    "id": "out-16",
+    "kind": "out_of_scope",
+    "question": "Can you tell me about the warranty claim process for a specific part number?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-17",
+    "kind": "out_of_scope",
+    "question": "What is the average lead time for parts from Asia?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "too-18",
+    "kind": "tool",
+    "question": "What is the total cost of 10 units of spare part A, given that each unit costs $100 and there is a 10% discount for bulk purchase?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "calculator",
+    "split": "dev",
+    "origin": "tool:calculator"
+  },
+  {
+    "id": "too-19",
+    "kind": "tool",
+    "question": "How much is the pro-rated cost of 5 units of spare part B, considering that the standard price is $500 and there is a 20% reduction for the first 10 units?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "calculator",
+    "split": "holdout",
+    "origin": "tool:calculator"
+  },
+  {
+    "id": "ans-20",
+    "kind": "answerable",
+    "question": "A fleet procurement officer is responsible for approving purchases up to $2,500. What is the next level of approval?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "Fleet Procurement Manager",
+      "USD 2,500 to",
+      "USD 10,000"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "purchase_approval_matrix.md#1"
+  },
+  {
+    "id": "ans-21",
+    "kind": "answerable",
+    "question": "A company orders a shipment of spare parts worth $52,000. Who would approve this purchase?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "Chief Executive Officer",
+      "Above USD 50,000",
+      "two competing quotations"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "purchase_approval_matrix.md#1"
+  },
+  {
+    "id": "ans-22",
+    "kind": "answerable",
+    "question": "What is the minimum order quantity for the Plate heat exchanger gasket part?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "min_order_qty",
+      "20"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row9"
+  },
+  {
+    "id": "ans-23",
+    "kind": "answerable",
+    "question": "A supplier wants to purchase 30 units of the Plate heat exchanger gasket. Will this order be accepted?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "min_order_qty",
+      "20",
+      "stock_qty",
+      "120"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row9"
+  },
+  {
+    "id": "ans-24",
+    "kind": "answerable",
+    "question": "What is the standard lead time for Kochi Harbour Traders?",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "7 working days",
+      "ship within 3 working days"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "supplier_terms.md#4"
+  },
+  {
+    "id": "ans-25",
+    "kind": "answerable",
+    "question": "If I order more than USD 3,000, what discount will I get?",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "3% on orders above USD 3,000"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "supplier_terms.md#4"
+  },
+  {
+    "id": "ans-26",
+    "kind": "answerable",
+    "question": "What is the minimum number of quotations required for orders above $5,000, unless the part is OEM only?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "USD"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "purchase_approval_matrix.md#3"
+  },
+  {
+    "id": "ans-27",
+    "kind": "answerable",
+    "question": "What is a requirement for a purchase order to be paid?",
+    "should_refuse": false,
+    "expected_sources": [
+      "purchase_approval_matrix.md"
+    ],
+    "key_facts": [
+      "PO",
+      "issued",
+      "before",
+      "supplier"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "purchase_approval_matrix.md#3"
+  },
+  {
+    "id": "ans-28",
+    "kind": "answerable",
+    "question": "What is the minimum order quantity for the Starting air valve overhaul kit?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "1",
+      "MMS-AC-5003",
+      "Bulk-Supramax"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row16"
+  },
+  {
+    "id": "ans-29",
+    "kind": "answerable",
+    "question": "I'm planning to order 3 kits of the Starting air valve overhaul kit. Will I be able to get it from Konkan Marine Spares?",
+    "should_refuse": false,
+    "expected_sources": [
+      "spares_catalogue.csv"
+    ],
+    "key_facts": [
+      "2",
+      "1475",
+      "MAN B&W"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "spares_catalogue.csv#row16"
+  },
+  {
+    "id": "ans-30",
+    "kind": "answerable",
+    "question": "What is the name of the procurement document that outlines the approved supplier terms?",
+    "should_refuse": false,
+    "expected_sources": [
+      "supplier_terms.md"
+    ],
+    "key_facts": [
+      "Meridian Marine Services",
+      "PR-ST-11"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "supplier_terms.md#1"
+  }
+]

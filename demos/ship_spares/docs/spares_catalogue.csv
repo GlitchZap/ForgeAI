@@ -1,0 +1,31 @@
+part_no,description,vessel_class,maker,unit,unit_price_usd,stock_qty,supplier,min_order_qty
+MMS-FP-1001,Fuel injection pump plunger,Bulk-Supramax,MAN B&W,pc,1840,6,Konkan Marine Spares,2
+MMS-FP-1002,Fuel injector nozzle,Bulk-Supramax,MAN B&W,pc,412.5,24,Konkan Marine Spares,4
+MMS-FP-1003,Fuel valve spindle guide,Bulk-Supramax,MAN B&W,pc,690,3,Konkan Marine Spares,1
+MMS-LO-2001,Lube oil filter cartridge,Tanker-MR,Alfa Laval,pc,96,40,Nordline Supply,10
+MMS-LO-2002,Lube oil separator bowl gasket set,Tanker-MR,Alfa Laval,set,355,8,Nordline Supply,1
+MMS-LO-2003,Purifier gravity disc,Tanker-MR,Alfa Laval,pc,128,,Nordline Supply,2
+MMS-CW-3001,Cooling water pump mechanical seal,Container-Feeder,Shinko,pc,780,5,Kochi Harbour Traders,1
+MMS-CW-3002,Cooling water pump impeller,Container-Feeder,Shinko,pc,2310,2,Kochi Harbour Traders,1
+MMS-CW-3003,Plate heat exchanger gasket,Container-Feeder,Alfa Laval,pc,64,120,Nordline Supply,20
+MMS-AE-4001,Aux engine cylinder liner,Bulk-Supramax,Yanmar,pc,4950,1,Konkan Marine Spares,1
+MMS-AE-4002,Aux engine piston ring set,Bulk-Supramax,Yanmar,set,860,7,Konkan Marine Spares,1
+MMS-AE-4003,Aux engine turbocharger cartridge,Bulk-Supramax,Yanmar,pc,12800,0,Konkan Marine Spares,1
+MMS-AE-4004,Aux engine fuel filter element,Tanker-MR,Daihatsu,pc,38,60,Nordline Supply,12
+MMS-AC-5001,Air compressor valve kit,Tanker-MR,Sperre,kit,540,9,Nordline Supply,1
+MMS-AC-5002,Air compressor piston ring set,Tanker-MR,Sperre,set,295,4,Nordline Supply,1
+MMS-AC-5003,Starting air valve overhaul kit,Bulk-Supramax,MAN B&W,kit,1475,2,Konkan Marine Spares,1
+MMS-SG-6001,Steering gear hydraulic pump seal kit,Container-Feeder,Rolls-Royce,kit,1120,3,Kochi Harbour Traders,1
+MMS-SG-6002,Steering gear hydraulic filter,Container-Feeder,Rolls-Royce,pc,145,15,Kochi Harbour Traders,5
+MMS-EL-7001,Main switchboard ACB trip unit,Tanker-MR,Terasaki,pc,3650,1,Nordline Supply,1
+MMS-EL-7002,Navigation light LED module,All,Glamox,pc,210,30,Kochi Harbour Traders,4
+MMS-EL-7003,Emergency generator AVR,Bulk-Supramax,Stamford,pc,1980,2,Konkan Marine Spares,1
+MMS-SF-8001,Lifeboat release hook overhaul kit,All,Davit International,kit,2650,2,Kochi Harbour Traders,1
+MMS-SF-8002,Fire detector head (smoke),All,Consilium,pc,175,48,Nordline Supply,6
+MMS-SF-8003,Immersion suit (universal),All,Viking,pc,320,12,Kochi Harbour Traders,2
+MMS-PU-9001,Ballast pump mechanical seal,Bulk-Supramax,Shinko,pc,840,4,Konkan Marine Spares,1
+MMS-PU-9002,Bilge pump impeller,All,Azcue,pc,465,6,Kochi Harbour Traders,1
+MMS-PU-9003,Cargo pump shaft seal (old ref CP-77),Tanker-MR,Framo,pc,5400,1,Nordline Supply,1
+MMS-HV-9101,AC compressor contactor,Container-Feeder,Danfoss,pc,88,20,Kochi Harbour Traders,5
+MMS-HV-9102,Provision refrigeration expansion valve,All,Danfoss,pc,240,10,Kochi Harbour Traders,2
+MMS-DK-9201,Mooring winch brake lining set,Container-Feeder,TTS,set,1350,2,Kochi Harbour Traders,1

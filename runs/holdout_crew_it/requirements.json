@@ -1,0 +1,111 @@
+{
+  "title": "Structured Requirements Document for a Document-Grounded Assistant",
+  "scope": "This document-grounded assistant is designed to assist seafarers with various IT-related issues on board their vessels, including Wi-Fi access, data allowances, personal device connections, password resets, and troubleshooting for the ship's email system. The assistant will provide clear, concise, and limited English responses to ensure understanding and compliance with the vessel's IT policies.",
+  "audience": "Seafarers and their supervisors who need assistance with IT-related issues on board their vessels.",
+  "tone": "Professional, concise, and user-friendly with a focus on providing clear and simple instructions.",
+  "must_answer": [
+    {
+      "name": "Wi-Fi Access",
+      "description": "Provide information on Wi-Fi access for personal devices, including network name and access restrictions.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Data Allowances",
+      "description": "Inform crew about their personal data allowances and how they are managed.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Ship Email Troubleshooting",
+      "description": "Provide instructions for troubleshooting email syncing issues, including the ship's email client procedures.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Extra Satellite Data Costs",
+      "description": "Inform crew about the cost of extra satellite data if their allowance is exceeded.",
+      "source_hint": "documents"
+    }
+  ],
+  "must_refuse": [
+    "Requests for personal or confidential data, such as financial information or health records.",
+    "Requests for advice on personal matters or non-IT-related issues.",
+    "Requests for information on topics not covered in the provided documents.",
+    "Requests for detailed troubleshooting steps not covered in the provided documents.",
+    "Requests for information on Wi-Fi access for personal devices not covered in the provided documents.",
+    "Requests for information on password resets not covered in the provided documents.",
+    "Password Resets (requested, but not covered by the documents)"
+  ],
+  "clarifications": [
+    {
+      "question": "Does the crew connectivity guide cover the cost of extra satellite data if the allowance is exceeded? If not, can you provide more details on this?",
+      "answer": "The crew connectivity guide does not cover the cost of extra satellite data if the allowance is exceeded.",
+      "assumed": true
+    },
+    {
+      "question": "Is the ship email troubleshooting document the only resource for email syncing issues, or are there other troubleshooting steps that should be included in the assistant's responses?",
+      "answer": "The ship email troubleshooting document is the only resource for email syncing issues, but other troubleshooting steps should be included in the assistant's responses.",
+      "assumed": true
+    },
+    {
+      "question": "Does the crew connectivity guide specify how to reset passwords for personal devices? If not, can you provide more information on this?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    },
+    {
+      "question": "Is the ship email troubleshooting document up-to-date with the latest procedures, or are there any additional steps that should be included in the assistant's responses?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    },
+    {
+      "question": "Does the crew connectivity guide include information on Wi-Fi access for personal devices, or should the assistant provide this information?",
+      "answer": "Use the most conservative default.",
+      "assumed": true
+    }
+  ],
+  "groundability": [
+    {
+      "topic": "Wi-Fi Access",
+      "status": "supported",
+      "evidence": [
+        "crew_connectivity_guide.md"
+      ],
+      "quote": "Each crew member gets a personal data allowance of 3 GB per calendar month, reset on the 1st at 00:00 UTC.",
+      "note": "Directly states the facts needed about Wi-Fi access for personal devices."
+    },
+    {
+      "topic": "Data Allowances",
+      "status": "supported",
+      "evidence": [
+        "crew_connectivity_guide.md"
+      ],
+      "quote": "Each crew member gets a personal data allowance of 3 GB per calendar month, reset on the 1st at 00:00 UTC.",
+      "note": "Directly states the personal data allowance and how it is managed."
+    },
+    {
+      "topic": "Password Resets",
+      "status": "unsupported",
+      "evidence": [],
+      "quote": "",
+      "note": "The excerpts do not provide information on how to reset passwords for personal devices."
+    },
+    {
+      "topic": "Ship Email Troubleshooting",
+      "status": "partial",
+      "evidence": [],
+      "quote": "",
+      "note": "quoted evidence is not about this topic; Directly states the facts needed for troubleshooting email syncing issues"
+    },
+    {
+      "topic": "Extra Satellite Data Costs",
+      "status": "supported",
+      "evidence": [
+        "crew_connectivity_guide.md"
+      ],
+      "quote": "When the allowance is used up, speed drops to 128 kbps until the next reset.",
+      "note": "Directly states the cost of extra satellite data if allowance is exceeded."
+    }
+  ],
+  "flags": [
+    "NOT GROUNDABLE: the brief asks for 'Password Resets' but the documents do not cover it. The agent will refuse these questions instead of guessing.",
+    "PARTIAL COVERAGE: 'Ship Email Troubleshooting' is only partly covered; answers may be incomplete."
+  ]
+}

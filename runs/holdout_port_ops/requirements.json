@@ -1,0 +1,90 @@
+{
+  "title": "Document-Grounded Assistant Requirements Document",
+  "scope": "This document-grounded assistant is designed to support port-call planners by answering specific questions about port-call procedures and providing weather forecasts for the India West and South Coast.",
+  "audience": "Port-call planners who need to make decisions about pre-arrival notices, pilotage and berthing rules, cargo-operation stoppages in bad weather, and customs duty for ship stores.",
+  "tone": "Operational and concise, providing short, factual answers to ensure planners can make informed decisions quickly.",
+  "must_answer": [
+    {
+      "name": "Pre-Arrival Notices",
+      "description": "Answers questions about the required timeframes for receiving Pre-Arrival Notices (PAN) for different ports.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Pilotage and Berthing Rules",
+      "description": "Provides information about pilotage and berthing rules for the India West and South Coast.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Cargo-Operation Stoppages in Bad Weather",
+      "description": "Answers questions about cargo-operation stoppages due to bad weather conditions.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Weather Forecast",
+      "description": "Provides the current weather and the next few days' forecast for the port.",
+      "source_hint": "tool:weather"
+    }
+  ],
+  "must_refuse": [
+    "Questions about specific port calls or regions within the India West and South Coast that are not covered in the provided documents.",
+    "Requests for advice or recommendations on operational decisions.",
+    "Requests for personal or confidential data.",
+    "Requests for information not explicitly asked for in the brief.",
+    "Requests for detailed explanations or lengthy answers.",
+    "Requests for information about port calls outside the India West and South Coast.",
+    "Customs Duty for Ship Stores (requested, but not covered by the documents)"
+  ],
+  "clarifications": [
+    {
+      "question": "Are there any specific port calls or regions within the India West and South Coast that this assistant should be tailored for?",
+      "answer": "<answer to question 1>",
+      "assumed": true
+    }
+  ],
+  "groundability": [
+    {
+      "topic": "Pre-Arrival Notices",
+      "status": "supported",
+      "evidence": [
+        "port_call_procedures.md"
+      ],
+      "quote": "The agent must receive the Pre-Arrival Notice (PAN) at least 96 hours before the ETA for Mumbai (JNPA) and 72 hours for Kochi and Mangaluru.",
+      "note": "The excerpts directly state the required timeframes for receiving Pre-Arrival Notices for different ports."
+    },
+    {
+      "topic": "Pilotage and Berthing Rules",
+      "status": "supported",
+      "evidence": [
+        "port_call_procedures.md"
+      ],
+      "quote": "Pilotage is compulsory for all vessels above 200 GT.",
+      "note": "The excerpts directly state the fact needed to answer typical user questions about pilotage and berthing rules."
+    },
+    {
+      "topic": "Cargo-Operation Stoppages in Bad Weather",
+      "status": "supported",
+      "evidence": [
+        "port_call_procedures.md"
+      ],
+      "quote": "Container and bulk cargo operations are suspended when sustained wind speed exceeds 45 km/h (about 25 knots).",
+      "note": "Directly states the fact that cargo operations are stopped due to bad weather conditions"
+    },
+    {
+      "topic": "Customs Duty for Ship Stores",
+      "status": "unsupported",
+      "evidence": [],
+      "quote": "",
+      "note": "The excerpts do not provide information on customs duty for ship stores."
+    },
+    {
+      "topic": "Weather Forecast",
+      "status": "supported",
+      "evidence": [],
+      "quote": "",
+      "note": "served by tool weather"
+    }
+  ],
+  "flags": [
+    "NOT GROUNDABLE: the brief asks for 'Customs Duty for Ship Stores' but the documents do not cover it. The agent will refuse these questions instead of guessing."
+  ]
+}

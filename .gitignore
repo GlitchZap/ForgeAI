@@ -1,0 +1,14 @@
+.venv/
+.claude/
+.impeccable/
+__pycache__/
+*.pyc
+.pytest_cache/
+web/node_modules/
+web/dist/
+.claude/settings.local.json
+runs/*/input_docs/
+# the brief says not to share the assignment itself
+Brief.pdf
+OceanAIJD.txt
+runs/.pytest_runs/

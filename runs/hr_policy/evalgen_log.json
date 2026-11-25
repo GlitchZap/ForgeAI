@@ -1,0 +1,38 @@
+[
+  {
+    "rejected": "What is the maximum paid leave period for a third child, and what is the daily allowance for meals and local transport for international trips?",
+    "why": "question is not about the facts from both documents"
+  },
+  {
+    "rejected": "What is the maximum amount that can be claimed for expenses under INR 25,000 for shore-based employees?",
+    "why": "question is not about the facts from both documents"
+  },
+  {
+    "rejected": "What is the deadline for submitting expense claims for trips over 60 days old?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the notice period for shore-based employees during their probation period?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the standard AC configuration for rail travel?",
+    "why": "question is not about the facts from both documents"
+  },
+  {
+    "rejected": "What is the company policy on work-from-home days?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "Can you provide information on termination procedures?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "How many paid annual leave days do I have remaining?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "What is the standard notice period for an employee leaving Meridian Marine Services?",
+    "why": "does not actually need current_date"
+  }
+]

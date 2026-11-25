@@ -1,0 +1,42 @@
+[
+  {
+    "rejected": "What is the maximum attachment size for ship email messages?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the recommended timeframe for resetting ship email and crew portal passwords?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the maximum email attachment size on MMS-CREW?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the maximum allowed size for attachments in MMS Mail client?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the maximum email attachment size on MMS-CREW?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "How do I troubleshoot the ship's email system?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "What is the data allowance for personal devices?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "Can you provide detailed troubleshooting steps for Wi-Fi access?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "How do I reset my password for the email system?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "How do I reset my password for the ship's email system?",
+    "why": "does not actually need calculator"
+  }
+]

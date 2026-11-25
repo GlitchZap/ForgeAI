@@ -1,0 +1,30 @@
+[
+  {
+    "candidate": 0,
+    "variant": "default",
+    "dev_pass_rate": 0.778,
+    "prompt_chars": 1258,
+    "tokens": 81749,
+    "seconds": 666.4,
+    "failures": [
+      "ans-01",
+      "ans-10",
+      "too-21",
+      "ans-26"
+    ]
+  },
+  {
+    "candidate": 1,
+    "variant": "Variant style: STRICT. Make grounding and refusal rules short, explicit and absolute; answers as brief as possible.",
+    "dev_pass_rate": 0.778,
+    "prompt_chars": 1239,
+    "tokens": 55162,
+    "seconds": 306.8,
+    "failures": [
+      "ans-01",
+      "ans-10",
+      "too-21",
+      "ans-26"
+    ]
+  }
+]

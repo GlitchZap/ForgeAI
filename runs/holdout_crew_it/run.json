@@ -1,0 +1,30 @@
+{
+  "name": "Crew IT helpdesk (held-out)",
+  "docs_path": "holdout/crew_it/docs",
+  "model": "qwen2.5:3b",
+  "judge_model": "llama3.2:3b",
+  "embed_model": "nomic-embed-text",
+  "started": 1795627090.560654,
+  "stop_reason": "iteration limit (3) reached",
+  "budget": {
+    "tokens": null,
+    "seconds": null
+  },
+  "documents": [
+    "crew_connectivity_guide.md",
+    "ship_email_troubleshooting.txt"
+  ],
+  "skipped_files": [],
+  "retrieval_mode": "hybrid",
+  "chunks": 4,
+  "finished": 1795628555.226904,
+  "duration_s": 1464.7,
+  "tokens": 329003,
+  "llm_calls": 364,
+  "final_version": 1,
+  "final": {
+    "dev_pass_rate": 0.714,
+    "holdout_pass_rate": 0.5,
+    "overall_pass_rate": 0.65
+  }
+}

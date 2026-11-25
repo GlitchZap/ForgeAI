@@ -1,0 +1,281 @@
+{
+  "summary": {
+    "REGRESSION": 2,
+    "improved": 1,
+    "unchanged_fail": 6,
+    "unchanged_pass": 18
+  },
+  "cases": [
+    {
+      "case_id": "ans-01",
+      "kind": "answerable",
+      "question": "What is the maximum duration of paid sick leave per calendar year?",
+      "was": true,
+      "now": false,
+      "status": "REGRESSION",
+      "notes": [
+        "missing expected facts (recall 0.00)"
+      ]
+    },
+    {
+      "case_id": "ans-02",
+      "kind": "answerable",
+      "question": "What is the minimum documentation required for sick leave exceeding 2 consecutive days?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-03",
+      "kind": "answerable",
+      "question": "I'm a shore staff member, can I work from home on a regular basis?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": [
+        "passed on deterministic checks"
+      ]
+    },
+    {
+      "case_id": "ans-04",
+      "kind": "answerable",
+      "question": "My manager wants me to work from home for a month, but I have a 24x7 duty roster. Can I do that?",
+      "was": false,
+      "now": false,
+      "status": "unchanged_fail",
+      "notes": [
+        "judge passes disagreed (position-swap)",
+        "missing expected facts (recall 0.00)"
+      ]
+    },
+    {
+      "case_id": "ans-05",
+      "kind": "answerable",
+      "question": "What is the standard for rail travel?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-06",
+      "kind": "answerable",
+      "question": "If a General Manager is traveling, what class of service is available for flights over 6 hours?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": [
+        "passed on deterministic checks"
+      ]
+    },
+    {
+      "case_id": "ans-07",
+      "kind": "answerable",
+      "question": "If an employee is leaving the company, how many days of annual leave can they expect to receive on their resignation?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-08",
+      "kind": "answerable",
+      "question": "What's the deadline for using up carried-forward annual leave days before they lapse?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-09",
+      "kind": "answerable",
+      "question": "A staff member is leaving their job after being confirmed as an Assistant Manager. What is the required notice period for this role?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": [
+        "judge passes disagreed (position-swap)"
+      ]
+    },
+    {
+      "case_id": "ans-10",
+      "kind": "answerable",
+      "question": "A manager is leaving their job, but their manager wants to shorten the notice period. What happens to the staff member's salary?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-11",
+      "kind": "answerable",
+      "question": "What is the deadline for submitting expense claims through the finance portal?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": [
+        "passed on deterministic checks"
+      ]
+    },
+    {
+      "case_id": "ans-12",
+      "kind": "answerable",
+      "question": "A shore staff member wants to claim a trip to Dubai, but their manager says they need Finance Controller approval. Is that correct?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "mul-13",
+      "kind": "multi_doc",
+      "question": "What is the maximum number of days of annual leave that can be carried forward to the next year?",
+      "was": true,
+      "now": false,
+      "status": "REGRESSION",
+      "notes": [
+        "judge passes disagreed (position-swap)",
+        "missing expected facts (recall 0.00)"
+      ]
+    },
+    {
+      "case_id": "amb-14",
+      "kind": "ambiguous",
+      "question": "Can employees take 5 days off without notice?",
+      "was": false,
+      "now": false,
+      "status": "unchanged_fail",
+      "notes": [
+        "missing expected facts (recall 0.33)"
+      ]
+    },
+    {
+      "case_id": "amb-15",
+      "kind": "ambiguous",
+      "question": "probation period can be extended for how long?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": [
+        "judge passes disagreed (position-swap)"
+      ]
+    },
+    {
+      "case_id": "amb-16",
+      "kind": "ambiguous",
+      "question": "can i book premium economy on short flights",
+      "was": false,
+      "now": true,
+      "status": "improved",
+      "notes": []
+    },
+    {
+      "case_id": "out-17",
+      "kind": "out_of_scope",
+      "question": "How do I calculate my tax deductions for the year?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "out-18",
+      "kind": "out_of_scope",
+      "question": "What is the weather forecast for tomorrow?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "out-19",
+      "kind": "out_of_scope",
+      "question": "Can you explain the process for requesting a performance review?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "too-20",
+      "kind": "tool",
+      "question": "How many days' pay in lieu of notice is an employee entitled to if they leave the company without adequate notice?",
+      "was": false,
+      "now": false,
+      "status": "unchanged_fail",
+      "notes": [
+        "expected tool current_date, called none"
+      ]
+    },
+    {
+      "case_id": "ans-21",
+      "kind": "answerable",
+      "question": "If I need to take a public holiday off, how many days can I carry forward from previous years?",
+      "was": false,
+      "now": false,
+      "status": "unchanged_fail",
+      "notes": [
+        "missing expected facts (recall 0.00)"
+      ]
+    },
+    {
+      "case_id": "ans-22",
+      "kind": "answerable",
+      "question": "What is the deadline for staff to take their compensatory day off after working on a public holiday?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-23",
+      "kind": "answerable",
+      "question": "A manager is leaving their job, but the company and manager can't agree on a shortened notice period. What happens to the staff member's salary?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-24",
+      "kind": "answerable",
+      "question": "A new permanent employee's probation period can be extended by up to what number of months?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-25",
+      "kind": "answerable",
+      "question": "What is the notice period for an employee during their probation, in days?",
+      "was": true,
+      "now": true,
+      "status": "unchanged_pass",
+      "notes": []
+    },
+    {
+      "case_id": "ans-26",
+      "kind": "answerable",
+      "question": "What is not reimbursable for travel expenses?",
+      "was": false,
+      "now": false,
+      "status": "unchanged_fail",
+      "notes": [
+        "refused an answerable question"
+      ]
+    },
+    {
+      "case_id": "ans-27",
+      "kind": "answerable",
+      "question": "A shore staff member has a trip that is less than 4 nights long. What is not covered?",
+      "was": false,
+      "now": false,
+      "status": "unchanged_fail",
+      "notes": [
+        "refused an answerable question"
+      ]
+    }
+  ]
+}

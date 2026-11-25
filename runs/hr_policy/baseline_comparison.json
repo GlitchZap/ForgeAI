@@ -1,0 +1,36 @@
+{
+  "factory": {
+    "overall": 0.741,
+    "by_kind": {
+      "ambiguous": 0.333,
+      "answerable": 0.789,
+      "multi_doc": 1.0,
+      "out_of_scope": 1.0,
+      "tool": 0.0
+    },
+    "failures": {
+      "hallucination": 1,
+      "prompt_defect": 3,
+      "wrong_refusal": 3
+    }
+  },
+  "human": {
+    "overall": 0.815,
+    "by_kind": {
+      "ambiguous": 1.0,
+      "answerable": 0.789,
+      "multi_doc": 1.0,
+      "out_of_scope": 1.0,
+      "tool": 0.0
+    },
+    "failures": {
+      "prompt_defect": 3,
+      "wrong_refusal": 2
+    }
+  },
+  "factory_wins": [],
+  "human_wins": [
+    "amb-14",
+    "amb-16"
+  ]
+}

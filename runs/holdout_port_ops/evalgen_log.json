@@ -1,0 +1,42 @@
+[
+  {
+    "rejected": "What is the maximum allowable length for a ship in Mangaluru port before a customs duty stoppage is required?",
+    "why": "question is not about the facts from both documents"
+  },
+  {
+    "rejected": "What is the required notice period for Pre-Arrival Notice (PAN) at Mumbai (JNPA)?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the minimum PAN notice required for Kochi?",
+    "why": "question is not about the facts from both documents"
+  },
+  {
+    "rejected": "What is the recommended sustained wind speed for container and bulk cargo operations?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the recommended sustained wind speed for container and bulk cargo operations?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the minimum number of hours required for the agent to receive the Pre-Arrival Notice (PAN) before ETA for Mumbai?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "What is the typical weather forecast for the port of Mumbai during the monsoon season?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "How much customs duty is applied to ship stores for cargo being transported from the India West Coast?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "Can you provide a detailed explanation of the weather patterns in the Bay of Bengal?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "What is the current notice period for pilotage at the Port of Mumbai?",
+    "why": "does not actually need current_date"
+  }
+]

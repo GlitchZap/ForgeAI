@@ -1,0 +1,30 @@
+{
+  "name": "Port call planner (held-out)",
+  "docs_path": "holdout/port_ops/docs",
+  "model": "qwen2.5:3b",
+  "judge_model": "llama3.2:3b",
+  "embed_model": "nomic-embed-text",
+  "started": 1795628558.889078,
+  "stop_reason": "iteration limit (3) reached",
+  "budget": {
+    "tokens": null,
+    "seconds": null
+  },
+  "documents": [
+    "agents_and_contacts.csv",
+    "port_call_procedures.md"
+  ],
+  "skipped_files": [],
+  "retrieval_mode": "hybrid",
+  "chunks": 7,
+  "finished": 1795630492.0831106,
+  "duration_s": 1933.2,
+  "tokens": 403198,
+  "llm_calls": 450,
+  "final_version": 1,
+  "final": {
+    "dev_pass_rate": 0.833,
+    "holdout_pass_rate": 1.0,
+    "overall_pass_rate": 0.885
+  }
+}

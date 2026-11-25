@@ -1,0 +1,47 @@
+[
+  {
+    "iteration": 1,
+    "category": "hallucination",
+    "target": "prompt.grounding_rules + retrieval.require_citation",
+    "before": "- Provide information only from the provided documents.\n- Refuse requests for personal or confidential data, personal matters, non-IT-related issues, and information not covered in the provided documents.\n- Refuse requests for detailed troubleshooting steps not covered in the provided documents.\n- Refuse requests for password resets not covered in the provided documents.",
+    "after": "- Provide information only from the provided documents.\n- Refuse requests for unsupported claims not aligned with the provided documents.\n- Refuse requests for personal or confidential data, personal matters, non-IT-related issues, and information not covered in the provided documents.\n- Refuse requests for detailed troubleshooting steps not covered in the provided documents.\n- Refuse requests for password resets not covered in the provided documents.",
+    "rationale": "Changed the section to address unsupported claims and provide clearer guidelines for what information is acceptable based on the provided documents. (+ answers without citations are now blocked) | fixed: ['out-13', 'ans-18', 'ans-20'] | newly failing: ['ans-07', 'ans-08', 'amb-12', 'ans-19']",
+    "addressed_cases": [
+      "ans-02",
+      "amb-10",
+      "amb-11"
+    ],
+    "score_before": 0.571,
+    "score_after": 0.5,
+    "kept": false
+  },
+  {
+    "iteration": 2,
+    "category": "prompt_defect",
+    "target": "prompt.style",
+    "before": "The assistant's tone will be professional and concise, ensuring the understanding and compliance with the vessel's IT policies.",
+    "after": "The assistant's tone will be professional and concise, ensuring the understanding and compliance with the vessel's IT policies. Use the appropriate tools and provide relevant facts and instructions. For example, for the Wi-Fi data allowance, use a calculator tool. For sending large attachments via ship email, include the expected facts such as compressing photos and the maximum attachment size per message (10 MB).",
+    "rationale": "Changed the tone and added general rules for using tools and providing relevant facts, addressing the prompt_defect failure. | fixed: ['amb-10', 'ans-18'] | newly failing: none",
+    "addressed_cases": [
+      "too-15",
+      "ans-18"
+    ],
+    "score_before": 0.571,
+    "score_after": 0.714,
+    "kept": true
+  },
+  {
+    "iteration": 3,
+    "category": "prompt_defect",
+    "target": "prompt.style",
+    "before": "The assistant's tone will be professional and concise, ensuring the understanding and compliance with the vessel's IT policies. Use the appropriate tools and provide relevant facts and instructions. For example, for the Wi-Fi data allowance, use a calculator tool. For sending large attachments via ship email, include the expected facts such as compressing photos and the maximum attachment size per message (10 MB).",
+    "after": "The assistant's tone will be professional and concise, ensuring understanding and compliance with the vessel's IT policies. Use the appropriate tools and provide relevant facts and instructions. For the Wi-Fi data allowance, use a calculator tool. For sending large attachments via ship email, include the expected facts such as compressing photos and the maximum attachment size per message (10 MB). For any data-related questions, use a calculator tool. For any attachment size questions, include the maximum attachment size per message (10 MB).",
+    "rationale": "Changed the section to include general rules for using a calculator tool for data-related questions and to specify the maximum attachment size per message for attachment size questions. | fixed: ['amb-11', 'ans-20'] | newly failing: ['amb-10']",
+    "addressed_cases": [
+      "too-15"
+    ],
+    "score_before": 0.714,
+    "score_after": 0.714,
+    "kept": false
+  }
+]

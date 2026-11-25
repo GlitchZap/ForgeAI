@@ -1,0 +1,14 @@
+SHIP EMAIL TROUBLESHOOTING (MMS Mail client)
+
+Ship email does not sync in real time. The vessel synchronises with the shore mail server every 2 hours, and
+immediately when the Master presses "Send/Receive all" on the bridge PC.
+
+If mail is not arriving:
+1. Check the satellite link status light on the bridge PC. Amber or red means no link; wait until it is green.
+2. Check the outbox. Messages larger than 5 MB are held and must be approved by the Master before they are sent.
+3. Restart the MMS Mail client. Do not reinstall it.
+4. If mail has not synced for more than 6 hours with a green link, the Master emails itsupport@meridian-marine.example
+   or calls the 24-hour IT desk on the Fleet Broadband phone, extension 7.
+
+Attachments: maximum 10 MB per message. Compress photos before sending.
+Personal email (Gmail, Outlook.com) can be used on MMS-CREW from personal devices only.
