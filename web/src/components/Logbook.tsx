@@ -5,6 +5,7 @@ import { api, percent, type RunSummary } from '@/lib/api'
 const STATUS: Record<RunSummary['status'], [string, string]> = {
   running: ['running', 'text-magenta'], awaiting_approval: ['needs approval', 'text-magenta'],
   done: ['finished', 'text-starboard'], failed: ['failed', 'text-port'], incomplete: ['incomplete', 'text-sounding'],
+  stopped: ['stopped', 'text-sounding'],
 }
 
 export const providerName = (p?: string) => (p === 'groq' ? 'Groq' : 'Ollama')

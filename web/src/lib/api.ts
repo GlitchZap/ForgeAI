@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 export type RunSummary = {
   id: string
   name: string
-  status: 'running' | 'done' | 'failed' | 'incomplete' | 'awaiting_approval'
+  status: 'running' | 'done' | 'failed' | 'incomplete' | 'awaiting_approval' | 'stopped'
   error?: string | null
   final?: { dev_pass_rate: number; holdout_pass_rate: number; overall_pass_rate: number } | null
   stop_reason?: string
@@ -81,6 +81,7 @@ export const api = {
   archive: (id: string, archived: boolean) => req(`/api/runs/${id}/archive`, {
     method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ archived }) }),
   remove: (id: string) => req(`/api/runs/${id}`, { method: 'DELETE' }),
+  stop: (id: string) => req(`/api/runs/${id}/stop`, { method: 'POST' }),
   chat: (id: string, question: string, history: object[], signal?: AbortSignal) => req<Trace>(`/api/chat/${id}`, { signal,
     method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ question, history }) }),
 }

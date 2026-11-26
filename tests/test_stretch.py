@@ -36,3 +36,15 @@ def test_compare_and_regress(tmp_path):
     summary = regress(out, HR / "docs_v2", FakeLLM(), tmp_path / "reg")
     assert sum(summary.values()) == len(json.loads((out / "evalset.json").read_text()))
     assert (tmp_path / "reg" / "regression.md").exists()
+
+
+def test_stop_halts_at_next_step(tmp_path):
+    import threading
+    import pytest
+    from forgeai.pipeline import RunStopped
+    f = Factory(FakeLLM(), tmp_path / "run")
+    f.stop = threading.Event()
+    f.stop.set()
+    with pytest.raises(RunStopped):
+        f.run(BRIEF, HR / "docs", "hr")
+    assert not (tmp_path / "run" / "run.json").exists() or "finished" not in (tmp_path / "run" / "run.json").read_text()

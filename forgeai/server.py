@@ -66,11 +66,11 @@ def inputs():
     return out
 
 
-def _last_ts(ev: Path) -> float:
+def _last_event(ev: Path) -> dict:
     try:
-        return float(json.loads(ev.read_text(encoding="utf-8").strip().splitlines()[-1]).get("ts", 0))
-    except (ValueError, IndexError):
-        return 0.0
+        return json.loads(ev.read_text(encoding="utf-8").strip().splitlines()[-1])
+    except (ValueError, IndexError, OSError):
+        return {}
 
 
 @app.get("/api/runs")
@@ -84,9 +84,11 @@ def list_runs():
         ev = d / "events.jsonl"
         # runs started from the CLI aren't in _active: an unfinished run whose log moved recently is still running
         # last event's own timestamp, not file mtime: a deploy copies the log and makes it look fresh
-        fresh = ev.exists() and time.time() - _last_ts(ev) < 300
+        last = _last_event(ev)
+        fresh = time.time() - float(last.get("ts", 0)) < 300 and last.get("stage") != "error"
         status = "running" if (a and a["thread"].is_alive()) or (not a and not meta.get("finished") and fresh) else \
-            ("failed" if a and a.get("error") else ("done" if meta.get("finished") else "incomplete"))
+            ("stopped" if last.get("status") == "stopped" else
+             "failed" if a and a.get("error") else ("done" if meta.get("finished") else "incomplete"))
         if not meta.get("name") and ev.exists():  # unfinished run: its first event carries name, provider and model
             with open(ev, encoding="utf-8") as f:
                 first = json.loads(f.readline() or "{}")
@@ -116,22 +118,28 @@ class StartRun(BaseModel):
 
 
 def _start(rid: str, brief: str, docs: Path, req: StartRun):
-    from .pipeline import Factory
+    from .pipeline import Factory, RunStopped
     out = RUNS / rid
     out.mkdir(parents=True, exist_ok=True)
-    state = {"error": None, "checkpoint": threading.Event(), "req": None}
+    state = {"error": None, "checkpoint": threading.Event(), "req": None, "stop": threading.Event()}
 
     def checkpoint(r: Requirements) -> Requirements:
         state["req"] = r
         (out / "requirements.pending.json").write_text(r.model_dump_json(indent=2), encoding="utf-8")
         state["checkpoint"].wait()
+        if state["stop"].is_set():
+            raise RunStopped()
         return state["req"]
 
     def work():
         try:
-            Factory(make_llm(), out, max_iters=req.iters, candidates=req.candidates, budget_tokens=req.budget_tokens,
-                    budget_seconds=req.budget_seconds).run(brief, docs, req.name, answers=req.answers,
-                                                            checkpoint=checkpoint if req.checkpoint else None)
+            f = Factory(make_llm(), out, max_iters=req.iters, candidates=req.candidates, budget_tokens=req.budget_tokens,
+                        budget_seconds=req.budget_seconds)
+            f.stop = state["stop"]
+            f.run(brief, docs, req.name, answers=req.answers, checkpoint=checkpoint if req.checkpoint else None)
+        except RunStopped:
+            with open(out / "events.jsonl", "a", encoding="utf-8") as fh:
+                fh.write(json.dumps({"ts": time.time(), "stage": "error", "status": "stopped", "error": "Stopped by you"}) + "\n")
         except Exception as e:  # surfaced to the UI; the traceback is in the server log
             state["error"] = f"{type(e).__name__}: {e}"
             with open(out / "events.jsonl", "a", encoding="utf-8") as f:
@@ -221,6 +229,20 @@ def archive_run(rid: str, body: dict):
     flag = _run_dir(rid) / ".archived"
     flag.touch() if body.get("archived", True) else flag.unlink(missing_ok=True)
     return {"id": rid, "archived": flag.exists()}
+
+
+@app.post("/api/runs/{rid}/stop")
+def stop_run(rid: str):
+    """Stop a run started from this server. It halts before its next step and keeps everything written so far."""
+    if READONLY:
+        raise HTTPException(403, "This deployment is read-only.")
+    _run_dir(rid)
+    a = _active.get(rid)
+    if not a or not a["thread"].is_alive():
+        raise HTTPException(409, "This run isn't running on this server.")
+    a["stop"].set()
+    a["checkpoint"].set()  # a run paused for approval wakes up and stops
+    return {"ok": True}
 
 
 @app.delete("/api/runs/{rid}")

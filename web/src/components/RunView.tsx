@@ -2,7 +2,7 @@ import { Suspense, lazy, useEffect, useMemo, useState } from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
-import { Check, Flag, Minus, X } from 'lucide-react'
+import { Check, Flag, Minus, Square, X } from 'lucide-react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -205,7 +205,9 @@ function TitleBlock({ run, final, meta, req }: { run: RunSummary; final: Scoreca
 
 function NowLine({ live, run, meta, stages }: { live: ReturnType<typeof liveFrom>; run: RunSummary; meta: RunMeta | null; stages: ReturnType<typeof stagesFrom> }) {
   const [now, setNow] = useState(() => Date.now() / 1000)
-  const running = !live.finished && run.status !== 'done' && run.status !== 'failed' &&
+  const [stopping, setStopping] = useState(false)
+  const [stopErr, setStopErr] = useState('')
+  const running = !live.finished && run.status !== 'done' && run.status !== 'failed' && run.status !== 'stopped' &&
     (run.status === 'running' || run.status === 'awaiting_approval' || (live.lastAt != null && now - live.lastAt < 300))
   useEffect(() => {
     if (!running) return
@@ -213,7 +215,9 @@ function NowLine({ live, run, meta, stages }: { live: ReturnType<typeof liveFrom
     return () => clearInterval(t)
   }, [running])
   const failed = stages.find((s) => s.state === 'failed')
-  if (failed) return <p className="now-line text-port" role="status">Stopped with an error: {failed.detail}</p>
+  if (failed) return failed.detail === 'Stopped by you'
+    ? <p className="now-line" role="status"><span className="font-semibold">Stopped by you</span> <span className="text-sounding">during {failed.label}. Everything written so far is kept.</span></p>
+    : <p className="now-line text-port" role="status">Stopped with an error: {failed.detail}</p>
   if (!running) {
     const dur = meta?.duration_s ?? (live.lastAt && live.startedAt ? live.lastAt - live.startedAt : null)
     return (
@@ -236,6 +240,14 @@ function NowLine({ live, run, meta, stages }: { live: ReturnType<typeof liveFrom
         {live.waiting && <>waiting on {live.waiting.model} for {Math.max(0, Math.round(now - live.waiting.since))} s, </>}
         {clock(elapsed)} elapsed{live.etaS != null ? `, about ${Math.max(1, Math.round(live.etaS / 60))} min left in this step` : ''}
       </span>
+      {run.status === 'running' || run.status === 'awaiting_approval' ? (
+        <span className="md:col-span-3 flex items-center gap-3">
+          <button className="inline-flex items-center gap-1.5 rounded-lg border border-white/15 px-3 py-1.5 text-sm text-ink hover:bg-white/[.08] disabled:opacity-40"
+            disabled={stopping} onClick={() => { setStopping(true); setStopErr(''); api.stop(run.id).catch((e) => { setStopErr(e.message); setStopping(false) }) }}>
+            <Square className="size-3.5 fill-current" aria-hidden />{stopping ? 'Stopping after this step…' : 'Stop the run'}
+          </button>
+          {stopErr && <span role="alert" className="text-sm text-port">{stopErr}</span>}
+        </span>) : null}
     </div>
   )
 }

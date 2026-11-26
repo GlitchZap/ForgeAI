@@ -76,3 +76,16 @@ def test_delete_refuses_running_and_readonly(client, monkeypatch):
     assert client.delete("/api/runs/r2").status_code == 409
     monkeypatch.setattr(server, "READONLY", True)
     assert client.post("/api/runs/r2/archive", json={}).status_code == 403
+
+
+def test_stop_running_run(client, monkeypatch):
+    import threading
+    (server.RUNS / "r3").mkdir()
+    (server.RUNS / "r3" / "events.jsonl").write_text('{"ts": 1, "stage": "error", "status": "stopped", "error": "Stopped by you"}\n')
+    assert client.post("/api/runs/r3/stop").status_code == 409  # not running here
+    st = {"thread": type("T", (), {"is_alive": lambda self: True})(), "stop": threading.Event(), "checkpoint": threading.Event()}
+    monkeypatch.setitem(server._active, "r3", st)
+    assert client.post("/api/runs/r3/stop").status_code == 200
+    assert st["stop"].is_set() and st["checkpoint"].is_set()
+    monkeypatch.delitem(server._active, "r3")
+    assert next(r for r in client.get("/api/runs").json() if r["id"] == "r3")["status"] == "stopped"

@@ -14,6 +14,10 @@ from .ingest import chunk_documents, load_folder
 from .intake import requirements_markdown, run_intake
 from .judge import Judge
 from .llm import LLM, BudgetExceeded
+
+
+class RunStopped(Exception):
+    """The user pressed Stop; raised at the next event so no half-written step is kept."""
 from .optimizer import apply_fix, choose_category
 from .report import write_report
 from .retrieval import Index
@@ -50,9 +54,12 @@ class Factory:
         self.candidates = candidates
         self.budget_tokens = budget_tokens
         self.budget_seconds = budget_seconds
+        self.stop = None  # threading.Event set by the server's Stop button
 
     # ------------------------------------------------------------ helpers
     def emit(self, stage: str, status: str, **data):
+        if self.stop is not None and self.stop.is_set():
+            raise RunStopped()
         ev = {"ts": time.time(), "stage": stage, "status": status, **data}
         with open(self.out / "events.jsonl", "a", encoding="utf-8") as f:
             f.write(json.dumps(ev, ensure_ascii=False) + "\n")
