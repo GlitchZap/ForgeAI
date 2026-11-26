@@ -1,5 +1,7 @@
 # ForgeAI - the agent that builds agents
 
+**Live demo: https://forgeai-vdn4.onrender.com** (hosted on Render's free tier with Groq models. The first load after a quiet spell takes about a minute while the server wakes up. A full run takes about 25 minutes, so open one of the finished runs in the sidebar to look around and chat with its agent.)
+
 New here? Read [docs/ASSIGNMENT_EXPLAINED.md](docs/ASSIGNMENT_EXPLAINED.md) first.
 
 ## Demo video
