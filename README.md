@@ -2,6 +2,10 @@
 
 New here? Read [docs/ASSIGNMENT_EXPLAINED.md](docs/ASSIGNMENT_EXPLAINED.md) first.
 
+## Demo video
+
+**[ForgeAI-Demo-AayushKumar.mp4](ForgeAI-Demo-AayushKumar.mp4)** (about 6.5 minutes, 47 MB) is a recorded walkthrough of ForgeAI: what it does, a run being started, a finished run's score, tests, fixes and report, and a chat with the agent it built. GitHub may show "View raw" instead of a player for a file this size; download it to watch.
+
 Give ForgeAI a one-paragraph brief and a folder of documents. Unattended, it:
 
 1. **Interviews** the requester (at most 5 questions; with no human present it assumes conservative defaults and says so).
