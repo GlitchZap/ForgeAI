@@ -166,7 +166,8 @@ class OllamaLLM(LLM):
         try:
             tags = {m["name"] for m in self.http.get(f"{self.host}/api/tags").json().get("models", [])}
         except httpx.HTTPError as e:
-            return {"ok": False, "error": f"Ollama not reachable at {self.host}: {e}", "provider": "ollama"}
+            hint = "" if os.getenv("GROQ_API_KEY") else " (set GROQ_API_KEY to run on Groq instead)"
+            return {"ok": False, "error": f"Ollama not reachable at {self.host}: {e}{hint}", "provider": "ollama"}
 
         def has(m):  # bare names match ":latest"
             return m in tags or f"{m}:latest" in tags

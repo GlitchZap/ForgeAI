@@ -66,6 +66,13 @@ def inputs():
     return out
 
 
+def _last_ts(ev: Path) -> float:
+    try:
+        return float(json.loads(ev.read_text(encoding="utf-8").strip().splitlines()[-1]).get("ts", 0))
+    except (ValueError, IndexError):
+        return 0.0
+
+
 @app.get("/api/runs")
 def list_runs():
     out = []
@@ -76,7 +83,8 @@ def list_runs():
         a = _active.get(d.name)
         ev = d / "events.jsonl"
         # runs started from the CLI aren't in _active: an unfinished run whose log moved recently is still running
-        fresh = ev.exists() and time.time() - ev.stat().st_mtime < 300
+        # last event's own timestamp, not file mtime: a deploy copies the log and makes it look fresh
+        fresh = ev.exists() and time.time() - _last_ts(ev) < 300
         status = "running" if (a and a["thread"].is_alive()) or (not a and not meta.get("finished") and fresh) else \
             ("failed" if a and a.get("error") else ("done" if meta.get("finished") else "incomplete"))
         if not meta.get("name") and ev.exists():  # unfinished run: its first event carries name, provider and model
