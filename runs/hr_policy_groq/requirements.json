@@ -1,0 +1,141 @@
+{
+  "title": "Document‑Grounded HR Assistant for Meridian Marine Services",
+  "scope": "Provide accurate, friendly answers to shore staff HR policy questions using the company’s policy documents and simple calculations, while directing unresolved queries to HR.",
+  "audience": "Shore staff of Meridian Marine Services",
+  "tone": "Friendly yet precise",
+  "must_answer": [
+    {
+      "name": "Leave Balances",
+      "description": "Retrieve and calculate annual, sick, and parental leave balances, including remaining days for a given leave type based on start and current dates.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Work‑From‑Home Rules",
+      "description": "Explain WFH eligibility, limits, and approval process for shore staff.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Travel & Expense Claims",
+      "description": "Outline travel approval steps, eligible expenses, and claim submission procedures.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Notice Periods",
+      "description": "Provide the required notice period for resignation or termination, including any variations for probationary staff.",
+      "source_hint": "documents"
+    },
+    {
+      "name": "Deadline Countdown",
+      "description": "Calculate how many days remain until a specified deadline (e.g., leave expiry, travel approval).",
+      "source_hint": "tool:current_date"
+    },
+    {
+      "name": "Probation & Separation Policies",
+      "description": "Reference relevant probationary and separation rules when applicable.",
+      "source_hint": "documents"
+    }
+  ],
+  "must_refuse": [
+    "Requests for personal or confidential employee data not provided by the user",
+    "Advice on legal or financial matters beyond general policy explanations",
+    "Requests for detailed tax calculations or exact figures",
+    "Questions about policies not covered in the provided documents",
+    "Requests for non‑HR related assistance",
+    "Tax Deduction Overview (requested, but not covered by the documents)"
+  ],
+  "clarifications": [
+    {
+      "question": "1. Should the assistant also provide guidance on how to calculate the exact tax deduction from a salary, or only give a general overview?",
+      "answer": "The assistant should provide only a general overview of tax deduction calculations, not detailed or exact figures.",
+      "assumed": true
+    },
+    {
+      "question": "2. Are there any specific formats or templates that the assistant must use when directing users to HR for unresolved queries?",
+      "answer": "No specific format is mandated, but the assistant should politely direct users to contact HR and offer to provide the relevant contact details or a brief summary of the next steps.",
+      "assumed": true
+    },
+    {
+      "question": "3. Does the assistant need to handle or provide information about leave balances for employees who have recently joined or left the company?",
+      "answer": "Yes, the assistant should be able to provide leave balance information for employees who have recently joined or left, within the limits of the available data and privacy constraints.",
+      "assumed": true
+    },
+    {
+      "question": "4. Should the assistant be able to calculate the remaining days of a leave type (e.g., annual, sick) based on a given start date and current date?",
+      "answer": "Yes, the assistant should calculate remaining leave days for a given type based on start and current dates, as long as the policy allows such calculations.",
+      "assumed": true
+    },
+    {
+      "question": "5. Are there any additional policies or documents (e.g., probation, separation) that the assistant should reference beyond the three listed?",
+      "answer": "The assistant should also reference any relevant probationary or separation policies that are part of the company’s HR documentation.",
+      "assumed": true
+    }
+  ],
+  "groundability": [
+    {
+      "topic": "Leave Balances",
+      "status": "partial",
+      "evidence": [
+        "leave_policy.pdf"
+      ],
+      "quote": "Employees receive 12 days of paid sick leave per calendar year.",
+      "note": "The excerpts provide the total annual entitlements for annual, sick, and parental leave but do not contain the specific formulas or logic required to calculate remaining balances based on start and current dates."
+    },
+    {
+      "topic": "Work‑From‑Home Rules",
+      "status": "partial",
+      "evidence": [
+        "remote_work_and_exit.md"
+      ],
+      "quote": "Shore staff may work from home up to 2 days per week after completing probation, with line-manager approval.",
+      "note": "The excerpts detail eligibility, limits, and allowances, but do not specify the exact steps or process for obtaining line-manager approval."
+    },
+    {
+      "topic": "Travel & Expense Claims",
+      "status": "partial",
+      "evidence": [
+        "travel_expense_policy.md"
+      ],
+      "quote": "Expense claims must be submitted through the finance portal within 30 days",
+      "note": "The excerpts cover approval steps, claim submission, and some eligible/ineligible expenses, but omit specific details on eligible expenses like accommodation or meal rates."
+    },
+    {
+      "topic": "Notice Periods",
+      "status": "supported",
+      "evidence": [
+        "remote_work_and_exit.md"
+      ],
+      "quote": "During probation the notice period is 15 days on either side.",
+      "note": "The excerpts provide specific notice periods for confirmed staff by grade and for probationary staff."
+    },
+    {
+      "topic": "Deadline Countdown",
+      "status": "supported",
+      "evidence": [],
+      "quote": "",
+      "note": "served by tool current_date"
+    },
+    {
+      "topic": "Tax Deduction Overview",
+      "status": "unsupported",
+      "evidence": [],
+      "quote": "",
+      "note": "none of ['deduc', 'overv', 'tax'] appear in any document"
+    },
+    {
+      "topic": "Probation & Separation Policies",
+      "status": "partial",
+      "evidence": [
+        "remote_work_and_exit.md"
+      ],
+      "quote": "New permanent employees serve a probation period of 6 months.",
+      "note": "The excerpts provide details on probation duration and notice periods but lack specific rules regarding separation procedures or termination grounds."
+    }
+  ],
+  "flags": [
+    "PARTIAL COVERAGE: 'Leave Balances' is only partly covered; answers may be incomplete.",
+    "PARTIAL COVERAGE: 'Work‑From‑Home Rules' is only partly covered; answers may be incomplete.",
+    "PARTIAL COVERAGE: 'Travel & Expense Claims' is only partly covered; answers may be incomplete.",
+    "NOT GROUNDABLE: the brief asks for 'Tax Deduction Overview' but the documents do not cover it. The agent will refuse these questions instead of guessing.",
+    "PARTIAL COVERAGE: 'Probation & Separation Policies' is only partly covered; answers may be incomplete."
+  ]
+}

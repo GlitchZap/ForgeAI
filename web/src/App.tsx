@@ -18,7 +18,7 @@ function useHashRoute(): [string, (h: string) => void] {
   return [hash, (h) => { location.hash = h }]
 }
 
-type Health = { ok: boolean; error?: string; missing?: Record<string, string> } | null
+type Health = { ok: boolean; error?: string; missing?: Record<string, string>; provider?: string } | null
 
 /** Light / dark switch: a class on <html> swaps the colour tokens; the choice is remembered. */
 export function ThemeSwitch() {
@@ -75,7 +75,7 @@ function NavContent({ runs, route, health }: { runs: RunSummary[]; route: string
           <SidebarLink className={pill(route === 'runs')} link={{ label: 'Logbook', href: '#runs', icon: <BookOpen className={icon} /> }} />
         </nav>
         <WhenOpen className="mt-6"><h2 className="whitespace-nowrap px-2 text-[13px] font-semibold text-sounding">Recent runs</h2></WhenOpen>
-        <ul aria-label="Runs" className="mt-2 flex flex-col gap-1">{runs.map((r) => (
+        <ul aria-label="Runs" className="mt-2 flex flex-col gap-1">{runs.filter((r) => !r.archived).map((r) => (
           <li key={r.id}>
             <a href={`#run/${r.id}`} aria-current={current === r.id ? 'page' : undefined} title={r.name}
               className={`flex items-start gap-2 py-1.5 ${pill(current === r.id)}`}>
@@ -85,15 +85,15 @@ function NavContent({ runs, route, health }: { runs: RunSummary[]; route: string
               </span>
               <WhenOpen className="min-w-0">
                 <span className="block text-[15px] font-medium leading-snug">{r.name}</span>
-                <span className="block text-xs text-sounding">{r.status === 'done' ? 'finished' : r.status.replace('_', ' ')}{r.final ? `, ${percent(r.final.overall_pass_rate)}` : ''}</span>
+                <span className="block text-xs text-sounding">{r.status === 'done' ? 'finished' : r.status.replace('_', ' ')}{r.final ? `, ${percent(r.final.overall_pass_rate)}` : ''}, {r.provider === 'groq' ? 'Groq' : 'Ollama'}</span>
               </WhenOpen>
             </a>
           </li>))}
         </ul>
       </div>
       <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-3">
-        <span title={health?.ok ? 'Ollama ready' : 'Ollama not ready'} className={`ml-2 size-2.5 shrink-0 rounded-full ${health === null ? 'bg-white/30' : health.ok ? 'bg-starboard' : 'bg-port'}`} />
-        <WhenOpen className="flex-1 whitespace-nowrap text-xs text-sounding">{health === null ? 'Checking…' : health.ok ? 'Ollama ready' : 'Ollama offline'}</WhenOpen>
+        <span title={health?.ok ? 'Models ready' : health?.error ?? 'Models not ready'} className={`ml-2 size-2.5 shrink-0 rounded-full ${health === null ? 'bg-white/30' : health.ok ? 'bg-starboard' : 'bg-port'}`} />
+        <WhenOpen className="flex-1 whitespace-nowrap text-xs text-sounding">{health === null ? 'Checking…' : health.ok ? `${health.provider === 'groq' ? 'Groq' : 'Ollama'} ready` : (health.error ?? 'Model server offline')}</WhenOpen>
         <WhenOpen><ThemeSwitch /></WhenOpen>
       </div>
     </>
@@ -139,7 +139,7 @@ export default function App() {
       <main className="min-w-0 flex-1">
         {route === '' ? <Home runs={runs} go={go} />
           : route === 'new' ? <NewRun ollamaOk={!!health?.ok} onStarted={(id) => { refresh(); go(`run/${id}`) }} />
-          : route === 'runs' ? <Logbook runs={runs} />
+          : route === 'runs' ? <Logbook runs={runs} onChanged={refresh} />
           : current ? <RunView key={current.id} run={current} section={section ?? 'overview'} />
           : <p className="p-10 text-sounding">{runs.length ? 'That run does not exist.' : 'Loading run…'}</p>}
       </main>

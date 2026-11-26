@@ -1,0 +1,369 @@
+[
+  {
+    "id": "ans-01",
+    "kind": "answerable",
+    "question": "How many days of paid sick leave do we get each year, and do unused days roll over?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "12 days of paid sick leave",
+      "Sick leave does not carry forward"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#3"
+  },
+  {
+    "id": "ans-02",
+    "kind": "answerable",
+    "question": "Hey, if I'm out sick for three days in a row, do I need to bring a doctor's note?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "medical certificate",
+      "longer than 2 consecutive days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#3"
+  },
+  {
+    "id": "ans-03",
+    "kind": "answerable",
+    "question": "How many days per week can I work from home once I finish my probation, and what are the specific availability hours on Teams?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "up to 2 days per week",
+      "between 10:00 and 17:00 IST"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#1"
+  },
+  {
+    "id": "ans-04",
+    "kind": "answerable",
+    "question": "Hey, I'm planning to work from a client site in Singapore for a few weeks. Is that allowed, and if so, what's the limit?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "prior written approval from HR",
+      "20 working days per calendar year"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "remote_work_and_exit.md#1"
+  },
+  {
+    "id": "ans-05",
+    "kind": "answerable",
+    "question": "What is the standard rail travel class for our staff?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "AC 2-tier"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "travel_expense_policy.md#3"
+  },
+  {
+    "id": "ans-06",
+    "kind": "answerable",
+    "question": "I'm a General Manager taking a flight that's 7 hours long. Can I book premium economy?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "6 hours or more",
+      "General Managers and above"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "travel_expense_policy.md#3"
+  },
+  {
+    "id": "ans-07",
+    "kind": "answerable",
+    "question": "How many days of annual leave do we get per year and how is it accrued?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "24 working days",
+      "2 days per completed month"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#2"
+  },
+  {
+    "id": "ans-08",
+    "kind": "answerable",
+    "question": "I'm planning to take a week off in August. What are the rules for applying for leave that long?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "more than 5 consecutive working days",
+      "15 calendar days in advance",
+      "HR portal"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "leave_policy.pdf#2"
+  },
+  {
+    "id": "ans-09",
+    "kind": "answerable",
+    "question": "What is the required notice period for a Senior Manager leaving the company?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "60 days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#3"
+  },
+  {
+    "id": "ans-10",
+    "kind": "answerable",
+    "question": "Hey, if I don't serve my full notice period and we didn't agree to shorten it, what happens to my final settlement?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "salary in lieu of the unserved notice is recovered"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#3"
+  },
+  {
+    "id": "ans-11",
+    "kind": "answerable",
+    "question": "I just got back from a site visit and need to file my expenses. What is the deadline for submitting my claim through the finance portal?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "within 30 days of returning from the trip",
+      "rejected"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "travel_expense_policy.md#5"
+  },
+  {
+    "id": "ans-12",
+    "kind": "answerable",
+    "question": "Hey, I have a big claim for INR 30,000. Who needs to sign off on this before I get paid?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "line manager",
+      "Finance Controller"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "travel_expense_policy.md#5"
+  },
+  {
+    "id": "mul-13",
+    "kind": "multi_doc",
+    "question": "If a Shore staff member takes parental leave and is assigned to stay on board a vessel during that period, how does the daily allowance change compared to the standard domestic rate?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf",
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "26 weeks of fully paid leave",
+      "daily allowance is reduced by 50%"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "leave_policy.pdf#4+travel_expense_policy.md#4"
+  },
+  {
+    "id": "mul-14",
+    "kind": "multi_doc",
+    "question": "If a permanent shore-based employee in Mumbai submits an expense claim 45 days after returning from a trip, will it be accepted, and who must approve it if the total is INR 30,000?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf",
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "Applies to all permanent shore-based employees in Mumbai and Kochi offices",
+      "Claims submitted later than 60 days are rejected",
+      "Claims above INR 25,000 also need Finance Controller approval"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#1+travel_expense_policy.md#5"
+  },
+  {
+    "id": "mul-15",
+    "kind": "multi_doc",
+    "question": "If a Shore staff member works on a public holiday and takes the compensatory day off 45 days later, is this within the allowed timeframe, and what is the deadline for submitting the expense claim for that trip?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md",
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "within 30 days of returning from the trip",
+      "to be taken within 60 days"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "travel_expense_policy.md#5+leave_policy.pdf#5"
+  },
+  {
+    "id": "amb-16",
+    "kind": "ambiguous",
+    "question": "hey, if a gal is expecting her 3rd one, how long does she get off? and does she gotta send a letter to HR before the baby pops?",
+    "should_refuse": false,
+    "expected_sources": [
+      "leave_policy.pdf"
+    ],
+    "key_facts": [
+      "12 weeks for the third child onwards",
+      "Employees must notify HR in writing at least 8 weeks before"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "leave_policy.pdf#4"
+  },
+  {
+    "id": "amb-17",
+    "kind": "ambiguous",
+    "question": "how long is the trial run for new perm staff and can it stretch?",
+    "should_refuse": false,
+    "expected_sources": [
+      "remote_work_and_exit.md"
+    ],
+    "key_facts": [
+      "probation period of 6 months",
+      "extended once by up to 3 months"
+    ],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "remote_work_and_exit.md#2"
+  },
+  {
+    "id": "amb-18",
+    "kind": "ambiguous",
+    "question": "hey, how long before we gotta file the travel req for a domestic trip, unless it's urgent vessel stuff?",
+    "should_refuse": false,
+    "expected_sources": [
+      "travel_expense_policy.md"
+    ],
+    "key_facts": [
+      "at least 7 days before departure for domestic trips",
+      "except for urgent vessel attendance"
+    ],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "travel_expense_policy.md#2"
+  },
+  {
+    "id": "out-19",
+    "kind": "out_of_scope",
+    "question": "What is the exact percentage of tax withheld for a shore staff member living in New York State?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-20",
+    "kind": "out_of_scope",
+    "question": "If I get injured on the dock, what specific legal steps should I take to ensure I get a full financial settlement?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "holdout",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-21",
+    "kind": "out_of_scope",
+    "question": "How do I calculate the exact net pay after all state and local tax deductions for a $50,000 annual salary?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "out-22",
+    "kind": "out_of_scope",
+    "question": "Can you help me draft a cover letter for a job application at a different company?",
+    "should_refuse": true,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": null,
+    "split": "dev",
+    "origin": "must_refuse"
+  },
+  {
+    "id": "too-23",
+    "kind": "tool",
+    "question": "My hourly rate is $25.00 and I worked 37.5 hours last week. What is my total gross pay for that week?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "calculator",
+    "split": "holdout",
+    "origin": "tool:calculator"
+  },
+  {
+    "id": "too-24",
+    "kind": "tool",
+    "question": "I submitted my resignation notice 30 days ago, but I'm not sure if my final working day has passed yet. How many days are left in my notice period today?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "current_date",
+    "split": "dev",
+    "origin": "tool:current_date"
+  },
+  {
+    "id": "too-25",
+    "kind": "tool",
+    "question": "The HR policy states I must give 2 weeks' notice before leaving. If I want to leave on the 15th of next month, what is the latest date I can submit my notice to meet the requirement?",
+    "should_refuse": false,
+    "expected_sources": [],
+    "key_facts": [],
+    "expected_tool": "current_date",
+    "split": "dev",
+    "origin": "tool:current_date"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "tool": "csv_lookup",
+    "attached": false,
+    "why": "no CSV files in the document folder"
+  },
+  {
+    "tool": "calculator",
+    "attached": true,
+    "hinted_by_requirements": false,
+    "evidence_words": [
+      "calculat"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "Deadline Countdown"
+      },
+      {
+        "needed": false,
+        "reason": "The 'Deadline Countdown' topic, which requires calculating days remaining, is explicitly assigned to the 'tool:current_date' in the requirements. The 'Leave Balances' topic involves retrieving data from documents rather than performing arithmetic on user-provided numbers for totals or pro-rating. Tax calculations are listed under 'must_refuse', so no arithmetic tool is needed for that. Therefore, the calculator tool is not required for any must-answer topic."
+      }
+    ]
+  },
+  {
+    "tool": "weather",
+    "attached": false,
+    "hinted_by_requirements": false,
+    "evidence_words": [],
+    "votes": [
+      {
+        "needed": false,
+        "reason": "No must-answer topic requires weather data"
+      },
+      {
+        "needed": false,
+        "reason": "The brief and requirements do not mention any need for weather information. The must-answer topics focus on HR policies (leave, WFH, expenses, notice periods) and date calculations, none of which require live weather data."
+      }
+    ]
+  },
+  {
+    "tool": "current_date",
+    "attached": true,
+    "hinted_by_requirements": true,
+    "evidence_words": [
+      "countdown",
+      "date",
+      "deadline",
+      "expir",
+      "how many days"
+    ],
+    "votes": [
+      {
+        "needed": true,
+        "reason": "Deadline Countdown"
+      },
+      {
+        "needed": true,
+        "reason": "The must-answer topic 'Deadline Countdown' explicitly requires calculating how many days remain until a specified deadline, which necessitates knowing the current date. The source_hint for this topic also explicitly lists 'tool:current_date'."
+      }
+    ]
+  }
+]

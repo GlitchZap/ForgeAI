@@ -40,7 +40,7 @@ function wilson(k: number, n: number): [number, number] {
   return [Math.max(0, c - h), Math.min(1, c + h)]
 }
 
-type RunMeta = { model?: string; judge_model?: string; stop_reason?: string; duration_s?: number; retrieval_mode?: string }
+type RunMeta = { provider?: string; model?: string; judge_model?: string; stop_reason?: string; duration_s?: number; retrieval_mode?: string }
 
 export function RunView({ run, section }: { run: RunSummary; section: string }) {
   const { events } = useRunEvents(run.id)
@@ -182,7 +182,7 @@ function TitleBlock({ run, final, meta, req }: { run: RunSummary; final: Scoreca
       <div className="min-w-0">
         <h1 className="display pb-1 text-[clamp(2.1rem,3.2vw,3.2rem)] leading-[1.05]">{run.name}</h1>
         <p className="mt-1 text-[15px] text-sounding">
-          {meta?.model ? <>Agent <b className="font-medium text-ink">{meta.model}</b>, judge <b className="font-medium text-ink">{meta.judge_model}</b></> : 'Waiting for the first results'}
+          {meta?.model ? <>Agent <b className="font-medium text-ink">{meta.model}</b>, judge <b className="font-medium text-ink">{meta.judge_model}</b>, on <b className="font-medium text-ink">{(meta.provider ?? run.provider) === 'groq' ? 'Groq' : 'Ollama'}</b></> : 'Waiting for the first results'}
           {gaps > 0 && <span className="ml-3 inline-flex items-center gap-1 text-port"><Flag className="size-3.5" aria-hidden />{gaps} topic{gaps > 1 ? 's' : ''} not covered by the documents</span>}
         </p>
       </div>

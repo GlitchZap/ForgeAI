@@ -1,0 +1,32 @@
+{
+  "name": "HR policy (Groq)",
+  "docs_path": "demos/hr_policy/docs",
+  "model": "openai/gpt-oss-20b",
+  "judge_model": "qwen/qwen3.8-27b",
+  "embed_model": "nomic-embed-text",
+  "provider": "groq",
+  "started": 1795644407.8402321,
+  "stop_reason": "no applicable fix left",
+  "budget": {
+    "tokens": null,
+    "seconds": null
+  },
+  "documents": [
+    "leave_policy.pdf",
+    "remote_work_and_exit.md",
+    "travel_expense_policy.md"
+  ],
+  "skipped_files": [],
+  "retrieval_mode": "hybrid",
+  "chunks": 15,
+  "finished": 1795645887.192805,
+  "duration_s": 1479.4,
+  "tokens": 257671,
+  "llm_calls": 268,
+  "final_version": 0,
+  "final": {
+    "dev_pass_rate": 0.882,
+    "holdout_pass_rate": 0.75,
+    "overall_pass_rate": 0.84
+  }
+}

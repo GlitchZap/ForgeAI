@@ -12,3 +12,5 @@ runs/*/input_docs/
 Brief.pdf
 OceanAIJD.txt
 runs/.pytest_runs/
+groqAPI.txt
+*.log

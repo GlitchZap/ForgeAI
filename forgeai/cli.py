@@ -11,16 +11,16 @@ import json
 import sys
 from pathlib import Path
 
-from .llm import OllamaLLM
+from .llm import LLM, make_llm
 
 
-def _llm(args) -> OllamaLLM:
+def _llm(args) -> LLM:
     kw = {}
     if getattr(args, "model", None):
         kw["model"] = args.model
     if getattr(args, "judge_model", None):
         kw["judge_model"] = args.judge_model
-    return OllamaLLM(**kw)
+    return make_llm(**kw)
 
 
 def cmd_compare(args) -> int:
@@ -65,7 +65,8 @@ def cmd_doctor(args) -> int:
     print(json.dumps(h, indent=2))
     if not h.get("ok"):
         for m in (h.get("missing") or {}).values():
-            print(f"  -> run: ollama pull {m}")
+            print(f"  -> not on your Groq account: {m} (set FORGE_MODEL / FORGE_JUDGE_MODEL)" if h.get("provider") == "groq"
+                  else f"  -> run: ollama pull {m}")
     return 0 if h.get("ok") else 1
 
 

@@ -1,0 +1,17 @@
+[
+  {
+    "iteration": 1,
+    "category": "prompt_defect",
+    "target": "prompt.tool_guidance",
+    "before": "Use calculator for arithmetic on provided numbers; use current_date to compute days until deadlines or notice periods.",
+    "after": "Use the current_date tool to obtain today’s date before performing any date calculations. For arithmetic on provided numbers, use the calculator tool. Do not call any tool unless the question explicitly requires a date or numeric computation. If a question involves notice periods or deadlines, first retrieve today’s date with current_date, then use calculator for days_between or date_add as needed.",
+    "rationale": "Added explicit rule to use current_date for date-related queries, fixing failures where no tool was called. | fixed: none | newly failing: none",
+    "addressed_cases": [
+      "too-24",
+      "too-25"
+    ],
+    "score_before": 0.882,
+    "score_after": 0.882,
+    "kept": false
+  }
+]

@@ -149,10 +149,85 @@ class OllamaLLM(LLM):
         try:
             tags = {m["name"] for m in self.http.get(f"{self.host}/api/tags").json().get("models", [])}
         except httpx.HTTPError as e:
-            return {"ok": False, "error": f"Ollama not reachable at {self.host}: {e}"}
+            return {"ok": False, "error": f"Ollama not reachable at {self.host}: {e}", "provider": "ollama"}
 
         def has(m):  # bare names match ":latest"
             return m in tags or f"{m}:latest" in tags
         need = {"model": self.model, "judge_model": self.judge_model, "embed_model": self.embed_model}
         missing = {k: v for k, v in need.items() if v and not has(v)}
-        return {"ok": not missing, "missing": missing, "available": sorted(tags)}
+        return {"ok": not missing, "missing": missing, "available": sorted(tags), "provider": "ollama"}
+
+
+class GroqLLM(LLM):
+    """Groq's OpenAI-compatible API serving open-weight models. Same tracing, budget and schema-retry as Ollama.
+
+    Groq has no embedding endpoint: retrieval falls back to BM25 unless FORGE_EMBED_VIA_OLLAMA=1, which keeps
+    nomic-embed-text on a local Ollama for hybrid search. The key is read from GROQ_API_KEY and never logged."""
+
+    URL = "https://api.groq.com/openai/v1"
+
+    def __init__(self, api_key: str | None = None, **kw):
+        kw.setdefault("model", os.getenv("FORGE_MODEL", "openai/gpt-oss-20b"))
+        kw.setdefault("judge_model", os.getenv("FORGE_JUDGE_MODEL", "qwen/qwen3.8-27b"))  # different family: limits self-preference
+        via_ollama = os.getenv("FORGE_EMBED_VIA_OLLAMA") == "1" or bool(kw.get("embed_model"))  # a run built with embeddings keeps them
+        kw.setdefault("embed_model", os.getenv("FORGE_EMBED_MODEL", "nomic-embed-text") if via_ollama else None)
+        super().__init__(**kw)
+        self.key = api_key or os.getenv("GROQ_API_KEY", "")
+        self.http = httpx.Client(timeout=httpx.Timeout(120.0, connect=10.0))
+        self._embedder = OllamaLLM(embed_model=self.embed_model) if via_ollama else None
+
+    def _chat_raw(self, messages, model, schema, temperature):
+        msgs = [dict(m) for m in messages]
+        body = {"model": model, "messages": msgs, "temperature": temperature, "seed": self.seed, "max_tokens": 900}
+        if schema is not None:
+            # json_object mode needs "json" in the prompt; the schema itself is enforced by structured()'s validation
+            msgs[-1]["content"] += "\n\nRespond with a single JSON object matching this JSON schema:\n" + json.dumps(schema)
+            body["response_format"] = {"type": "json_object"}
+        if model.startswith("qwen/qwen3"):
+            body["reasoning_effort"] = "none"  # keep <think> text out of JSON answers
+        elif model.startswith("openai/gpt-oss"):
+            body["reasoning_effort"] = "low"  # short hidden reasoning: fewer tokens, faster calls
+        for attempt in range(6):
+            r = self.http.post(f"{self.URL}/chat/completions", json=body, headers={"Authorization": f"Bearer {self.key}"})
+            if r.status_code == 429 or r.status_code >= 500:  # rate limit or transient: wait as told, then retry
+                wait = float(r.headers.get("retry-after") or 2 ** attempt)
+                time.sleep(min(wait, 60))
+                continue
+            if r.status_code != 200:
+                raise LLMError(f"groq {r.status_code}: {r.text[:300]}")
+            d = r.json()
+            return d["choices"][0]["message"]["content"] or "", int(d.get("usage", {}).get("total_tokens", 0))
+        raise LLMError("groq: still rate-limited after 6 retries")
+
+    def _embed_raw(self, texts):
+        if not self._embedder:
+            raise LLMError("Groq has no embeddings; set FORGE_EMBED_VIA_OLLAMA=1 for hybrid retrieval")
+        return self._embedder._embed_raw(texts)
+
+    def health(self) -> dict:
+        if not self.key:
+            return {"ok": False, "error": "GROQ_API_KEY is not set", "provider": "groq"}
+        try:
+            r = self.http.get(f"{self.URL}/models", headers={"Authorization": f"Bearer {self.key}"})
+        except httpx.HTTPError as e:
+            return {"ok": False, "error": f"Groq not reachable: {e}", "provider": "groq"}
+        if r.status_code != 200:
+            return {"ok": False, "error": f"Groq rejected the key or request ({r.status_code})", "provider": "groq"}
+        have = {m["id"] for m in r.json().get("data", [])}
+        missing = {k: v for k, v in {"model": self.model, "judge_model": self.judge_model}.items() if v not in have}
+        out = {"ok": not missing, "missing": missing, "provider": "groq"}
+        if self._embedder:
+            eh = self._embedder.health()
+            if not eh.get("ok"):
+                out.update(ok=False, error=f"embeddings via Ollama unavailable: {eh.get('error') or eh.get('missing')}")
+        return out
+
+
+def make_llm(provider: str | None = None, **kw) -> LLM:
+    """FORGE_PROVIDER=groq|ollama (default ollama). Every entry point builds its model client through here."""
+    p = (provider or os.getenv("FORGE_PROVIDER", "ollama")).lower()
+    if p == "groq":
+        return GroqLLM(**kw)
+    if p == "ollama":
+        return OllamaLLM(**kw)
+    raise ValueError(f"unknown FORGE_PROVIDER {p!r} (use 'ollama' or 'groq')")

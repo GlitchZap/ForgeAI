@@ -1,0 +1,38 @@
+[
+  {
+    "candidate": 0,
+    "variant": "default",
+    "dev_pass_rate": 0.882,
+    "prompt_chars": 1419,
+    "tokens": 39440,
+    "seconds": 197.6,
+    "failures": [
+      "too-24",
+      "too-25"
+    ]
+  },
+  {
+    "candidate": 1,
+    "variant": "Variant style: STRICT. Make grounding and refusal rules short, explicit and absolute; answers as brief as possible.",
+    "dev_pass_rate": 0.882,
+    "prompt_chars": 1160,
+    "tokens": 35915,
+    "seconds": 250.9,
+    "failures": [
+      "too-24",
+      "too-25"
+    ]
+  },
+  {
+    "candidate": 2,
+    "variant": "Variant style: EXPLANATORY. Ask the assistant to quote the exact clause it relies on and explain it in plain words.",
+    "dev_pass_rate": 0.882,
+    "prompt_chars": 1501,
+    "tokens": 37044,
+    "seconds": 252.8,
+    "failures": [
+      "too-24",
+      "too-25"
+    ]
+  }
+]

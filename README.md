@@ -36,6 +36,15 @@ cd web; npm install; npm run build; cd ..
 
 Other models: `--model`, `--judge-model`, or env vars `FORGE_MODEL`, `FORGE_JUDGE_MODEL`, `FORGE_EMBED_MODEL`, `OLLAMA_HOST`.
 
+**Groq instead of a local GPU** (open-weight models, hosted; much faster):
+```powershell
+$env:GROQ_API_KEY = "<your key from console.groq.com>"   # set it yourself; never commit it
+$env:FORGE_PROVIDER = "groq"                             # agent openai/gpt-oss-20b, judge qwen/qwen3.8-27b (different families)
+$env:FORGE_EMBED_VIA_OLLAMA = "1"                        # optional: keep hybrid retrieval with local nomic-embed-text; without it, BM25 only
+.venv\Scripts\python -m forgeai doctor
+```
+Rate limits (HTTP 429) are retried with the server's `retry-after`. Each run records its provider in `run.json`, and the UI chat uses it.
+
 **On a 4 GB GPU** (the committed runs were made on an RTX 3050 laptop): the 7-8B models only partly fit, so use the 3B pair, which runs fully on the GPU at about 8-14 s per call:
 ```powershell
 ollama pull qwen2.5:3b; ollama pull llama3.2:3b

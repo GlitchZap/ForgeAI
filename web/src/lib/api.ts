@@ -10,6 +10,8 @@ export type RunSummary = {
   duration_s?: number
   tokens?: number
   model?: string
+  provider?: 'ollama' | 'groq'
+  archived?: boolean
   updated: number
 }
 
@@ -63,7 +65,7 @@ async function req<T>(url: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  health: () => req<{ ok: boolean; error?: string; missing?: Record<string, string> }>('/api/health'),
+  health: () => req<{ ok: boolean; error?: string; missing?: Record<string, string>; provider?: string }>('/api/health'),
   inputs: () => req<InputSet[]>('/api/inputs'),
   runs: () => req<RunSummary[]>('/api/runs'),
   start: (body: object) => req<{ id: string }>('/api/runs', {
@@ -76,6 +78,9 @@ export const api = {
   startChat: (id: string, question: string, history: object[]) => req<{ job: string }>(`/api/chat/${id}/jobs`, {
     method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ question, history }) }),
   chatJob: (job: string) => req<{ status: 'running' | 'done' | 'error'; trace?: Trace; error?: string; started: number }>(`/api/chat/jobs/${job}`),
+  archive: (id: string, archived: boolean) => req(`/api/runs/${id}/archive`, {
+    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ archived }) }),
+  remove: (id: string) => req(`/api/runs/${id}`, { method: 'DELETE' }),
   chat: (id: string, question: string, history: object[], signal?: AbortSignal) => req<Trace>(`/api/chat/${id}`, { signal,
     method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ question, history }) }),
 }

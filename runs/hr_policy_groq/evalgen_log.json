@@ -1,0 +1,18 @@
+[
+  {
+    "rejected": "If a shore staff member resigns after using all their current year's leave but has 10 unused days carried forward from the previous year, are they eligible for encashment of those carried-forward days, and what is the maximum payout limit?",
+    "why": "multi-doc case lacks a verified fact from each document"
+  },
+  {
+    "rejected": "Can you look up the specific tax deduction amounts for my last pay period based on my employee ID?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "What are the company policies regarding cryptocurrency investments or stock trading during work hours?",
+    "why": "labelled must-refuse but names a must-answer topic"
+  },
+  {
+    "rejected": "If my annual leave balance is 20 days and I take 5 days off in July, how many days do I have remaining for the rest of the year?",
+    "why": "does not actually need calculator"
+  }
+]

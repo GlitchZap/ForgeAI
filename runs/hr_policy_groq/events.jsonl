@@ -1,0 +1,772 @@
+{"ts": 1795644407.8402321, "stage": "ingest", "status": "start", "name": "HR policy (Groq)"}
+{"ts": 1795644411.9982777, "stage": "ingest", "status": "done", "documents": 3, "chunks": 15, "mode": "hybrid", "skipped": []}
+{"ts": 1795644411.9995022, "stage": "intake", "status": "start"}
+{"ts": 1795644412.0050614, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644412.5996296, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "openai/gpt-oss-20b", "tokens": 788, "latency_s": 0.59}
+{"ts": 1795644412.6026337, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644413.0510259, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "openai/gpt-oss-20b", "tokens": 654, "latency_s": 0.45}
+{"ts": 1795644413.063015, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644413.9082718, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "openai/gpt-oss-20b", "tokens": 1681, "latency_s": 0.85}
+{"ts": 1795644413.9508297, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644414.2423606, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen/qwen3.8-27b", "tokens": 1016, "latency_s": 0.29}
+{"ts": 1795644414.3445313, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644414.6425571, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen/qwen3.8-27b", "tokens": 971, "latency_s": 0.3}
+{"ts": 1795644414.6833882, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644414.9761386, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen/qwen3.8-27b", "tokens": 836, "latency_s": 0.29}
+{"ts": 1795644415.0273504, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644415.318365, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen/qwen3.8-27b", "tokens": 968, "latency_s": 0.29}
+{"ts": 1795644415.3436615, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644415.615254, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen/qwen3.8-27b", "tokens": 1081, "latency_s": 0.27}
+{"ts": 1795644415.6182492, "stage": "intake", "status": "done", "topics": 6, "flags": ["PARTIAL COVERAGE: 'Leave Balances' is only partly covered; answers may be incomplete.", "PARTIAL COVERAGE: 'Work‑From‑Home Rules' is only partly covered; answers may be incomplete.", "PARTIAL COVERAGE: 'Travel & Expense Claims' is only partly covered; answers may be incomplete.", "NOT GROUNDABLE: the brief asks for 'Tax Deduction Overview' but the documents do not cover it. The agent will refuse these questions instead of guessing.", "PARTIAL COVERAGE: 'Probation & Separation Policies' is only partly covered; answers may be incomplete."], "unsupported": ["Tax Deduction Overview"]}
+{"ts": 1795644415.619252, "stage": "generate", "status": "start"}
+{"ts": 1795644415.6242511, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644416.3089585, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "openai/gpt-oss-20b", "tokens": 869, "latency_s": 0.68}
+{"ts": 1795644416.3099635, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644416.6604393, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen/qwen3.8-27b", "tokens": 904, "latency_s": 0.35}
+{"ts": 1795644416.663434, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644417.1054933, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "openai/gpt-oss-20b", "tokens": 874, "latency_s": 0.44}
+{"ts": 1795644417.106485, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644419.3917947, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen/qwen3.8-27b", "tokens": 867, "latency_s": 2.29}
+{"ts": 1795644419.3967867, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644419.8903756, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "openai/gpt-oss-20b", "tokens": 866, "latency_s": 0.49}
+{"ts": 1795644419.8913772, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644420.299381, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen/qwen3.8-27b", "tokens": 861, "latency_s": 0.41}
+{"ts": 1795644420.303386, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644420.7907746, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "openai/gpt-oss-20b", "tokens": 1391, "latency_s": 0.49}
+{"ts": 1795644420.7937737, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644421.4591427, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "openai/gpt-oss-20b", "tokens": 1369, "latency_s": 0.67}
+{"ts": 1795644421.4611433, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644427.2093399, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "openai/gpt-oss-20b", "tokens": 1442, "latency_s": 5.75}
+{"ts": 1795644427.2133508, "stage": "generate", "status": "done", "tools": ["calculator", "current_date"], "candidates": 3}
+{"ts": 1795644427.2133508, "stage": "evalgen", "status": "start"}
+{"ts": 1795644427.2163508, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644427.7586448, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 550, "latency_s": 0.54}
+{"ts": 1795644427.761642, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644428.21385, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 733, "latency_s": 0.45}
+{"ts": 1795644428.2180572, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644428.601367, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 531, "latency_s": 0.38}
+{"ts": 1795644428.6373916, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644431.1130767, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 642, "latency_s": 2.48}
+{"ts": 1795644431.1170743, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644434.5269814, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 585, "latency_s": 3.41}
+{"ts": 1795644434.5289946, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644439.0094714, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 607, "latency_s": 4.48}
+{"ts": 1795644439.012473, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644448.509718, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 679, "latency_s": 9.5}
+{"ts": 1795644448.5147233, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644452.9329953, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 642, "latency_s": 4.42}
+{"ts": 1795644452.9379919, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644461.4308424, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 859, "latency_s": 8.49}
+{"ts": 1795644461.432842, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644468.826404, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 680, "latency_s": 7.39}
+{"ts": 1795644468.8304033, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644475.1931887, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 517, "latency_s": 6.36}
+{"ts": 1795644475.1951897, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644481.505227, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 412, "latency_s": 6.31}
+{"ts": 1795644481.5072262, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644485.8273544, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 439, "latency_s": 4.32}
+{"ts": 1795644485.829349, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644491.3101044, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 432, "latency_s": 5.48}
+{"ts": 1795644491.3130991, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644500.6775925, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 257, "latency_s": 9.36}
+{"ts": 1795644500.6785998, "stage": "llm", "status": "start", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644506.0278301, "stage": "llm", "status": "done", "llm_stage": "evalgen", "model": "qwen/qwen3.8-27b", "tokens": 273, "latency_s": 5.35}
+{"ts": 1795644506.0608337, "stage": "evalgen", "status": "done", "cases": 25, "kinds": {"answerable": 12, "multi_doc": 3, "ambiguous": 3, "out_of_scope": 4, "tool": 3}}
+{"ts": 1795644506.0608337, "stage": "tournament", "status": "start", "candidates": 3}
+{"ts": 1795644506.0608337, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 0, "total": 17, "case": "ans-01", "question": "How many days of paid sick leave do we get each year, and do unused days roll over?"}
+{"ts": 1795644508.17996, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644508.59345, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 918, "latency_s": 0.41}
+{"ts": 1795644508.5954378, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644509.0729618, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1189, "latency_s": 0.48}
+{"ts": 1795644509.0759602, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 1, "total": 17, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644509.0759602, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 1, "total": 17, "case": "ans-02", "question": "Hey, if I'm out sick for three days in a row, do I need to bring a doctor's note?"}
+{"ts": 1795644509.136485, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644509.6999881, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 860, "latency_s": 0.56}
+{"ts": 1795644509.7019887, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644510.181988, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1149, "latency_s": 0.48}
+{"ts": 1795644510.1849892, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644512.4429903, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 862, "latency_s": 2.26}
+{"ts": 1795644512.4479885, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644513.7243156, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 862, "latency_s": 1.28}
+{"ts": 1795644513.7263103, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 2, "total": 17, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644513.7263103, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 2, "total": 17, "case": "ans-03", "question": "How many days per week can I work from home once I finish my probation, and what are the specific availability hours on Teams?"}
+{"ts": 1795644513.7976458, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644514.1991413, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 969, "latency_s": 0.4}
+{"ts": 1795644514.201142, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644514.6887493, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1273, "latency_s": 0.49}
+{"ts": 1795644514.6907516, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 3, "total": 17, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644514.6907516, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 3, "total": 17, "case": "ans-05", "question": "What is the standard rail travel class for our staff?"}
+{"ts": 1795644514.8066266, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644515.2000005, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 676, "latency_s": 0.39}
+{"ts": 1795644515.2020018, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644515.6889665, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 959, "latency_s": 0.49}
+{"ts": 1795644515.6899445, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 4, "total": 17, "case": "ans-05", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644515.6909525, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 4, "total": 17, "case": "ans-07", "question": "How many days of annual leave do we get per year and how is it accrued?"}
+{"ts": 1795644515.750577, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644517.201979, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 914, "latency_s": 1.45}
+{"ts": 1795644517.2039826, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644526.7641273, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1196, "latency_s": 9.56}
+{"ts": 1795644526.765131, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 5, "total": 17, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644526.765131, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 5, "total": 17, "case": "ans-09", "question": "What is the required notice period for a Senior Manager leaving the company?"}
+{"ts": 1795644528.8923728, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644532.5729306, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 749, "latency_s": 3.68}
+{"ts": 1795644532.5749247, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644540.124493, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1029, "latency_s": 7.55}
+{"ts": 1795644540.1254907, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 6, "total": 17, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644540.1254907, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 6, "total": 17, "case": "ans-10", "question": "Hey, if I don't serve my full notice period and we didn't agree to shorten it, what happens to my final settlement?"}
+{"ts": 1795644542.232165, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644544.7655149, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 842, "latency_s": 2.53}
+{"ts": 1795644544.76752, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644552.4455924, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1129, "latency_s": 7.68}
+{"ts": 1795644552.447598, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 7, "total": 17, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644552.4485939, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 7, "total": 17, "case": "ans-11", "question": "I just got back from a site visit and need to file my expenses. What is the deadline for submitting my claim through the finance portal?"}
+{"ts": 1795644554.5468621, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644558.8488896, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 814, "latency_s": 4.3}
+{"ts": 1795644558.8508801, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644567.449984, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1093, "latency_s": 8.6}
+{"ts": 1795644567.452999, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644567.6400855, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 794, "latency_s": 0.19}
+{"ts": 1795644567.6410663, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644567.837426, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 799, "latency_s": 0.2}
+{"ts": 1795644567.8384252, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 8, "total": 17, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644567.8394232, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 8, "total": 17, "case": "mul-14", "question": "If a permanent shore-based employee in Mumbai submits an expense claim 45 days after returning from a trip, will it be accepted, and who must approve it if the total is INR 30,000?"}
+{"ts": 1795644569.9476912, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644573.5677795, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 906, "latency_s": 3.62}
+{"ts": 1795644573.5707781, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644582.2255297, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1229, "latency_s": 8.65}
+{"ts": 1795644582.2285295, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644582.4451249, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 890, "latency_s": 0.22}
+{"ts": 1795644582.4461222, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644582.6647267, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 890, "latency_s": 0.22}
+{"ts": 1795644582.6657145, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 9, "total": 17, "case": "mul-14", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795644582.6657145, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 9, "total": 17, "case": "mul-15", "question": "If a Shore staff member works on a public holiday and takes the compensatory day off 45 days later, is this within the allowed timeframe, and what is the deadline for submitting the expense claim for "}
+{"ts": 1795644584.7739527, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644590.2089124, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 897, "latency_s": 5.44}
+{"ts": 1795644590.2109306, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644598.7771277, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1240, "latency_s": 8.57}
+{"ts": 1795644598.780134, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644598.9883177, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 919, "latency_s": 0.21}
+{"ts": 1795644598.9903145, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644599.199316, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "qwen/qwen3.8-27b", "tokens": 919, "latency_s": 0.21}
+{"ts": 1795644599.2013292, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 10, "total": 17, "case": "mul-15", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795644599.2023256, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 10, "total": 17, "case": "amb-16", "question": "hey, if a gal is expecting her 3rd one, how long does she get off? and does she gotta send a letter to HR before the baby pops?"}
+{"ts": 1795644601.3032336, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644605.8398468, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 850, "latency_s": 4.54}
+{"ts": 1795644605.8418536, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644614.2678337, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1154, "latency_s": 8.43}
+{"ts": 1795644614.2698357, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 11, "total": 17, "case": "amb-16", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795644614.270834, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 11, "total": 17, "case": "amb-17", "question": "how long is the trial run for new perm staff and can it stretch?"}
+{"ts": 1795644616.3576458, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644619.8324404, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 794, "latency_s": 3.47}
+{"ts": 1795644619.8334403, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644628.474573, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1090, "latency_s": 8.64}
+{"ts": 1795644628.4755752, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 12, "total": 17, "case": "amb-17", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795644628.4765737, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 12, "total": 17, "case": "out-19", "question": "What is the exact percentage of tax withheld for a shore staff member living in New York State?"}
+{"ts": 1795644630.5811424, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644635.1192372, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 824, "latency_s": 4.54}
+{"ts": 1795644635.121233, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644642.7937055, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1077, "latency_s": 7.67}
+{"ts": 1795644642.795711, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 13, "total": 17, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795644642.795711, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 13, "total": 17, "case": "out-21", "question": "How do I calculate the exact net pay after all state and local tax deductions for a $50,000 annual salary?"}
+{"ts": 1795644644.9025261, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644647.4385767, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 959, "latency_s": 2.54}
+{"ts": 1795644647.44056, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644657.0517683, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1209, "latency_s": 9.61}
+{"ts": 1795644657.053774, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 14, "total": 17, "case": "out-21", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795644657.053774, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 14, "total": 17, "case": "out-22", "question": "Can you help me draft a cover letter for a job application at a different company?"}
+{"ts": 1795644659.1605234, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644662.682267, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 877, "latency_s": 3.52}
+{"ts": 1795644662.684283, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644671.2712207, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1173, "latency_s": 8.59}
+{"ts": 1795644671.2722197, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 15, "total": 17, "case": "out-22", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795644671.2722197, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 15, "total": 17, "case": "too-24", "question": "I submitted my resignation notice 30 days ago, but I'm not sure if my final working day has passed yet. How many days are left in my notice period today?"}
+{"ts": 1795644673.3662398, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644674.966013, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644685.3724282, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1159, "latency_s": 10.41}
+{"ts": 1795644685.373428, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 16, "total": 17, "case": "too-24", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795644685.3744311, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate0", "done": 16, "total": 17, "case": "too-25", "question": "The HR policy states I must give 2 weeks' notice before leaving. If I want to leave on the 15th of next month, what is the latest date I can submit my notice to meet the requirement?"}
+{"ts": 1795644687.4749284, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644692.8824062, "stage": "llm", "status": "start", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644703.630624, "stage": "llm", "status": "done", "llm_stage": "eval_candidate0", "model": "openai/gpt-oss-20b", "tokens": 1308, "latency_s": 10.75}
+{"ts": 1795644703.6326244, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate0", "done": 17, "total": 17, "case": "too-25", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795644703.6346238, "stage": "tournament", "status": "progress", "candidate": 0, "dev": 0.882}
+{"ts": 1795644703.6346238, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 0, "total": 17, "case": "ans-01", "question": "How many days of paid sick leave do we get each year, and do unused days roll over?"}
+{"ts": 1795644703.636626, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644710.8854253, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 918, "latency_s": 7.25}
+{"ts": 1795644710.8874242, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644720.7951808, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1152, "latency_s": 9.91}
+{"ts": 1795644720.7981834, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644721.0191827, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b", "tokens": 909, "latency_s": 0.22}
+{"ts": 1795644721.0211878, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644721.228189, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b", "tokens": 909, "latency_s": 0.21}
+{"ts": 1795644721.228189, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 1, "total": 17, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644721.2291853, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 1, "total": 17, "case": "ans-02", "question": "Hey, if I'm out sick for three days in a row, do I need to bring a doctor's note?"}
+{"ts": 1795644721.2301884, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644726.712981, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 860, "latency_s": 5.48}
+{"ts": 1795644726.7149813, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644734.3568258, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1107, "latency_s": 7.64}
+{"ts": 1795644734.3618212, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644734.5636678, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b", "tokens": 863, "latency_s": 0.2}
+{"ts": 1795644734.5656676, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644734.768665, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b", "tokens": 863, "latency_s": 0.2}
+{"ts": 1795644734.768665, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 2, "total": 17, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644734.7696643, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 2, "total": 17, "case": "ans-03", "question": "How many days per week can I work from home once I finish my probation, and what are the specific availability hours on Teams?"}
+{"ts": 1795644734.7706666, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644741.3626053, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 969, "latency_s": 6.59}
+{"ts": 1795644741.3646073, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644749.9735246, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1230, "latency_s": 8.61}
+{"ts": 1795644749.974526, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 3, "total": 17, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644749.9755268, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 3, "total": 17, "case": "ans-05", "question": "What is the standard rail travel class for our staff?"}
+{"ts": 1795644749.9765236, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644756.20431, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 676, "latency_s": 6.23}
+{"ts": 1795644756.2063198, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644763.819002, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 920, "latency_s": 7.61}
+{"ts": 1795644763.8210058, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 4, "total": 17, "case": "ans-05", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644763.822018, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 4, "total": 17, "case": "ans-07", "question": "How many days of annual leave do we get per year and how is it accrued?"}
+{"ts": 1795644763.8250365, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644769.0629773, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 914, "latency_s": 5.24}
+{"ts": 1795644769.0639768, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644777.3563733, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1152, "latency_s": 8.29}
+{"ts": 1795644777.3573709, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 5, "total": 17, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644777.3583722, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 5, "total": 17, "case": "ans-09", "question": "What is the required notice period for a Senior Manager leaving the company?"}
+{"ts": 1795644777.3593783, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644783.8101213, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 749, "latency_s": 6.45}
+{"ts": 1795644783.8121197, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644790.4037125, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 986, "latency_s": 6.59}
+{"ts": 1795644790.4057112, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 6, "total": 17, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644790.4057112, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 6, "total": 17, "case": "ans-10", "question": "Hey, if I don't serve my full notice period and we didn't agree to shorten it, what happens to my final settlement?"}
+{"ts": 1795644790.4077098, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644798.0005136, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 842, "latency_s": 7.59}
+{"ts": 1795644798.0025153, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644804.6408088, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1091, "latency_s": 6.64}
+{"ts": 1795644804.6428115, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 7, "total": 17, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644804.6438072, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 7, "total": 17, "case": "ans-11", "question": "I just got back from a site visit and need to file my expenses. What is the deadline for submitting my claim through the finance portal?"}
+{"ts": 1795644804.6448088, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644813.1987135, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 814, "latency_s": 8.55}
+{"ts": 1795644813.2017162, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644820.4586496, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1048, "latency_s": 7.26}
+{"ts": 1795644820.4596536, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 8, "total": 17, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644820.4606538, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 8, "total": 17, "case": "mul-14", "question": "If a permanent shore-based employee in Mumbai submits an expense claim 45 days after returning from a trip, will it be accepted, and who must approve it if the total is INR 30,000?"}
+{"ts": 1795644820.4616525, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644823.7749798, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 906, "latency_s": 3.31}
+{"ts": 1795644823.7769842, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644832.37914, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1112, "latency_s": 8.6}
+{"ts": 1795644832.381143, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644832.60967, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b", "tokens": 890, "latency_s": 0.23}
+{"ts": 1795644832.61067, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795644832.8216743, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "qwen/qwen3.8-27b", "tokens": 890, "latency_s": 0.21}
+{"ts": 1795644832.822674, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 9, "total": 17, "case": "mul-14", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795644832.823673, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 9, "total": 17, "case": "mul-15", "question": "If a Shore staff member works on a public holiday and takes the compensatory day off 45 days later, is this within the allowed timeframe, and what is the deadline for submitting the expense claim for "}
+{"ts": 1795644832.8246744, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644840.3285801, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 911, "latency_s": 7.5}
+{"ts": 1795644840.3305814, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644848.1180508, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1165, "latency_s": 7.79}
+{"ts": 1795644848.120049, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 10, "total": 17, "case": "mul-15", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795644848.120049, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 10, "total": 17, "case": "amb-16", "question": "hey, if a gal is expecting her 3rd one, how long does she get off? and does she gotta send a letter to HR before the baby pops?"}
+{"ts": 1795644848.1220508, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644854.0167072, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 850, "latency_s": 5.9}
+{"ts": 1795644854.018704, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644860.3541808, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1116, "latency_s": 6.34}
+{"ts": 1795644860.3561816, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 11, "total": 17, "case": "amb-16", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795644860.3561816, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 11, "total": 17, "case": "amb-17", "question": "how long is the trial run for new perm staff and can it stretch?"}
+{"ts": 1795644860.3581855, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644867.8202946, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 794, "latency_s": 7.46}
+{"ts": 1795644867.8232944, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644875.226741, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1037, "latency_s": 7.4}
+{"ts": 1795644875.228734, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 12, "total": 17, "case": "amb-17", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795644875.228734, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 12, "total": 17, "case": "out-19", "question": "What is the exact percentage of tax withheld for a shore staff member living in New York State?"}
+{"ts": 1795644875.2307355, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644880.452091, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 824, "latency_s": 5.22}
+{"ts": 1795644880.4540904, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644887.993759, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1052, "latency_s": 7.54}
+{"ts": 1795644887.994761, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 13, "total": 17, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795644887.994761, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 13, "total": 17, "case": "out-21", "question": "How do I calculate the exact net pay after all state and local tax deductions for a $50,000 annual salary?"}
+{"ts": 1795644887.9957626, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644896.588803, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 959, "latency_s": 8.59}
+{"ts": 1795644896.5918021, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644906.2815, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1181, "latency_s": 9.69}
+{"ts": 1795644906.2835026, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 14, "total": 17, "case": "out-21", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795644906.2835026, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 14, "total": 17, "case": "out-22", "question": "Can you help me draft a cover letter for a job application at a different company?"}
+{"ts": 1795644906.2854998, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644911.8235703, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 877, "latency_s": 5.54}
+{"ts": 1795644911.8255634, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644920.2581117, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1107, "latency_s": 8.43}
+{"ts": 1795644920.259119, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 15, "total": 17, "case": "out-22", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795644920.2601166, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 15, "total": 17, "case": "too-24", "question": "I submitted my resignation notice 30 days ago, but I'm not sure if my final working day has passed yet. How many days are left in my notice period today?"}
+{"ts": 1795644920.2611017, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644927.7077143, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644937.3193293, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 16, "total": 17, "case": "too-24", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795644937.320329, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate1", "done": 16, "total": 17, "case": "too-25", "question": "The HR policy states I must give 2 weeks' notice before leaving. If I want to leave on the 15th of next month, what is the latest date I can submit my notice to meet the requirement?"}
+{"ts": 1795644937.3223317, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644943.9093375, "stage": "llm", "status": "start", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644954.5368993, "stage": "llm", "status": "done", "llm_stage": "eval_candidate1", "model": "openai/gpt-oss-20b", "tokens": 1272, "latency_s": 10.63}
+{"ts": 1795644954.5384116, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate1", "done": 17, "total": 17, "case": "too-25", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795644954.5404258, "stage": "tournament", "status": "progress", "candidate": 1, "dev": 0.882}
+{"ts": 1795644954.5414283, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 0, "total": 17, "case": "ans-01", "question": "How many days of paid sick leave do we get each year, and do unused days roll over?"}
+{"ts": 1795644954.5434282, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644962.0298762, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 918, "latency_s": 7.49}
+{"ts": 1795644962.0338778, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644970.7179987, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1216, "latency_s": 8.68}
+{"ts": 1795644970.721002, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 1, "total": 17, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644970.721002, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 1, "total": 17, "case": "ans-02", "question": "Hey, if I'm out sick for three days in a row, do I need to bring a doctor's note?"}
+{"ts": 1795644970.723002, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644976.951879, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 860, "latency_s": 6.23}
+{"ts": 1795644976.953884, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644986.5928564, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1171, "latency_s": 9.64}
+{"ts": 1795644986.5948422, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 2, "total": 17, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795644986.5948422, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 2, "total": 17, "case": "ans-03", "question": "How many days per week can I work from home once I finish my probation, and what are the specific availability hours on Teams?"}
+{"ts": 1795644986.5968487, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795644994.0438688, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 969, "latency_s": 7.45}
+{"ts": 1795644994.0468724, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645003.7331996, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1310, "latency_s": 9.69}
+{"ts": 1795645003.7352023, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 3, "total": 17, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645003.736203, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 3, "total": 17, "case": "ans-05", "question": "What is the standard rail travel class for our staff?"}
+{"ts": 1795645003.7372015, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645009.3018277, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 676, "latency_s": 5.56}
+{"ts": 1795645009.3038287, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645015.92628, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 982, "latency_s": 6.62}
+{"ts": 1795645015.9282935, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 4, "total": 17, "case": "ans-05", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645015.9282935, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 4, "total": 17, "case": "ans-07", "question": "How many days of annual leave do we get per year and how is it accrued?"}
+{"ts": 1795645015.9292974, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645023.6762066, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 914, "latency_s": 7.75}
+{"ts": 1795645023.6782084, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645031.3169143, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1225, "latency_s": 7.64}
+{"ts": 1795645031.3199062, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 5, "total": 17, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645031.3199062, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 5, "total": 17, "case": "ans-09", "question": "What is the required notice period for a Senior Manager leaving the company?"}
+{"ts": 1795645031.3209178, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645037.765566, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 749, "latency_s": 6.44}
+{"ts": 1795645037.7665505, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645045.3512902, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1050, "latency_s": 7.58}
+{"ts": 1795645045.352282, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 6, "total": 17, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645045.35329, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 6, "total": 17, "case": "ans-10", "question": "Hey, if I don't serve my full notice period and we didn't agree to shorten it, what happens to my final settlement?"}
+{"ts": 1795645045.354285, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645051.937463, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 842, "latency_s": 6.58}
+{"ts": 1795645051.9394698, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645060.548342, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1186, "latency_s": 8.61}
+{"ts": 1795645060.5513408, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645060.7389057, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b", "tokens": 846, "latency_s": 0.19}
+{"ts": 1795645060.7399075, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645060.9509254, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b", "tokens": 846, "latency_s": 0.21}
+{"ts": 1795645060.9519236, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 7, "total": 17, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645060.9529157, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 7, "total": 17, "case": "ans-11", "question": "I just got back from a site visit and need to file my expenses. What is the deadline for submitting my claim through the finance portal?"}
+{"ts": 1795645060.9539087, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645065.4879904, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 814, "latency_s": 4.53}
+{"ts": 1795645065.4909968, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645075.0879912, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1117, "latency_s": 9.6}
+{"ts": 1795645075.088991, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 8, "total": 17, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645075.088991, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 8, "total": 17, "case": "mul-14", "question": "If a permanent shore-based employee in Mumbai submits an expense claim 45 days after returning from a trip, will it be accepted, and who must approve it if the total is INR 30,000?"}
+{"ts": 1795645075.0909884, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645081.755016, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 906, "latency_s": 6.66}
+{"ts": 1795645081.7570226, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645090.5313942, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1184, "latency_s": 8.77}
+{"ts": 1795645090.5333936, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 9, "total": 17, "case": "mul-14", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795645090.5333936, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 9, "total": 17, "case": "mul-15", "question": "If a Shore staff member works on a public holiday and takes the compensatory day off 45 days later, is this within the allowed timeframe, and what is the deadline for submitting the expense claim for "}
+{"ts": 1795645090.5354018, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645095.8812075, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 897, "latency_s": 5.35}
+{"ts": 1795645095.8822098, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645106.5452585, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1280, "latency_s": 10.66}
+{"ts": 1795645106.549782, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645106.8657951, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b", "tokens": 930, "latency_s": 0.32}
+{"ts": 1795645106.866793, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645107.1010702, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b", "tokens": 930, "latency_s": 0.23}
+{"ts": 1795645107.102069, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 10, "total": 17, "case": "mul-15", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795645107.103067, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 10, "total": 17, "case": "amb-16", "question": "hey, if a gal is expecting her 3rd one, how long does she get off? and does she gotta send a letter to HR before the baby pops?"}
+{"ts": 1795645107.1050663, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645112.5391583, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 850, "latency_s": 5.43}
+{"ts": 1795645112.5421445, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645122.1783319, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1179, "latency_s": 9.64}
+{"ts": 1795645122.1813395, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645122.3822324, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b", "tokens": 859, "latency_s": 0.2}
+{"ts": 1795645122.384237, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645122.6242876, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "qwen/qwen3.8-27b", "tokens": 859, "latency_s": 0.24}
+{"ts": 1795645122.625287, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 11, "total": 17, "case": "amb-16", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795645122.625287, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 11, "total": 17, "case": "amb-17", "question": "how long is the trial run for new perm staff and can it stretch?"}
+{"ts": 1795645122.627297, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645126.9726434, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 794, "latency_s": 4.35}
+{"ts": 1795645126.974155, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645136.6292324, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1089, "latency_s": 9.65}
+{"ts": 1795645136.6322215, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 12, "total": 17, "case": "amb-17", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795645136.6322215, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 12, "total": 17, "case": "out-19", "question": "What is the exact percentage of tax withheld for a shore staff member living in New York State?"}
+{"ts": 1795645136.6332195, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645140.815395, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 824, "latency_s": 4.18}
+{"ts": 1795645140.817395, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645143.457893, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1133, "latency_s": 2.64}
+{"ts": 1795645143.4588928, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 13, "total": 17, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645143.4598973, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 13, "total": 17, "case": "out-21", "question": "How do I calculate the exact net pay after all state and local tax deductions for a $50,000 annual salary?"}
+{"ts": 1795645143.460897, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645149.8146868, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 959, "latency_s": 6.35}
+{"ts": 1795645149.8166995, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645158.2284026, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1254, "latency_s": 8.41}
+{"ts": 1795645158.2304075, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 14, "total": 17, "case": "out-21", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645158.2304075, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 14, "total": 17, "case": "out-22", "question": "Can you help me draft a cover letter for a job application at a different company?"}
+{"ts": 1795645158.2324042, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645166.775824, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 877, "latency_s": 8.54}
+{"ts": 1795645166.7798345, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645175.3834445, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1189, "latency_s": 8.6}
+{"ts": 1795645175.3844194, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 15, "total": 17, "case": "out-22", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645175.3844194, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 15, "total": 17, "case": "too-24", "question": "I submitted my resignation notice 30 days ago, but I'm not sure if my final working day has passed yet. How many days are left in my notice period today?"}
+{"ts": 1795645175.386431, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645179.9039044, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645188.3970287, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 16, "total": 17, "case": "too-24", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795645188.398017, "stage": "evaluate", "status": "case", "iteration": 0, "label": "candidate2", "done": 16, "total": 17, "case": "too-25", "question": "The HR policy states I must give 2 weeks' notice before leaving. If I want to leave on the 15th of next month, what is the latest date I can submit my notice to meet the requirement?"}
+{"ts": 1795645188.399018, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645196.7162707, "stage": "llm", "status": "start", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645207.3280568, "stage": "llm", "status": "done", "llm_stage": "eval_candidate2", "model": "openai/gpt-oss-20b", "tokens": 1360, "latency_s": 10.61}
+{"ts": 1795645207.3290558, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "candidate2", "done": 17, "total": 17, "case": "too-25", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795645207.3300636, "stage": "tournament", "status": "progress", "candidate": 2, "dev": 0.882}
+{"ts": 1795645207.3320618, "stage": "tournament", "status": "done", "winner": 1, "dev": 0.882}
+{"ts": 1795645207.3340616, "stage": "iteration", "status": "start", "iteration": 0}
+{"ts": 1795645207.3340616, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 0, "total": 25, "case": "ans-01", "question": "How many days of paid sick leave do we get each year, and do unused days roll over?"}
+{"ts": 1795645207.3350601, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645211.8877873, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 918, "latency_s": 4.55}
+{"ts": 1795645211.889788, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645221.2030573, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1152, "latency_s": 9.31}
+{"ts": 1795645221.2040586, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 1, "total": 25, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645221.2050586, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 1, "total": 25, "case": "ans-02", "question": "Hey, if I'm out sick for three days in a row, do I need to bring a doctor's note?"}
+{"ts": 1795645221.2070608, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645226.7449057, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 860, "latency_s": 5.54}
+{"ts": 1795645226.7479115, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645234.0613716, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1107, "latency_s": 7.31}
+{"ts": 1795645234.063358, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 2, "total": 25, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645234.063358, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 2, "total": 25, "case": "ans-03", "question": "How many days per week can I work from home once I finish my probation, and what are the specific availability hours on Teams?"}
+{"ts": 1795645234.0653577, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645239.0963755, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 969, "latency_s": 5.03}
+{"ts": 1795645239.0973668, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645248.7010255, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1230, "latency_s": 9.6}
+{"ts": 1795645248.702027, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 3, "total": 25, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645248.703006, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 3, "total": 25, "case": "ans-04", "question": "Hey, I'm planning to work from a client site in Singapore for a few weeks. Is that allowed, and if so, what's the limit?"}
+{"ts": 1795645253.5595443, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645255.7975602, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 905, "latency_s": 2.24}
+{"ts": 1795645255.799535, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645264.1602814, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1170, "latency_s": 8.36}
+{"ts": 1795645264.162304, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 4, "total": 25, "case": "ans-04", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645264.1633346, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 4, "total": 25, "case": "ans-05", "question": "What is the standard rail travel class for our staff?"}
+{"ts": 1795645264.1652932, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645267.4969296, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 679, "latency_s": 3.33}
+{"ts": 1795645267.4989147, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645274.9510124, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 920, "latency_s": 7.45}
+{"ts": 1795645274.9529939, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 5, "total": 25, "case": "ans-05", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645274.9529939, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 5, "total": 25, "case": "ans-06", "question": "I'm a General Manager taking a flight that's 7 hours long. Can I book premium economy?"}
+{"ts": 1795645277.1004417, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645280.64201, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 823, "latency_s": 3.54}
+{"ts": 1795645280.6440208, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645288.3611882, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1058, "latency_s": 7.72}
+{"ts": 1795645288.364188, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645288.5631857, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 798, "latency_s": 0.2}
+{"ts": 1795645288.5661845, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645288.7627342, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 798, "latency_s": 0.2}
+{"ts": 1795645288.7637148, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 6, "total": 25, "case": "ans-06", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645288.7647114, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 6, "total": 25, "case": "ans-07", "question": "How many days of annual leave do we get per year and how is it accrued?"}
+{"ts": 1795645288.7667165, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645295.39736, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 914, "latency_s": 6.63}
+{"ts": 1795645295.3993478, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645303.6350746, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1152, "latency_s": 8.24}
+{"ts": 1795645303.6370752, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 7, "total": 25, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645303.6370752, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 7, "total": 25, "case": "ans-08", "question": "I'm planning to take a week off in August. What are the rules for applying for leave that long?"}
+{"ts": 1795645305.7500148, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645306.2279975, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 877, "latency_s": 0.48}
+{"ts": 1795645306.2299917, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645310.5276704, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1113, "latency_s": 4.3}
+{"ts": 1795645310.529673, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 8, "total": 25, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645310.5306728, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 8, "total": 25, "case": "ans-09", "question": "What is the required notice period for a Senior Manager leaving the company?"}
+{"ts": 1795645310.5316715, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645314.8472292, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 749, "latency_s": 4.31}
+{"ts": 1795645314.8492284, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645322.4700613, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 986, "latency_s": 7.62}
+{"ts": 1795645322.4710715, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 9, "total": 25, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645322.4720657, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 9, "total": 25, "case": "ans-10", "question": "Hey, if I don't serve my full notice period and we didn't agree to shorten it, what happens to my final settlement?"}
+{"ts": 1795645322.4740653, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645327.0140014, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 842, "latency_s": 4.54}
+{"ts": 1795645327.0159762, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645334.3190167, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1091, "latency_s": 7.3}
+{"ts": 1795645334.320021, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 10, "total": 25, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645334.3210247, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 10, "total": 25, "case": "ans-11", "question": "I just got back from a site visit and need to file my expenses. What is the deadline for submitting my claim through the finance portal?"}
+{"ts": 1795645334.3220196, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645339.7669616, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 814, "latency_s": 5.44}
+{"ts": 1795645339.7689707, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645347.3878825, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1048, "latency_s": 7.62}
+{"ts": 1795645347.3888838, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 11, "total": 25, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645347.3888838, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 11, "total": 25, "case": "ans-12", "question": "Hey, I have a big claim for INR 30,000. Who needs to sign off on this before I get paid?"}
+{"ts": 1795645349.493536, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645353.9511957, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 889, "latency_s": 4.46}
+{"ts": 1795645353.9531982, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645362.429046, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1145, "latency_s": 8.48}
+{"ts": 1795645362.4320238, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 12, "total": 25, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645362.4320238, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 12, "total": 25, "case": "mul-13", "question": "If a Shore staff member takes parental leave and is assigned to stay on board a vessel during that period, how does the daily allowance change compared to the standard domestic rate?"}
+{"ts": 1795645364.5462298, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645368.1012661, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 990, "latency_s": 3.56}
+{"ts": 1795645368.1032674, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645376.699664, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1258, "latency_s": 8.6}
+{"ts": 1795645376.7026665, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645376.9186637, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 1011, "latency_s": 0.22}
+{"ts": 1795645376.9206681, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645377.1402702, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 1011, "latency_s": 0.22}
+{"ts": 1795645377.1422708, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 13, "total": 25, "case": "mul-13", "passed": false, "kind": "multi_doc", "split": "holdout", "failure": "hallucination"}
+{"ts": 1795645377.1422708, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 13, "total": 25, "case": "mul-14", "question": "If a permanent shore-based employee in Mumbai submits an expense claim 45 days after returning from a trip, will it be accepted, and who must approve it if the total is INR 30,000?"}
+{"ts": 1795645377.1442764, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645383.7832668, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 906, "latency_s": 6.64}
+{"ts": 1795645383.7852788, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645392.4020638, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1113, "latency_s": 8.62}
+{"ts": 1795645392.407055, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645392.6300573, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 891, "latency_s": 0.22}
+{"ts": 1795645392.632071, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645392.8476074, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 891, "latency_s": 0.22}
+{"ts": 1795645392.848608, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 14, "total": 25, "case": "mul-14", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795645392.8496068, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 14, "total": 25, "case": "mul-15", "question": "If a Shore staff member works on a public holiday and takes the compensatory day off 45 days later, is this within the allowed timeframe, and what is the deadline for submitting the expense claim for "}
+{"ts": 1795645392.8515997, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645399.444996, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 897, "latency_s": 6.59}
+{"ts": 1795645399.446983, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645408.8685348, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1210, "latency_s": 9.42}
+{"ts": 1795645408.8725376, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645409.0785332, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 926, "latency_s": 0.21}
+{"ts": 1795645409.0805302, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645409.34606, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 926, "latency_s": 0.26}
+{"ts": 1795645409.347049, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 15, "total": 25, "case": "mul-15", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795645409.347049, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 15, "total": 25, "case": "amb-16", "question": "hey, if a gal is expecting her 3rd one, how long does she get off? and does she gotta send a letter to HR before the baby pops?"}
+{"ts": 1795645409.349061, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645412.8568368, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 850, "latency_s": 3.51}
+{"ts": 1795645412.858838, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645420.438169, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1116, "latency_s": 7.58}
+{"ts": 1795645420.4391685, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 16, "total": 25, "case": "amb-16", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795645420.440179, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 16, "total": 25, "case": "amb-17", "question": "how long is the trial run for new perm staff and can it stretch?"}
+{"ts": 1795645420.4411712, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645424.6713436, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 794, "latency_s": 4.23}
+{"ts": 1795645424.6733184, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645432.208756, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1037, "latency_s": 7.54}
+{"ts": 1795645432.2107596, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 17, "total": 25, "case": "amb-17", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795645432.211756, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 17, "total": 25, "case": "amb-18", "question": "hey, how long before we gotta file the travel req for a domestic trip, unless it's urgent vessel stuff?"}
+{"ts": 1795645434.305577, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645438.7952466, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 805, "latency_s": 4.49}
+{"ts": 1795645438.797247, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645446.3459146, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1055, "latency_s": 7.55}
+{"ts": 1795645446.3489115, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645446.5422418, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 807, "latency_s": 0.19}
+{"ts": 1795645446.5442348, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645446.7450058, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "qwen/qwen3.8-27b", "tokens": 812, "latency_s": 0.2}
+{"ts": 1795645446.7460022, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 18, "total": 25, "case": "amb-18", "passed": true, "kind": "ambiguous", "split": "holdout", "failure": null}
+{"ts": 1795645446.7460022, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 18, "total": 25, "case": "out-19", "question": "What is the exact percentage of tax withheld for a shore staff member living in New York State?"}
+{"ts": 1795645446.7480037, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645452.2933865, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 824, "latency_s": 5.55}
+{"ts": 1795645452.2953846, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645460.5537066, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1052, "latency_s": 8.26}
+{"ts": 1795645460.5546877, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 19, "total": 25, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645460.555696, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 19, "total": 25, "case": "out-20", "question": "If I get injured on the dock, what specific legal steps should I take to ensure I get a full financial settlement?"}
+{"ts": 1795645462.6563354, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645465.2310247, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 844, "latency_s": 2.58}
+{"ts": 1795645465.2330112, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645472.4836137, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1066, "latency_s": 7.25}
+{"ts": 1795645472.4846177, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 20, "total": 25, "case": "out-20", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795645472.4856162, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 20, "total": 25, "case": "out-21", "question": "How do I calculate the exact net pay after all state and local tax deductions for a $50,000 annual salary?"}
+{"ts": 1795645472.4866192, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645476.7377524, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 959, "latency_s": 4.25}
+{"ts": 1795645476.740747, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645485.2954633, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1171, "latency_s": 8.55}
+{"ts": 1795645485.2974474, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 21, "total": 25, "case": "out-21", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645485.2974474, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 21, "total": 25, "case": "out-22", "question": "Can you help me draft a cover letter for a job application at a different company?"}
+{"ts": 1795645485.2994375, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645491.7521882, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 877, "latency_s": 6.45}
+{"ts": 1795645491.7541912, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645500.3374074, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1107, "latency_s": 8.58}
+{"ts": 1795645500.3394186, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 22, "total": 25, "case": "out-22", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645500.3404093, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 22, "total": 25, "case": "too-23", "question": "My hourly rate is $25.00 and I worked 37.5 hours last week. What is my total gross pay for that week?"}
+{"ts": 1795645502.440358, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645507.6480975, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1008, "latency_s": 5.21}
+{"ts": 1795645507.6511004, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645516.0420964, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1049, "latency_s": 8.39}
+{"ts": 1795645516.046096, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645524.5771527, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1271, "latency_s": 8.53}
+{"ts": 1795645524.5781543, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 23, "total": 25, "case": "too-23", "passed": false, "kind": "tool", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795645524.5791492, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 23, "total": 25, "case": "too-24", "question": "I submitted my resignation notice 30 days ago, but I'm not sure if my final working day has passed yet. How many days are left in my notice period today?"}
+{"ts": 1795645524.5811534, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645529.9640439, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645539.5675716, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 24, "total": 25, "case": "too-24", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795645539.5675716, "stage": "evaluate", "status": "case", "iteration": 0, "label": "", "done": 24, "total": 25, "case": "too-25", "question": "The HR policy states I must give 2 weeks' notice before leaving. If I want to leave on the 15th of next month, what is the latest date I can submit my notice to meet the requirement?"}
+{"ts": 1795645539.5695715, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645547.2679856, "stage": "llm", "status": "start", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645557.644891, "stage": "llm", "status": "done", "llm_stage": "eval_iter0", "model": "openai/gpt-oss-20b", "tokens": 1316, "latency_s": 10.38}
+{"ts": 1795645557.6469107, "stage": "evaluate", "status": "progress", "iteration": 0, "label": "", "done": 25, "total": 25, "case": "too-25", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795645557.6539083, "stage": "iteration", "status": "done", "iteration": 0, "dev": 0.882, "holdout": 0.75}
+{"ts": 1795645557.6549091, "stage": "diagnose", "status": "done", "iteration": 1, "category": "prompt_defect", "cases": ["too-24", "too-25"]}
+{"ts": 1795645557.657912, "stage": "llm", "status": "start", "llm_stage": "fix_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645559.1531596, "stage": "llm", "status": "done", "llm_stage": "fix_iter1", "model": "openai/gpt-oss-20b", "tokens": 692, "latency_s": 1.49}
+{"ts": 1795645559.154159, "stage": "fix", "status": "done", "iteration": 1, "category": "prompt_defect", "target": "prompt.tool_guidance", "rationale": "Added explicit rule to use current_date for date-related queries, fixing failures where no tool was called."}
+{"ts": 1795645559.1551628, "stage": "iteration", "status": "start", "iteration": 1}
+{"ts": 1795645559.1551628, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 0, "total": 25, "case": "ans-01", "question": "How many days of paid sick leave do we get each year, and do unused days roll over?"}
+{"ts": 1795645559.1571648, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645566.6411514, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 918, "latency_s": 7.48}
+{"ts": 1795645566.6431532, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645575.6671522, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1199, "latency_s": 9.02}
+{"ts": 1795645575.6681535, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 1, "total": 25, "case": "ans-01", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645575.6681535, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 1, "total": 25, "case": "ans-02", "question": "Hey, if I'm out sick for three days in a row, do I need to bring a doctor's note?"}
+{"ts": 1795645575.6701334, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645580.1280634, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 872, "latency_s": 4.46}
+{"ts": 1795645580.13007, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645588.961287, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1156, "latency_s": 8.83}
+{"ts": 1795645588.9642909, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645589.1812897, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 859, "latency_s": 0.22}
+{"ts": 1795645589.1832957, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645589.389299, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 859, "latency_s": 0.21}
+{"ts": 1795645589.3902934, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 2, "total": 25, "case": "ans-02", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645589.3902934, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 2, "total": 25, "case": "ans-03", "question": "How many days per week can I work from home once I finish my probation, and what are the specific availability hours on Teams?"}
+{"ts": 1795645589.3912914, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645593.9691339, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 969, "latency_s": 4.58}
+{"ts": 1795645593.9711413, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645603.767137, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1283, "latency_s": 9.8}
+{"ts": 1795645603.7681386, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 3, "total": 25, "case": "ans-03", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645603.7691367, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 3, "total": 25, "case": "ans-04", "question": "Hey, I'm planning to work from a client site in Singapore for a few weeks. Is that allowed, and if so, what's the limit?"}
+{"ts": 1795645603.7701368, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645608.3109934, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 905, "latency_s": 4.54}
+{"ts": 1795645608.3130016, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645616.8713076, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1218, "latency_s": 8.56}
+{"ts": 1795645616.8733106, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 4, "total": 25, "case": "ans-04", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645616.8733106, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 4, "total": 25, "case": "ans-05", "question": "What is the standard rail travel class for our staff?"}
+{"ts": 1795645616.8753102, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645623.0694604, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 676, "latency_s": 6.19}
+{"ts": 1795645623.071459, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645626.5525186, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 972, "latency_s": 3.48}
+{"ts": 1795645626.5545247, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 5, "total": 25, "case": "ans-05", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645626.5555246, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 5, "total": 25, "case": "ans-06", "question": "I'm a General Manager taking a flight that's 7 hours long. Can I book premium economy?"}
+{"ts": 1795645626.5575268, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645630.1602104, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 823, "latency_s": 3.6}
+{"ts": 1795645630.1662116, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645632.7502804, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1112, "latency_s": 2.58}
+{"ts": 1795645632.7522883, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645632.9922848, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 799, "latency_s": 0.24}
+{"ts": 1795645632.9942894, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645633.1917043, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 799, "latency_s": 0.2}
+{"ts": 1795645633.1927037, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 6, "total": 25, "case": "ans-06", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645633.1937106, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 6, "total": 25, "case": "ans-07", "question": "How many days of annual leave do we get per year and how is it accrued?"}
+{"ts": 1795645633.1947057, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645637.7416215, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 914, "latency_s": 4.55}
+{"ts": 1795645637.743629, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645647.1582208, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1214, "latency_s": 9.41}
+{"ts": 1795645647.1602154, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 7, "total": 25, "case": "ans-07", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645647.1602154, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 7, "total": 25, "case": "ans-08", "question": "I'm planning to take a week off in August. What are the rules for applying for leave that long?"}
+{"ts": 1795645647.1632292, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645651.7557702, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 877, "latency_s": 4.59}
+{"ts": 1795645651.7577577, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645660.587918, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1193, "latency_s": 8.83}
+{"ts": 1795645660.5909142, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645660.8813972, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 873, "latency_s": 0.29}
+{"ts": 1795645660.8834064, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645661.098396, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 873, "latency_s": 0.22}
+{"ts": 1795645661.1003942, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 8, "total": 25, "case": "ans-08", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645661.1003942, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 8, "total": 25, "case": "ans-09", "question": "What is the required notice period for a Senior Manager leaving the company?"}
+{"ts": 1795645661.102395, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645664.517799, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 749, "latency_s": 3.42}
+{"ts": 1795645664.5198069, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645668.1489089, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1039, "latency_s": 3.63}
+{"ts": 1795645668.1499088, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 9, "total": 25, "case": "ans-09", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645668.1509097, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 9, "total": 25, "case": "ans-10", "question": "Hey, if I don't serve my full notice period and we didn't agree to shorten it, what happens to my final settlement?"}
+{"ts": 1795645668.1519077, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645672.5733356, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 842, "latency_s": 4.42}
+{"ts": 1795645672.5753171, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645681.2700627, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1166, "latency_s": 8.7}
+{"ts": 1795645681.2730649, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645681.5380802, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 838, "latency_s": 0.27}
+{"ts": 1795645681.5401862, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645681.8155596, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 838, "latency_s": 0.28}
+{"ts": 1795645681.8165627, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 10, "total": 25, "case": "ans-10", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645681.8175695, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 10, "total": 25, "case": "ans-11", "question": "I just got back from a site visit and need to file my expenses. What is the deadline for submitting my claim through the finance portal?"}
+{"ts": 1795645681.8185666, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645686.3476143, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 814, "latency_s": 4.53}
+{"ts": 1795645686.3495953, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645693.9569073, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1101, "latency_s": 7.61}
+{"ts": 1795645693.958899, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 11, "total": 25, "case": "ans-11", "passed": true, "kind": "answerable", "split": "dev", "failure": null}
+{"ts": 1795645693.958899, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 11, "total": 25, "case": "ans-12", "question": "Hey, I have a big claim for INR 30,000. Who needs to sign off on this before I get paid?"}
+{"ts": 1795645693.9609022, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645698.5042284, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 889, "latency_s": 4.54}
+{"ts": 1795645698.5062327, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645706.802253, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1193, "latency_s": 8.3}
+{"ts": 1795645706.8042598, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 12, "total": 25, "case": "ans-12", "passed": true, "kind": "answerable", "split": "holdout", "failure": null}
+{"ts": 1795645706.8042598, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 12, "total": 25, "case": "mul-13", "question": "If a Shore staff member takes parental leave and is assigned to stay on board a vessel during that period, how does the daily allowance change compared to the standard domestic rate?"}
+{"ts": 1795645706.8062503, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645713.4181876, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 990, "latency_s": 6.61}
+{"ts": 1795645713.4202104, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645723.1618242, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1305, "latency_s": 9.74}
+{"ts": 1795645723.1698153, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645723.3928087, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 1009, "latency_s": 0.22}
+{"ts": 1795645723.3948095, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645723.607542, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 1009, "latency_s": 0.21}
+{"ts": 1795645723.6085384, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 13, "total": 25, "case": "mul-13", "passed": false, "kind": "multi_doc", "split": "holdout", "failure": "hallucination"}
+{"ts": 1795645723.6085384, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 13, "total": 25, "case": "mul-14", "question": "If a permanent shore-based employee in Mumbai submits an expense claim 45 days after returning from a trip, will it be accepted, and who must approve it if the total is INR 30,000?"}
+{"ts": 1795645723.6105392, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645726.9059432, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 906, "latency_s": 3.3}
+{"ts": 1795645726.90894, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645730.542779, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1182, "latency_s": 3.63}
+{"ts": 1795645730.5477798, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645730.7659469, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 890, "latency_s": 0.22}
+{"ts": 1795645730.767944, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645730.982458, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 890, "latency_s": 0.21}
+{"ts": 1795645730.9834564, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 14, "total": 25, "case": "mul-14", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795645730.9834564, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 14, "total": 25, "case": "mul-15", "question": "If a Shore staff member works on a public holiday and takes the compensatory day off 45 days later, is this within the allowed timeframe, and what is the deadline for submitting the expense claim for "}
+{"ts": 1795645730.9854608, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645735.2117589, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 897, "latency_s": 4.23}
+{"ts": 1795645735.213744, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645744.9752338, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1269, "latency_s": 9.76}
+{"ts": 1795645744.9762347, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 15, "total": 25, "case": "mul-15", "passed": true, "kind": "multi_doc", "split": "dev", "failure": null}
+{"ts": 1795645744.9772372, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 15, "total": 25, "case": "amb-16", "question": "hey, if a gal is expecting her 3rd one, how long does she get off? and does she gotta send a letter to HR before the baby pops?"}
+{"ts": 1795645744.9782345, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645749.5101995, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 850, "latency_s": 4.53}
+{"ts": 1795645749.5112062, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645758.1299624, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1168, "latency_s": 8.62}
+{"ts": 1795645758.132953, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 16, "total": 25, "case": "amb-16", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795645758.132953, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 16, "total": 25, "case": "amb-17", "question": "how long is the trial run for new perm staff and can it stretch?"}
+{"ts": 1795645758.1349683, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645762.671923, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 794, "latency_s": 4.54}
+{"ts": 1795645762.6739292, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645770.200819, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1089, "latency_s": 7.53}
+{"ts": 1795645770.2028253, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 17, "total": 25, "case": "amb-17", "passed": true, "kind": "ambiguous", "split": "dev", "failure": null}
+{"ts": 1795645770.2028253, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 17, "total": 25, "case": "amb-18", "question": "hey, how long before we gotta file the travel req for a domestic trip, unless it's urgent vessel stuff?"}
+{"ts": 1795645770.2048223, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645774.7272243, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 805, "latency_s": 4.52}
+{"ts": 1795645774.729227, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645783.0278616, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1119, "latency_s": 8.3}
+{"ts": 1795645783.0298638, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645783.2269652, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 809, "latency_s": 0.2}
+{"ts": 1795645783.229954, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795645783.436952, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "qwen/qwen3.8-27b", "tokens": 814, "latency_s": 0.21}
+{"ts": 1795645783.437951, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 18, "total": 25, "case": "amb-18", "passed": true, "kind": "ambiguous", "split": "holdout", "failure": null}
+{"ts": 1795645783.4389558, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 18, "total": 25, "case": "out-19", "question": "What is the exact percentage of tax withheld for a shore staff member living in New York State?"}
+{"ts": 1795645783.4409523, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645787.9745564, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 824, "latency_s": 4.53}
+{"ts": 1795645787.9765491, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645795.5619597, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1105, "latency_s": 7.59}
+{"ts": 1795645795.56397, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 19, "total": 25, "case": "out-19", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645795.56397, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 19, "total": 25, "case": "out-20", "question": "If I get injured on the dock, what specific legal steps should I take to ensure I get a full financial settlement?"}
+{"ts": 1795645795.565967, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645800.0311196, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 848, "latency_s": 4.47}
+{"ts": 1795645800.0331235, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645808.628129, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1135, "latency_s": 8.6}
+{"ts": 1795645808.6301327, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 20, "total": 25, "case": "out-20", "passed": true, "kind": "out_of_scope", "split": "holdout", "failure": null}
+{"ts": 1795645808.6301327, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 20, "total": 25, "case": "out-21", "question": "How do I calculate the exact net pay after all state and local tax deductions for a $50,000 annual salary?"}
+{"ts": 1795645808.6321342, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645814.000561, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 959, "latency_s": 5.37}
+{"ts": 1795645814.0025632, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645823.6446903, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1223, "latency_s": 9.64}
+{"ts": 1795645823.6476917, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 21, "total": 25, "case": "out-21", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645823.6476917, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 21, "total": 25, "case": "out-22", "question": "Can you help me draft a cover letter for a job application at a different company?"}
+{"ts": 1795645823.651221, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645828.0521715, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 877, "latency_s": 4.4}
+{"ts": 1795645828.053168, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645830.6087968, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1160, "latency_s": 2.56}
+{"ts": 1795645830.610799, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 22, "total": 25, "case": "out-22", "passed": true, "kind": "out_of_scope", "split": "dev", "failure": null}
+{"ts": 1795645830.610799, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 22, "total": 25, "case": "too-23", "question": "My hourly rate is $25.00 and I worked 37.5 hours last week. What is my total gross pay for that week?"}
+{"ts": 1795645830.6128047, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645837.1381767, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1008, "latency_s": 6.53}
+{"ts": 1795645837.1401782, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645844.7278569, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1049, "latency_s": 7.59}
+{"ts": 1795645844.7298622, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645854.0088725, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1324, "latency_s": 9.28}
+{"ts": 1795645854.0098882, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 23, "total": 25, "case": "too-23", "passed": false, "kind": "tool", "split": "holdout", "failure": "wrong_refusal"}
+{"ts": 1795645854.0098882, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 23, "total": 25, "case": "too-24", "question": "I submitted my resignation notice 30 days ago, but I'm not sure if my final working day has passed yet. How many days are left in my notice period today?"}
+{"ts": 1795645854.0118797, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645859.4646008, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645867.8445637, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 24, "total": 25, "case": "too-24", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795645867.8455648, "stage": "evaluate", "status": "case", "iteration": 1, "label": "", "done": 24, "total": 25, "case": "too-25", "question": "The HR policy states I must give 2 weeks' notice before leaving. If I want to leave on the 15th of next month, what is the latest date I can submit my notice to meet the requirement?"}
+{"ts": 1795645867.8475683, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645876.5080721, "stage": "llm", "status": "start", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645887.1722848, "stage": "llm", "status": "done", "llm_stage": "eval_iter1", "model": "openai/gpt-oss-20b", "tokens": 1308, "latency_s": 10.66}
+{"ts": 1795645887.1742847, "stage": "evaluate", "status": "progress", "iteration": 1, "label": "", "done": 25, "total": 25, "case": "too-25", "passed": false, "kind": "tool", "split": "dev", "failure": "prompt_defect"}
+{"ts": 1795645887.184814, "stage": "iteration", "status": "done", "iteration": 1, "dev": 0.882, "holdout": 0.75, "kept": false, "tokens": 61447}
+{"ts": 1795645887.195811, "stage": "report", "status": "done", "final": {"dev_pass_rate": 0.882, "holdout_pass_rate": 0.75, "overall_pass_rate": 0.84}, "stop_reason": "no applicable fix left"}

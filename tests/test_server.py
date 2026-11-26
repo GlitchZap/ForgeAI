@@ -7,7 +7,7 @@ import forgeai.server as server
 
 @pytest.fixture
 def client(monkeypatch):
-    monkeypatch.setattr(server.OllamaLLM, "health", lambda self: {"ok": True})  # no model needed to test validation
+    monkeypatch.setattr(server, "make_llm", lambda *a, **k: type("H", (), {"health": lambda self: {"ok": True}})())  # no model needed
     monkeypatch.setattr(server, "RUNS", tmp_runs := server.RUNS.parent / ".pytest_runs")
     tmp_runs.mkdir(exist_ok=True)
     started = []
@@ -55,3 +55,24 @@ def test_readonly_blocks_work(client, monkeypatch):
 def test_artifact_whitelist(client):
     assert client.get("/api/runs/..%2F..%2Fforgeai/artifacts/run.json").status_code == 404
     assert client.get("/api/runs/x/artifacts/trace.jsonl").status_code == 404
+
+
+def test_archive_then_delete_run(client):
+    d = server.RUNS / "r1"
+    d.mkdir()
+    (d / "run.json").write_text('{"name": "R", "model": "openai/gpt-oss-20b", "finished": true}', encoding="utf-8")
+    run = next(r for r in client.get("/api/runs").json() if r["id"] == "r1")
+    assert run["provider"] == "groq" and run["archived"] is False  # old runs: provider inferred from the model id
+    assert client.post("/api/runs/r1/archive", json={"archived": True}).json()["archived"] is True
+    assert next(r for r in client.get("/api/runs").json() if r["id"] == "r1")["archived"] is True
+    assert client.post("/api/runs/r1/archive", json={"archived": False}).json()["archived"] is False
+    assert client.delete("/api/runs/r1").status_code == 200 and not d.exists()
+    assert client.delete("/api/runs/nope").status_code == 404
+
+
+def test_delete_refuses_running_and_readonly(client, monkeypatch):
+    (server.RUNS / "r2").mkdir()
+    monkeypatch.setitem(server._active, "r2", {"thread": type("T", (), {"is_alive": lambda self: True})()})
+    assert client.delete("/api/runs/r2").status_code == 409
+    monkeypatch.setattr(server, "READONLY", True)
+    assert client.post("/api/runs/r2/archive", json={}).status_code == 403

@@ -19,7 +19,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from sse_starlette.sse import EventSourceResponse
 
-from .llm import OllamaLLM
+from .llm import make_llm
 from .schemas import AgentDefinition, Requirements
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,7 +49,7 @@ def _inside(p: Path, roots: list[Path]) -> bool:
 
 @app.get("/api/health")
 def health():
-    return OllamaLLM().health()
+    return make_llm().health()
 
 
 @app.get("/api/inputs")
@@ -79,14 +79,19 @@ def list_runs():
         fresh = ev.exists() and time.time() - ev.stat().st_mtime < 300
         status = "running" if (a and a["thread"].is_alive()) or (not a and not meta.get("finished") and fresh) else \
             ("failed" if a and a.get("error") else ("done" if meta.get("finished") else "incomplete"))
-        if not meta.get("name") and ev.exists():
+        if not meta.get("name") and ev.exists():  # unfinished run: its first event carries name, provider and model
             with open(ev, encoding="utf-8") as f:
-                meta["name"] = json.loads(f.readline() or "{}").get("name")
+                first = json.loads(f.readline() or "{}")
+            meta.update({k: first[k] for k in ("name", "provider", "model") if first.get(k)})
+            if not meta.get("model"):  # runs from before that: the first model call names the model
+                with open(ev, encoding="utf-8") as f:
+                    meta["model"] = next((e.get("model") for e in map(json.loads, f) if e.get("stage") == "llm" and e.get("model")), None)
         if a and a.get("req") is not None and not a["checkpoint"].is_set():
             status = "awaiting_approval"
         out.append({"id": d.name, "status": status, "error": (a or {}).get("error"), "name": meta.get("name") or d.name,
                     "final": meta.get("final"), "stop_reason": meta.get("stop_reason"), "duration_s": meta.get("duration_s"),
-                    "tokens": meta.get("tokens"), "model": meta.get("model"), "updated": d.stat().st_mtime})
+                    "tokens": meta.get("tokens"), "model": meta.get("model"), "provider": _provider(meta),
+                    "archived": (d / ".archived").exists(), "updated": d.stat().st_mtime})
     return out
 
 
@@ -116,7 +121,7 @@ def _start(rid: str, brief: str, docs: Path, req: StartRun):
 
     def work():
         try:
-            Factory(OllamaLLM(), out, max_iters=req.iters, candidates=req.candidates, budget_tokens=req.budget_tokens,
+            Factory(make_llm(), out, max_iters=req.iters, candidates=req.candidates, budget_tokens=req.budget_tokens,
                     budget_seconds=req.budget_seconds).run(brief, docs, req.name, answers=req.answers,
                                                             checkpoint=checkpoint if req.checkpoint else None)
         except Exception as e:  # surfaced to the UI; the traceback is in the server log
@@ -138,13 +143,29 @@ READONLY = os.getenv("FORGE_READONLY") == "1"  # public hosting: show committed 
 MAX_FILE_BYTES, MAX_FILES = 20 * 1024 * 1024, 20
 
 
-def _preflight():
+def _provider(meta: dict) -> str:
+    """Runs made before run.json recorded a provider: Groq model ids have a vendor prefix, Ollama tags don't."""
+    # shortcut: an Ollama model pulled as "user/model" would read as Groq; record the provider instead (pipeline does)
+    return meta.get("provider") or ("groq" if "/" in (meta.get("model") or "") else "ollama")
+
+
+def _run_llm(meta: dict):
+    """The exact provider and models a run was built and tested with, not the server's defaults."""
+    return make_llm(_provider(meta), **{k: meta[k] for k in ("model", "judge_model", "embed_model") if meta.get(k)})
+
+
+def _meta(d: Path) -> dict:
+    return json.loads((d / "run.json").read_text(encoding="utf-8")) if (d / "run.json").exists() else {}
+
+
+def _preflight(llm=None):
     """Every endpoint that writes files or spends model time goes through here."""
     if READONLY:
         raise HTTPException(403, "This deployment is read-only. Run ForgeAI locally to start runs or chat.")
-    h = OllamaLLM().health()
+    h = (llm or make_llm()).health()
     if not h.get("ok"):
-        raise HTTPException(503, f"Ollama is not ready: {h.get('error') or h.get('missing')}")
+        name = "Groq" if h.get("provider") == "groq" else "Ollama"
+        raise HTTPException(503, f"{name} is not ready: {h.get('error') or h.get('missing')}")
 
 
 @app.post("/api/runs")
@@ -182,6 +203,31 @@ async def upload_run(name: str = Form(...), brief: str = Form(...), checkpoint: 
         (docs / fname).write_bytes(data)
     _start(rid, brief, docs, StartRun(name=name, checkpoint=checkpoint, candidates=candidates))
     return {"id": rid}
+
+
+@app.post("/api/runs/{rid}/archive")
+def archive_run(rid: str, body: dict):
+    """Archived runs stay on disk and keep working; the UI just files them away from the recent list."""
+    if READONLY:
+        raise HTTPException(403, "This deployment is read-only.")
+    flag = _run_dir(rid) / ".archived"
+    flag.touch() if body.get("archived", True) else flag.unlink(missing_ok=True)
+    return {"id": rid, "archived": flag.exists()}
+
+
+@app.delete("/api/runs/{rid}")
+def delete_run(rid: str):
+    if READONLY:
+        raise HTTPException(403, "This deployment is read-only.")
+    d = _run_dir(rid)
+    a = _active.get(rid)
+    if a and a["thread"].is_alive():
+        raise HTTPException(409, "This run is still working. Wait for it to finish, then delete it.")
+    shutil.rmtree(d)
+    _active.pop(rid, None)
+    for k in [k for k in _runtimes if k.startswith(f"{rid}@")]:
+        _runtimes.pop(k, None)
+    return {"id": rid, "deleted": True}
 
 
 @app.get("/api/runs/{rid}/events")
@@ -246,8 +292,9 @@ class Ask(BaseModel):
 @app.post("/api/chat/{rid}")
 def chat(rid: str, body: Ask):
     from .agent_runtime import AgentRuntime
-    _preflight()
     d = _run_dir(rid)
+    meta = _meta(d)
+    _preflight(_run_llm(meta))
     if not (d / "agent.json").exists():
         raise HTTPException(409, "this run has not produced an agent yet")
     key = f"{rid}@{(d / 'agent.json').stat().st_mtime_ns}"  # a re-run into the same folder must load the new agent
@@ -262,9 +309,7 @@ def chat(rid: str, body: Ask):
             if not local:
                 raise HTTPException(409, "the agent's document folder is not available on this machine")
             defn.docs_path = str(local)
-        meta = json.loads((d / "run.json").read_text(encoding="utf-8")) if (d / "run.json").exists() else {}
-        # chat with the exact models the agent was built and tested with, not the server's defaults
-        _runtimes[key] = AgentRuntime(defn, OllamaLLM(**{k: meta[k] for k in ("model", "judge_model", "embed_model") if meta.get(k)}))
+        _runtimes[key] = AgentRuntime(defn, _run_llm(meta))
     tr = _runtimes[key].ask(body.question[:2000], body.history[-6:])
     return tr.model_dump(mode="json")
 
@@ -276,8 +321,7 @@ _jobs: dict[str, dict] = {}
 
 @app.post("/api/chat/{rid}/jobs")
 def start_chat_job(rid: str, body: Ask):
-    _run_dir(rid)
-    _preflight()
+    _preflight(_run_llm(_meta(_run_dir(rid))))
     now = time.time()
     for old in [j for j, v in _jobs.items() if now - v["started"] > 3600]:
         _jobs.pop(old, None)

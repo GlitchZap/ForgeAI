@@ -114,11 +114,11 @@ class Factory:
         self.llm.token_budget = self.budget_tokens  # hard ceiling; _over_budget is the soft, early one
         t0 = time.time()
         meta = {"name": name, "docs_path": str(docs_path), "model": self.llm.model, "judge_model": self.llm.judge_model,
-                "embed_model": self.llm.embed_model, "started": t0, "stop_reason": "",
+                "embed_model": self.llm.embed_model, "provider": "groq" if type(self.llm).__name__ == "GroqLLM" else "ollama", "started": t0, "stop_reason": "",
                 "budget": {"tokens": self.budget_tokens, "seconds": self.budget_seconds}}
         self.write("brief.md", brief)
 
-        self.emit("ingest", "start", name=name)  # lets the UI title a run before run.json exists
+        self.emit("ingest", "start", name=name, provider=meta["provider"], model=meta["model"])  # lets the UI label a run before run.json exists
         self.llm.stage = "ingest"
         docs, skipped = load_folder(docs_path)
         if not docs:
