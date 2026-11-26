@@ -42,3 +42,14 @@ def test_health_without_key_and_provider_switch(monkeypatch):
     assert isinstance(make_llm(), GroqLLM)
     assert isinstance(make_llm("ollama"), OllamaLLM)
     assert GroqLLM().embed_model is None  # BM25 unless embeddings are routed to Ollama
+
+
+def test_groq_takes_over_when_ollama_is_down(monkeypatch):
+    monkeypatch.setattr("forgeai.llm.ollama_up", lambda: False)
+    monkeypatch.setenv("FORGE_EMBED_VIA_OLLAMA", "1")
+    monkeypatch.setenv("GROQ_API_KEY", "test-key-not-real")
+    llm = make_llm("ollama", model="qwen2.5:7b", judge_model="llama3.1:8b", embed_model="nomic-embed-text")
+    assert isinstance(llm, GroqLLM)
+    assert (llm.model, llm.judge_model, llm.embed_model) == (GroqLLM.MODEL, GroqLLM.JUDGE, None)  # no Ollama tags, BM25 only
+    monkeypatch.delenv("GROQ_API_KEY")
+    assert isinstance(make_llm("ollama"), OllamaLLM)  # no key: nothing to fall back to, health reports Ollama down

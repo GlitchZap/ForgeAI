@@ -93,7 +93,7 @@ function NavContent({ runs, route, health }: { runs: RunSummary[]; route: string
       </div>
       <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-3">
         <span title={health?.ok ? 'Models ready' : health?.error ?? 'Models not ready'} className={`ml-2 size-2.5 shrink-0 rounded-full ${health === null ? 'bg-white/30' : health.ok ? 'bg-starboard' : 'bg-port'}`} />
-        <WhenOpen className="flex-1 whitespace-nowrap text-xs text-sounding">{health === null ? 'Checking…' : health.ok ? `${health.provider === 'groq' ? 'Groq' : 'Ollama'} ready` : (health.error ?? 'Model server offline')}</WhenOpen>
+        <WhenOpen className="min-w-0 flex-1 truncate text-xs text-sounding">{health === null ? 'Checking…' : `${health.provider === 'groq' ? 'Groq' : 'Ollama'} ${health.ok ? 'ready' : 'not ready'}`}</WhenOpen>
         <WhenOpen><ThemeSwitch /></WhenOpen>
       </div>
     </>
@@ -138,7 +138,7 @@ export default function App() {
       </div>
       <main className="min-w-0 flex-1">
         {route === '' ? <Home runs={runs} go={go} />
-          : route === 'new' ? <NewRun ollamaOk={!!health?.ok} onStarted={(id) => { refresh(); go(`run/${id}`) }} />
+          : route === 'new' ? <NewRun modelsOk={!!health?.ok} modelsError={health?.ok ? undefined : health?.error} onStarted={(id) => { refresh(); go(`run/${id}`) }} />
           : route === 'runs' ? <Logbook runs={runs} onChanged={refresh} />
           : current ? <RunView key={current.id} run={current} section={section ?? 'overview'} />
           : <p className="p-10 text-sounding">{runs.length ? 'That run does not exist.' : 'Loading run…'}</p>}

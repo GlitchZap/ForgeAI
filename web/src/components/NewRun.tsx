@@ -30,7 +30,7 @@ function Choice({ on, onClick, title, detail, icon }: { on: boolean; onClick: ()
   )
 }
 
-export function NewRun({ onStarted, ollamaOk }: { onStarted: (id: string) => void; ollamaOk: boolean }) {
+export function NewRun({ onStarted, modelsOk, modelsError }: { onStarted: (id: string) => void; modelsOk: boolean; modelsError?: string }) {
   const reduce = useReducedMotion()
   const [step, setStep] = useState(0)
   const [inputs, setInputs] = useState<InputSet[]>([])
@@ -152,7 +152,7 @@ export function NewRun({ onStarted, ollamaOk }: { onStarted: (id: string) => voi
               <dt className="text-sounding">Documents</dt><dd>{pick === UPLOAD ? `${files?.length ?? 0} uploaded file(s)` : pick ?? <span className="text-port">none chosen</span>}</dd>
               <dt className="text-sounding">Brief</dt><dd>{brief || <span className="text-port">missing</span>}</dd>
             </dl>
-            {!ollamaOk && <p className="text-port">Ollama isn't reachable, so new runs can't start. Saved runs still open.</p>}
+            {!modelsOk && <p className="text-port">No model server is ready{modelsError ? ` (${modelsError})` : ''}, so new runs can't start. Saved runs still open.</p>}
             {err && <p className="text-port">{err}</p>}
           </div>
         )}
@@ -162,7 +162,7 @@ export function NewRun({ onStarted, ollamaOk }: { onStarted: (id: string) => voi
         <Button variant="ghost" onClick={() => (step === 0 ? history.back() : setStep((s) => s - 1))}><ArrowLeft /> Back</Button>
         {step < 2
           ? <Button onClick={() => setStep((s) => s + 1)} disabled={!done[step]}>Next <ArrowRight /></Button>
-          : <button className="glass-btn glass-btn--tint disabled:opacity-40" onClick={start} disabled={busy || !ollamaOk || !brief.trim() || !done[0]}>
+          : <button className="glass-btn glass-btn--tint disabled:opacity-40" onClick={start} disabled={busy || !modelsOk || !brief.trim() || !done[0]}>
               <Play className="size-4" aria-hidden /> {busy ? 'Starting…' : 'Start the run'}</button>}
       </div>
     </div>

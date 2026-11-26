@@ -83,15 +83,11 @@ All generation prompts are committed in `forgeai/prompts/`. The demo documents a
 
 ## Render deployment
 
-The repository includes `render.yaml` for a Docker-based Render web service. It keeps `FORGE_READONLY=1`, so the public deployment can safely show the committed demo runs without accepting uploaded briefs or spending model resources.
+`render.yaml` deploys the Docker image with live runs and chat on **Groq** (Render has no GPU for Ollama). In the Render dashboard set `GROQ_API_KEY` (secret), `FORGE_PROVIDER=groq`, `FORGE_READONLY=0`, and delete any `FORGE_MODEL` / `FORGE_JUDGE_MODEL` left from the Ollama setup (Ollama tags are not Groq model ids).
 
-To enable live runs or chat later:
+Groq also takes over automatically: whenever Ollama is asked for but not reachable and `GROQ_API_KEY` is set, ForgeAI uses Groq's default models with BM25 retrieval. That includes chat with runs built on Ollama.
 
-1. Deploy Ollama on a GPU-enabled server and pull `qwen2.5:7b`, `llama3.1:8b`, and `nomic-embed-text`.
-2. Set `OLLAMA_HOST` in Render to the Ollama server's public HTTPS URL.
-3. Set `FORGE_READONLY=0` and redeploy.
-
-Do not expose Ollama directly to the public internet without authentication or a reverse proxy. `OLLAMA_HOST=http://localhost:11434` is only valid when Ollama runs in the same machine/container as ForgeAI.
+Caveats: a public deployment with `FORGE_READONLY=0` lets anyone start runs on your Groq quota (set it back to `1` for browse-only), and Render's free disk is wiped on every deploy, so new runs disappear on the next redeploy.
 
 ## How the judge is defended
 

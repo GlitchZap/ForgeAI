@@ -5,13 +5,10 @@ services:
     dockerfilePath: ./Dockerfile
     healthCheckPath: /api/health
     envVars:
+      # live runs and chat on Groq (Render has no GPU for Ollama). Set "1" to go back to browse-only.
       - key: FORGE_READONLY
-        value: "1"
-      - key: OLLAMA_HOST
-        sync: false
-      - key: FORGE_MODEL
-        value: qwen2.5:7b
-      - key: FORGE_JUDGE_MODEL
-        value: llama3.1:8b
-      - key: FORGE_EMBED_MODEL
-        value: nomic-embed-text
+        value: "0"
+      - key: FORGE_PROVIDER
+        value: groq
+      - key: GROQ_API_KEY
+        sync: false   # paste it in the Render dashboard; never commit it

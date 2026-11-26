@@ -1,0 +1,24 @@
+{"ts": 1795645892.4091651, "stage": "ingest", "status": "start", "name": "Ship spares (Groq)"}
+{"ts": 1795645895.4709084, "stage": "ingest", "status": "done", "documents": 3, "chunks": 39, "mode": "hybrid", "skipped": []}
+{"ts": 1795645895.4720087, "stage": "intake", "status": "start"}
+{"ts": 1795645895.4758694, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645896.0414019, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "openai/gpt-oss-20b", "tokens": 736, "latency_s": 0.56}
+{"ts": 1795645896.0444043, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "openai/gpt-oss-20b"}
+{"ts": 1795645896.6417592, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "openai/gpt-oss-20b", "tokens": 629, "latency_s": 0.6}
+{"ts": 1795645896.6487808, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "openai/gpt-oss-20b"}
+{"ts": 1795646162.7342098, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "openai/gpt-oss-20b", "tokens": 1549, "latency_s": 266.08}
+{"ts": 1795646164.8559625, "stage": "llm", "status": "start", "llm_stage": "intake", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795646165.2722163, "stage": "llm", "status": "done", "llm_stage": "intake", "model": "qwen/qwen3.8-27b", "tokens": 797, "latency_s": 0.42}
+{"ts": 1795646165.2772279, "stage": "intake", "status": "done", "topics": 4, "flags": ["NOT GROUNDABLE: the brief asks for 'WarrantyClaimGuide' but the documents do not cover it. The agent will refuse these questions instead of guessing.", "PARTIAL COVERAGE: 'ApprovalLimits' is only partly covered; answers may be incomplete."], "unsupported": ["WarrantyClaimGuide"]}
+{"ts": 1795646165.2772279, "stage": "generate", "status": "start"}
+{"ts": 1795646165.2812178, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795646525.6209075, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795646525.8321943, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen/qwen3.8-27b", "tokens": 708, "latency_s": 0.21}
+{"ts": 1795646525.8371964, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795646769.2092617, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795646769.3972855, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen/qwen3.8-27b", "tokens": 704, "latency_s": 0.19}
+{"ts": 1795646769.4003031, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}
+{"ts": 1795646786.7654126, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "openai/gpt-oss-20b", "tokens": 773, "latency_s": 17.36}
+{"ts": 1795646786.7664142, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "qwen/qwen3.8-27b"}
+{"ts": 1795646787.1169503, "stage": "llm", "status": "done", "llm_stage": "generate", "model": "qwen/qwen3.8-27b", "tokens": 757, "latency_s": 0.35}
+{"ts": 1795646787.1199677, "stage": "llm", "status": "start", "llm_stage": "generate", "model": "openai/gpt-oss-20b"}

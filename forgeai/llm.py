@@ -111,15 +111,32 @@ def _extract_json(text: str) -> str:
     return t[start:end + 1]
 
 
+def _ollama_host(host: str | None = None) -> str:
+    h = (host or os.getenv("OLLAMA_HOST", "http://localhost:11434")).rstrip("/")
+    return h if h.startswith("http") else "http://" + h
+
+
+_up = {"t": -1e9, "ok": False}
+
+
+def ollama_up() -> bool:
+    """Is Ollama answering? Cached 30 s so the UI's health polling doesn't probe it on every request."""
+    if time.monotonic() - _up["t"] > 30:
+        try:
+            ok = httpx.get(f"{_ollama_host()}/api/tags", timeout=2.0).status_code == 200
+        except httpx.HTTPError:
+            ok = False
+        _up.update(t=time.monotonic(), ok=ok)
+    return _up["ok"]
+
+
 class OllamaLLM(LLM):
     def __init__(self, host: str | None = None, **kw):
         kw.setdefault("model", os.getenv("FORGE_MODEL", "qwen2.5:7b"))
         kw.setdefault("judge_model", os.getenv("FORGE_JUDGE_MODEL", "llama3.1:8b"))
         kw.setdefault("embed_model", os.getenv("FORGE_EMBED_MODEL", "nomic-embed-text"))
         super().__init__(**kw)
-        self.host = (host or os.getenv("OLLAMA_HOST", "http://localhost:11434")).rstrip("/")
-        if not self.host.startswith("http"):
-            self.host = "http://" + self.host
+        self.host = _ollama_host(host)
         self.http = httpx.Client(timeout=httpx.Timeout(600.0, connect=10.0))
 
     def _chat_raw(self, messages, model, schema, temperature):
@@ -165,12 +182,14 @@ class GroqLLM(LLM):
     nomic-embed-text on a local Ollama for hybrid search. The key is read from GROQ_API_KEY and never logged."""
 
     URL = "https://api.groq.com/openai/v1"
+    MODEL, JUDGE = "openai/gpt-oss-20b", "qwen/qwen3.8-27b"  # different families: limits self-preference
 
     def __init__(self, api_key: str | None = None, **kw):
-        kw.setdefault("model", os.getenv("FORGE_MODEL", "openai/gpt-oss-20b"))
-        kw.setdefault("judge_model", os.getenv("FORGE_JUDGE_MODEL", "qwen/qwen3.8-27b"))  # different family: limits self-preference
-        via_ollama = os.getenv("FORGE_EMBED_VIA_OLLAMA") == "1" or bool(kw.get("embed_model"))  # a run built with embeddings keeps them
-        kw.setdefault("embed_model", os.getenv("FORGE_EMBED_MODEL", "nomic-embed-text") if via_ollama else None)
+        kw.setdefault("model", os.getenv("FORGE_MODEL", self.MODEL))
+        kw.setdefault("judge_model", os.getenv("FORGE_JUDGE_MODEL", self.JUDGE))
+        # a run built with embeddings keeps them, but only while Ollama is up; otherwise retrieval drops to BM25
+        via_ollama = (os.getenv("FORGE_EMBED_VIA_OLLAMA") == "1" or bool(kw.get("embed_model"))) and ollama_up()
+        kw["embed_model"] = (kw.get("embed_model") or os.getenv("FORGE_EMBED_MODEL", "nomic-embed-text")) if via_ollama else None
         super().__init__(**kw)
         self.key = api_key or os.getenv("GROQ_API_KEY", "")
         self.http = httpx.Client(timeout=httpx.Timeout(120.0, connect=10.0))
@@ -224,8 +243,14 @@ class GroqLLM(LLM):
 
 
 def make_llm(provider: str | None = None, **kw) -> LLM:
-    """FORGE_PROVIDER=groq|ollama (default ollama). Every entry point builds its model client through here."""
+    """FORGE_PROVIDER=groq|ollama (default ollama). Every entry point builds its model client through here.
+
+    Groq takes over whenever Ollama is asked for but not reachable and GROQ_API_KEY is set (e.g. on a host
+    with no GPU): Ollama model tags mean nothing on Groq, so the Groq defaults are used instead."""
     p = (provider or os.getenv("FORGE_PROVIDER", "ollama")).lower()
+    if p == "ollama" and os.getenv("GROQ_API_KEY") and not ollama_up():
+        rest = {k: v for k, v in kw.items() if k not in ("model", "judge_model", "embed_model")}
+        return GroqLLM(model=GroqLLM.MODEL, judge_model=GroqLLM.JUDGE, **rest)
     if p == "groq":
         return GroqLLM(**kw)
     if p == "ollama":
