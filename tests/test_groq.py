@@ -34,6 +34,23 @@ def test_retries_rate_limit_then_parses_json(tmp_path, monkeypatch):
     assert "test-key-not-real" not in (tmp_path / "trace.jsonl").read_text()
 
 
+def test_daily_limit_switches_model_without_waiting(monkeypatch):
+    monkeypatch.setattr("forgeai.llm._groq_spent", {})
+    monkeypatch.setattr("forgeai.llm.time.sleep", lambda s: (_ for _ in ()).throw(AssertionError("must not wait")))
+    models = []
+
+    def handler(req):
+        models.append(json.loads(req.content)["model"])
+        if models[-1] == "openai/gpt-oss-20b":  # tokens-per-day spent: Groq says wait ~27 min
+            return httpx.Response(429, headers={"retry-after": "1637"}, json={"error": "TPD"})
+        return httpx.Response(200, json={"choices": [{"message": {"content": "24 days"}}], "usage": {"total_tokens": 5}})
+    llm = GroqLLM(api_key="test-key-not-real")
+    llm.http = httpx.Client(transport=httpx.MockTransport(handler))
+    assert llm.chat([{"role": "user", "content": "leave?"}]) == "24 days"
+    assert llm.chat([{"role": "user", "content": "again"}]) == "24 days"
+    assert models == ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "openai/gpt-oss-120b"]  # spent model skipped next time
+
+
 def test_health_without_key_and_provider_switch(monkeypatch):
     monkeypatch.delenv("GROQ_API_KEY", raising=False)
     monkeypatch.delenv("FORGE_EMBED_VIA_OLLAMA", raising=False)

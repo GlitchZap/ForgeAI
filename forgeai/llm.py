@@ -176,6 +176,9 @@ class OllamaLLM(LLM):
         return {"ok": not missing, "missing": missing, "available": sorted(tags), "provider": "ollama"}
 
 
+_groq_spent: dict[str, float] = {}  # model -> when its daily quota frees up (shared by all clients)
+
+
 class GroqLLM(LLM):
     """Groq's OpenAI-compatible API serving open-weight models. Same tracing, budget and schema-retry as Ollama.
 
@@ -184,6 +187,7 @@ class GroqLLM(LLM):
 
     URL = "https://api.groq.com/openai/v1"
     MODEL, JUDGE = "openai/gpt-oss-20b", "qwen/qwen3.8-27b"  # different families: limits self-preference
+    FALLBACK = ("openai/gpt-oss-20b", "openai/gpt-oss-120b", "qwen/qwen3.8-27b")  # each has its own daily quota
 
     def __init__(self, api_key: str | None = None, **kw):
         kw.setdefault("model", os.getenv("FORGE_MODEL", self.MODEL))
@@ -197,6 +201,16 @@ class GroqLLM(LLM):
         self._embedder = OllamaLLM(embed_model=self.embed_model) if via_ollama else None
 
     def _chat_raw(self, messages, model, schema, temperature):
+        # a model whose daily token quota is spent is skipped until it frees up; the next one in FALLBACK answers
+        for m in [model] + [f for f in self.FALLBACK if f != model]:
+            if _groq_spent.get(m, 0) <= time.time():
+                out = self._call(messages, m, schema, temperature)
+                if out is not None:
+                    return out
+        raise LLMError("groq: the daily token limit is used up on every model; try again later or upgrade at console.groq.com")
+
+    def _call(self, messages, model, schema, temperature):
+        """One model's answer, or None once its daily quota is spent (Groq says to wait more than a minute)."""
         msgs = [dict(m) for m in messages]
         body = {"model": model, "messages": msgs, "temperature": temperature, "seed": self.seed, "max_tokens": 900}
         if schema is not None:
@@ -211,7 +225,10 @@ class GroqLLM(LLM):
             r = self.http.post(f"{self.URL}/chat/completions", json=body, headers={"Authorization": f"Bearer {self.key}"})
             if r.status_code == 429 or r.status_code >= 500:  # rate limit or transient: wait as told, then retry
                 wait = float(r.headers.get("retry-after") or 2 ** attempt)
-                time.sleep(min(wait, 60))
+                if r.status_code == 429 and wait > 60:  # daily (TPD/RPD) limit, not the per-minute one
+                    _groq_spent[model] = time.time() + wait
+                    return None
+                time.sleep(wait)
                 continue
             if r.status_code != 200:
                 raise LLMError(f"groq {r.status_code}: {r.text[:300]}")
